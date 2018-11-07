@@ -1,0 +1,21 @@
+/**
+ * Colors template
+ * Primary #202B51, #D0D7DC, #05080A
+ * Secondary #387E80, #52B5BE
+ *
+ */
+* {
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;		
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+#jumbotron {
+	background:no-repeat;
+	background-size: cover;
+}
