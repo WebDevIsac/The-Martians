@@ -12,8 +12,29 @@ const activeBtn = document.querySelector('.active');
 
 
 for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", () => {
-        console.log(buttons[i]); 
+    buttons[i].addEventListener('click', () => {
+        let currentBtn = buttons[i];
+        let newIndex = i + 1;
+        let currentImg = 'imgSlide' + newIndex;
+        
+        container.setAttribute('id', currentImg);
+        currentBtn.setAttribute('id', 'active');
+
+
+        if (btn1 !== currentBtn) {
+            btn1.removeAttribute('id', 'active');
+            if (btn2 !== currentBtn) {
+                btn2.removeAttribute('id', 'active');
+            } else {
+                btn3.removeAttribute('id', 'active');
+            }
+            
+        } else if (btn2 !== currentBtn) {
+            btn2.removeAttribute('id', 'active');
+            if (btn3 !== currentBtn) {
+                btn3.removeAttribute('id', 'active');
+            }
+        }
     });
 }
 
