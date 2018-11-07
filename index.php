@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/stylesheet/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="fonts">
+  <link rel="icon" href="assets/images/saabfavicon.png">
   <title>The Martians</title>
 </head>
 
