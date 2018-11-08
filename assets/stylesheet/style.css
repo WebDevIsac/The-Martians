@@ -58,10 +58,10 @@ Costum styles
 }
 
 body {
-  font-size: 16px;
+  font-size: 1.2rem;
   letter-spacing: .5px;
   font-family: 'Roboto', sans-serif;
-  height: 2000px;
+  height: 200vh;
 }
 
 a {
@@ -102,10 +102,6 @@ Desktop navigation
   padding: 20px 0 0 10px;
 }
 
-.logoContainer {
-  flex-grow: 1.5;
-}
-
 .email {
   flex-grow: .1;
 }
@@ -114,12 +110,28 @@ Desktop navigation
   flex-grow: .1;
 }
 
+.langSV {
+  margin-top: auto;
+  padding: 10px;
+  border-right: 1px solid black
+}
+
+.langENG {
+  margin-top: auto;
+  padding: 10px;
+  border-left: 1px solid black
+}
+
+.logoContainer {
+  flex-grow: 1.5;
+}
+
 .logoImg {
   width: 130px;
   margin-top: 24px;
 }
 
-@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) {
   .button {
     display: none;
   }
@@ -169,7 +181,16 @@ Burger icon
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) and (orientation: portrait){
+  .burgerIcon {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) and (orientation: landscape){
   .burgerIcon {
     display: none;
   }
@@ -190,13 +211,14 @@ Mobile menu
   justify-content: center;
 }
 
-.langSV {
+.langSvMobile {
   padding: 10px;
-  border-right: 2px solid black
+  border-right: 1px solid black
 }
 
-.langENG {
+.langEngMobile {
   padding: 10px;
+  border-left: 1px solid black
 }
 
 .emailMobile {
@@ -231,6 +253,7 @@ Mobile menu
     transform: translate(100%, 0);
     transition: transform 0.5s;
   }
+
   .slide{
     transform: none;
   }
@@ -260,6 +283,11 @@ Mobile menu
     transform: translate(100%, 0);
     transition: transform 0.5s;
   }
+
+  .catalogueMobile {
+    margin-bottom: 35vh;
+  }
+
   .slide{
     transform: none;
   }

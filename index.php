@@ -44,8 +44,8 @@
       <div class="emailMobile"><a href="#">Email</a></div>
       <div class="catalogueMobile"><a href="#">Produkt katalog</a></div>
       <div class="langContainer">
-        <div class="langSV"><a href="#">SV</a></div>
-        <div class="langENG"><a href="#">ENG</a></div>
+        <div class="langSvMobile"><a href="#">SV</a></div>
+        <div class="langEngMobile"><a href="#">ENG</a></div>
       </div>
     </div>
 
