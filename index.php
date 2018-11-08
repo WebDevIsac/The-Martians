@@ -14,17 +14,19 @@
   <title>The Martians</title>
 </head>
 
+<body id="body">
 <header>
 
   <!-- Desktop Navigation  -->
 
-  <nav class="mainNav">
+  <nav class="navContainer">
 
     <div class="desktopNav">
-      <div class="about button"><a href="#">Om</a></div>
       <div class="logoContainer"><a href="#top"><img class="logoImg" src="assets/images/saabLogo.png" alt=""></a></div>
       <div class="email button"><a href="#">Email</a></div>
       <div class="catalogue button"><a  href="#">Produkt katalog</a></div>
+      <div class="langSV button"><a href="#">SV</a></div>
+      <div class="langENG button"><a href="#">ENG</a></div>
     </div>
 
     <!-- Burger menu icon -->
@@ -37,16 +39,19 @@
 
     <!-- Mobile menu  -->
 
-    <div class="burgerMenu" id="burgerMenu">
-      <div class="aboutBurger"><a href="#">Om</a></div>
-      <div class="emailBurger"><a href="#">Email</a></div>
-      <div class="catalogueBurger"><a href="#">Produkt katalog</a></div>
+    <div class="mobileMenu" id="mobileMenu">
+
+      <div class="emailMobile"><a href="#">Email</a></div>
+      <div class="catalogueMobile"><a href="#">Produkt katalog</a></div>
+      <div class="langContainer">
+        <div class="langSV"><a href="#">SV</a></div>
+        <div class="langENG"><a href="#">ENG</a></div>
+      </div>
     </div>
 
   </nav>
 </header>
 
-<body>
 
 
 
