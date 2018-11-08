@@ -14,38 +14,64 @@ document.getElementById("burgerIcon").addEventListener("click", () => {
 
 
 
-const container = document.querySelector('.container');
-const buttonsContainer = document.querySelector('.buttons');
-const buttons = document.querySelectorAll('.buttons > div');
-const btn1 = document.querySelector('.btn1');
-const btn2 = document.querySelector('.btn2');
-const btn3 = document.querySelector('.btn3');
-const activeBtn = document.querySelector('.active');
 
+// Variables for body
+let sliderImages = document.querySelectorAll('.slide');
+let buttons = document.querySelector('.buttons');
+let allButtons = document.querySelectorAll('.buttons > div');
+let current = 0;
 
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', () => {
-        let currentBtn = buttons[i];
-        let newIndex = i + 1;
-        let currentImg = 'imgSlide' + newIndex;
-
-        container.setAttribute('id', currentImg);
-        currentBtn.setAttribute('id', 'active');
-
-
-        if (btn1 !== currentBtn) {
-            btn1.removeAttribute('id', 'active');
-            if (btn2 !== currentBtn) {
-                btn2.removeAttribute('id', 'active');
-            } else {
-                btn3.removeAttribute('id', 'active');
-            }
-
-        } else if (btn2 !== currentBtn) {
-            btn2.removeAttribute('id', 'active');
-            if (btn3 !== currentBtn) {
-                btn3.removeAttribute('id', 'active');
-            }
-        }
-    });
+// Clear all images
+function reset () {
+    for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = 'none';
+        allButtons[i].removeAttribute('id', 'active');
+    }
+    buttons.style.display = 'none';
 }
+
+// Show first slide after reload
+function startSlide () {
+        reset();
+        sliderImages[0].style.display = 'block';
+        allButtons[0].setAttribute('id', 'active');
+        buttons.style.display = 'flex';
+        current = 0;
+}
+
+// Show first after click
+allButtons[0].addEventListener('click', () => {
+    if (current !== 0) {
+        reset();
+        sliderImages[0].style.display = 'block';
+        allButtons[0].setAttribute('id', 'active');
+        buttons.style.display = 'flex';
+        current = 0;
+    }
+});
+
+// Show second after click
+allButtons[1].addEventListener('click', () => {
+    if (current !== 1) {
+        reset();
+        sliderImages[1].style.display = 'block';
+        allButtons[1].setAttribute('id', 'active');
+        buttons.style.display = 'flex';
+        current = 1;
+    }    
+});
+
+
+// Show third after click
+allButtons[2].addEventListener('click', () => {
+    if (current !== 2) {
+        reset();
+        sliderImages[2].style.display = 'block';
+        allButtons[2].setAttribute('id', 'active');
+        buttons.style.display = 'flex';
+        current = 2;
+    }
+});
+
+// Calling function to start slide
+startSlide();
