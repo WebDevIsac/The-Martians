@@ -151,6 +151,7 @@ Burger menu icon
   right: 20px;
   z-index: 3;
   padding-right: 10px;
+  cursor: pointer;
 }
 
 .barOne, .barTwo, .barThree {
@@ -283,6 +284,7 @@ Body
   background: #d3d3d3;
   border: 0.8px solid #8c8c8c;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .buttons > div:hover {
