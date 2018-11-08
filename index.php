@@ -9,10 +9,6 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<nav>
-		</nav>
-	</header>
 =======
 <?php
 
@@ -92,15 +88,8 @@
 		</div>
 	</div>
 
-<<<<<<< HEAD
-<script src="script.js"></script>
-
-</body>
-</html>
-=======
 
   <script src="assets/script.js" charset="utf-8"></script>
 
 </body>
 </html>
->>>>>>> master
