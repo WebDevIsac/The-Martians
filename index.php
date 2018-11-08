@@ -1,11 +1,3 @@
-<?php 
-
- 
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
@@ -22,19 +14,32 @@
 	</header>
 
 
-	<div class="container" id="imgSlide1">
-		<div class="textBox">
-			<p>Voluptatibus velit atque quis facilis quo voluptatem vel debitis.</p>
-		</div>
-		<div class="buttons">
-			<div class="btn1" id="active"></div>
-			<div class="btn2"></div>
-			<div class="btn3"></div>
+	<div class="container">
+		<div class="slider">
+			<div class="slide slide1">
+				<div class="slide-content">
+					<p>Voluptatibus velit atque quis facilis quo voluptatem vel debitis.</p>
+				</div>
+			</div>
+			<div class="slide slide2">
+				<div class="slide-content">
+					<p>Placeat aut nihil ut aliquid sequi corrupti consectetur ut ipsam.</p>
+				</div>
+			</div>
+			<div class="slide slide3">
+				<div class="slide-content">
+					<p>Odit reiciendis quod vel velit rerum eum earum temporibus et.</p>
+				</div>
+			</div>
+			<div class="buttons">
+				<div class=""></div>
+				<div class=""></div>
+				<div class=""></div>
+			</div>
 		</div>
 	</div>
 
-
-<script src="javascript/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
