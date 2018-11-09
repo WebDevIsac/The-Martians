@@ -269,7 +269,7 @@ Mobile menu
 
 /*
 ==============================================
-Body
+Mobile body
 ==============================================
 */
 
@@ -284,6 +284,8 @@ Body
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: opacity 1s linear;
+  width: 100%;
 }
 
 .slide1 {
@@ -341,7 +343,31 @@ Body
   border-color: #d3d3d3;
 }
 
-#active {
-  background: #8c8c8c;
+.buttons > .active {
+  background-color: #8c8c8c;
   border-color: #d3d3d3;
 }
+
+
+
+
+
+@media only screen and (min-width: 900px) {
+
+  .buttons {
+    left: 100%;
+    bottom: 50%;
+    margin-bottom: -50px;
+    flex-direction: column;
+    height: 100px;
+    width: 25px;
+  }
+
+  .button > div {
+
+  }
+
+
+} 
+
+
