@@ -9,13 +9,10 @@
   <link rel="icon" href="assets/images/saabfavicon.png">
   <title>The Martians</title>
 </head>
-<<<<<<< HEAD
 <body>
   
-=======
 
 <body id="body">
->>>>>>> master
 <header>
 
   <!-- Desktop Navigation  -->
@@ -53,7 +50,6 @@
   </nav>
 </header>
 
-<<<<<<< HEAD
 <div class="container">
   <div class="slider">
     <div class="slide slide1">
@@ -78,7 +74,6 @@
     </div>
   </div>
 </div>
-=======
 
 
 
@@ -106,7 +101,6 @@
 			</div>
 		</div>
 	</div>
->>>>>>> master
 
 
 <script src="assets/script.js" charset="utf-8"></script>
