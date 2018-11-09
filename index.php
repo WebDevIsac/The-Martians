@@ -9,19 +9,25 @@
   <link rel="icon" href="assets/images/saabfavicon.png">
   <title>The Martians</title>
 </head>
+<<<<<<< HEAD
 <body>
   
+=======
+
+<body id="body">
+>>>>>>> master
 <header>
 
   <!-- Desktop Navigation  -->
 
-  <nav class="mainNav">
+  <nav class="navContainer">
 
     <div class="desktopNav">
-      <div class="about button"><a href="#">Om</a></div>
       <div class="logoContainer"><a href="#top"><img class="logoImg" src="assets/images/saabLogo.png" alt=""></a></div>
       <div class="email button"><a href="#">Email</a></div>
       <div class="catalogue button"><a  href="#">Produkt katalog</a></div>
+      <div class="langSV button"><a href="#">SV</a></div>
+      <div class="langENG button"><a href="#">ENG</a></div>
     </div>
 
     <!-- Burger menu icon -->
@@ -34,15 +40,20 @@
 
     <!-- Mobile menu  -->
 
-    <div class="burgerMenu" id="burgerMenu">
-      <div class="aboutBurger"><a href="#">Om</a></div>
-      <div class="emailBurger"><a href="#">Email</a></div>
-      <div class="catalogueBurger"><a href="#">Produkt katalog</a></div>
+    <div class="mobileMenu" id="mobileMenu">
+
+      <div class="emailMobile"><a href="#">Email</a></div>
+      <div class="catalogueMobile"><a href="#">Produkt katalog</a></div>
+      <div class="langContainer">
+        <div class="langSV"><a href="#">SV</a></div>
+        <div class="langENG"><a href="#">ENG</a></div>
+      </div>
     </div>
 
   </nav>
 </header>
 
+<<<<<<< HEAD
 <div class="container">
   <div class="slider">
     <div class="slide slide1">
@@ -67,6 +78,35 @@
     </div>
   </div>
 </div>
+=======
+
+
+
+	<div class="container">
+		<div class="slider">
+			<div class="slide slide1">
+				<div class="slide-content">
+					<p>Voluptatibus velit atque quis facilis quo voluptatem vel debitis.</p>
+				</div>
+			</div>
+			<div class="slide slide2">
+				<div class="slide-content">
+					<p>Placeat aut nihil ut aliquid sequi corrupti consectetur ut ipsam.</p>
+				</div>
+			</div>
+			<div class="slide slide3">
+				<div class="slide-content">
+					<p>Odit reiciendis quod vel velit rerum eum earum temporibus et.</p>
+				</div>
+			</div>
+			<div class="buttons">
+				<div class=""></div>
+				<div class=""></div>
+				<div class=""></div>
+			</div>
+		</div>
+	</div>
+>>>>>>> master
 
 
 <script src="assets/script.js" charset="utf-8"></script>
