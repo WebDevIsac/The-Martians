@@ -53,8 +53,8 @@ Costum styles
 ==============================================
 */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -75,16 +75,15 @@ a:hover {
 
 /*
 ==============================================
-Navigation bar
+Desktop navigation
 ==============================================
 */
 
-.mainNav {
+.navContainer {
   position: fixed;
   top:0;
   width: 100%;
   z-index: 2;
-  opacity: 0.9;
 }
 
 .desktopNav {
@@ -103,12 +102,8 @@ Navigation bar
   padding: 20px 0 0 10px;
 }
 
-.about {
-  flex-grow: 1.5;
-}
-
 .logoContainer {
-  flex-grow: 1;
+  flex-grow: 1.5;
 }
 
 .email {
@@ -124,12 +119,12 @@ Navigation bar
   margin-top: 24px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
   .button {
     display: none;
   }
 
-  .mainNav {
+  .navContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -141,7 +136,7 @@ Navigation bar
 
 /*
 ==============================================
-Burger menu icon
+Burger icon
 ==============================================
 */
 
@@ -180,42 +175,96 @@ Burger menu icon
     display: none;
   }
 
-  .burgerMenu {
+  .mobileMenu {
     display: none;
   }
 }
 
 /*
 ==============================================
-Burger menu
+Mobile menu
 ==============================================
 */
 
-.burgerMenu {
-  margin-top: 85vh;
-  width: 150px;
-  height: 100vh;
-  padding: 15px;
-  background-color: white;
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  transition: transform 0.5s;
+.langContainer {
+  display: flex;
+  justify-content: center;
 }
 
-.slide{
-  transform: none;
+.langSV {
+  padding: 10px;
+  border-right: 2px solid black
 }
 
-.aboutBurger {
+.langENG {
+  padding: 10px;
+}
+
+.emailMobile {
   margin-top: 100px;
 }
 
-.emailBurger {
+.catalogueMobile {
   margin-top: 15px;
+  margin-bottom: 70vh;
 }
 
-.catalogueBurger {
-  margin-top: 15px;
+@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
+  .button {
+    display: none;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 5px 8px 15px;
+  }
+  .mobileMenu {
+    margin-top: 85vh;
+    width: 150px;
+    height: 100vh;
+    padding: 15px;
+    background-color: white;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s;
+  }
+  .slide{
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 900px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: landscape) {
+  .button {
+    display: none;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 5px 8px 15px;
+  }
+
+  .mobileMenu {
+    margin-top: 75vh;
+    width: 150px;
+    height: 100vh;
+    padding: 15px;
+    background-color: white;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s;
+  }
+  .slide{
+    transform: none;
+  }
+
 }
 
 /*
