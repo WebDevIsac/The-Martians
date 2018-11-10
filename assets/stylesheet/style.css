@@ -58,10 +58,10 @@ Costum styles
 }
 
 body {
-  font-size: 16px;
+  font-size: 1.2rem;
   letter-spacing: .5px;
   font-family: 'Roboto', sans-serif;
-  height: 2000px;
+  height: 200vh;
 }
 
 a {
@@ -102,10 +102,6 @@ Desktop navigation
   padding: 20px 0 0 10px;
 }
 
-.logoContainer {
-  flex-grow: 1.5;
-}
-
 .email {
   flex-grow: .1;
 }
@@ -114,24 +110,25 @@ Desktop navigation
   flex-grow: .1;
 }
 
+.langSV {
+  margin-top: auto;
+  padding: 10px;
+  border-right: 1px solid black
+}
+
+.langENG {
+  margin-top: auto;
+  padding: 10px;
+  border-left: 1px solid black
+}
+
+.logoContainer {
+  flex-grow: 1.5;
+}
+
 .logoImg {
   width: 130px;
   margin-top: 24px;
-}
-
-@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
 }
 
 /*
@@ -146,6 +143,7 @@ Burger icon
   right: 20px;
   z-index: 3;
   padding-right: 10px;
+  cursor: pointer;
 }
 
 .barOne, .barTwo, .barThree {
@@ -169,16 +167,6 @@ Burger icon
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media only screen and (min-width: 900px) {
-  .burgerIcon {
-    display: none;
-  }
-
-  .mobileMenu {
-    display: none;
-  }
-}
-
 /*
 ==============================================
 Mobile menu
@@ -190,13 +178,14 @@ Mobile menu
   justify-content: center;
 }
 
-.langSV {
+.langSvMobile {
   padding: 10px;
-  border-right: 2px solid black
+  border-right: 1px solid black
 }
 
-.langENG {
+.langEngMobile {
   padding: 10px;
+  border-left: 1px solid black
 }
 
 .emailMobile {
@@ -206,64 +195,6 @@ Mobile menu
 .catalogueMobile {
   margin-top: 15px;
   margin-bottom: 70vh;
-}
-
-@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
-  .mobileMenu {
-    margin-top: 85vh;
-    width: 150px;
-    height: 100vh;
-    padding: 15px;
-    background-color: white;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s;
-  }
-  .slide{
-    transform: none;
-  }
-}
-
-@media only screen and (max-width: 900px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: landscape) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
-
-  .mobileMenu {
-    margin-top: 75vh;
-    width: 150px;
-    height: 100vh;
-    padding: 15px;
-    background-color: white;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s;
-  }
-  .slide{
-    transform: none;
-  }
-
 }
 
 /*
@@ -316,16 +247,28 @@ Body
   }
 
 
+<<<<<<< HEAD
   .slide {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+=======
+.buttons > div {
+  width: 25px;
+  height: 25px;
+  background: #d3d3d3;
+  border: 0.8px solid #8c8c8c;
+  border-radius: 100%;
+  cursor: pointer;
+}
+>>>>>>> master
 
   .slide1 {
     background-image: url(https://i.pinimg.com/736x/6f/fe/99/6ffe994320b9a03aef4dab8a1045bd6c--sportscar-hd-wallpaper.jpg);
   }
 
+<<<<<<< HEAD
   .slide2 {
     background-image: url(https://d3rvezpmgp265q.cloudfront.net/lexusone/lexeuenv11/2017-lexus-hybrid-portrait-lc-ready-to-perform-810x1080_tcm-3154-1157459.jpg);
   }
@@ -386,3 +329,104 @@ Body
     background: #8c8c8c;
     border-color: #d3d3d3;
   }
+=======
+#active {
+  background: #8c8c8c;
+  border-color: #d3d3d3;
+}
+
+/*
+==============================================
+Media Queries
+==============================================
+*/
+
+
+/* Media Queries for desktop view. portrait */
+@media only screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait){
+  .burgerIcon {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+/* Media Queries for mobile view. portrait */
+@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .button {
+    display: none;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 5px 8px 15px;
+  }
+  .mobileMenu {
+    margin-top: 85vh;
+    width: 150px;
+    height: 100vh;
+    padding: 15px;
+    background-color: white;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s;
+  }
+
+  .slide{
+    transform: none;
+  }
+}
+
+/* Media Queries for desktop view. landscape */
+@media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape){
+  .burgerIcon {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+/* Media Queries for mobile view. landcape */
+@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .button {
+    display: none;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 5px 8px 15px;
+  }
+
+  .mobileMenu {
+    margin-top: 75vh;
+    width: 150px;
+    height: 100vh;
+    padding: 15px;
+    background-color: white;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s;
+  }
+
+  .catalogueMobile {
+    margin-bottom: 35vh;
+  }
+
+  .slide{
+    transform: none;
+  }
+
+}
+>>>>>>> master
