@@ -1,4 +1,13 @@
 <?php
+require __DIR__.'/assets/functions.php';
+require __DIR__.'/assets/data.php';
+
+$language = $data[$_GET['lang']];
+  if(empty($language)) {
+    header('Location: /?lang=sv');
+  }
+
+// echo getLang($data, $language);
 
 ?>
 
@@ -15,74 +24,86 @@
 </head>
 
 <body id="body">
-<header>
+  <header>
 
-  <!-- Desktop Navigation  -->
+    <!-- Desktop Navigation  -->
 
-  <nav class="navContainer">
+    <nav class="navContainer">
 
-    <div class="desktopNav">
-      <div class="logoContainer"><a href="#top"><img class="logoImg" src="assets/images/saabLogo.png" alt=""></a></div>
-      <div class="email button"><a href="#">Email</a></div>
-      <div class="catalogue button"><a  href="#">Produkt katalog</a></div>
-      <div class="langSV button"><a href="#">SV</a></div>
-      <div class="langENG button"><a href="#">ENG</a></div>
-    </div>
+      <div class="desktopNav">
+        <div class="logoContainer"><a href="#top"><img class="logoImg" src="assets/images/saabLogo.png" alt=""></a></div>
+        <div class="email button"><a href="#">Email</a></div>
+        <div class="catalogue button"><a  href="#">Produkt katalog</a></div>
+        <div class="langSV button"><a href="?lang=sv">SV</a></div>
+        <div class="langENG button"><a href="?lang=en">ENG</a></div>
+      </div>
 
-    <!-- Burger menu icon -->
+      <!-- Burger menu icon -->
 
-    <div class="burgerIcon" id="burgerIcon">
-      <div id="barOne" class="barOne"></div>
-      <div id="barTwo" class="barTwo"></div>
-      <div id="barThree" class="barThree"></div>
-    </div>
+      <div class="burgerIcon" id="burgerIcon">
+        <div id="barOne" class="barOne"></div>
+        <div id="barTwo" class="barTwo"></div>
+        <div id="barThree" class="barThree"></div>
+      </div>
 
-    <!-- Mobile menu  -->
+      <!-- Mobile menu  -->
 
-    <div class="mobileMenu" id="mobileMenu">
+      <div class="mobileMenu" id="mobileMenu">
 
-      <div class="emailMobile"><a href="#">Email</a></div>
-      <div class="catalogueMobile"><a href="#">Produkt katalog</a></div>
-      <div class="langContainer">
-        <div class="langSV"><a href="#">SV</a></div>
-        <div class="langENG"><a href="#">ENG</a></div>
+        <div class="emailMobile"><a href="#">Email</a></div>
+        <div class="catalogueMobile"><a href="#">Produkt katalog</a></div>
+        <div class="langContainer">
+          <div class="langSV"><a href="?lang=sv">SV</a></div>
+          <div class="langENG"><a href="?lang=en">ENG</a></div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+
+
+  <div class="container">
+    <div class="slider">
+      <div class="slide slide1">
+        <div class="slide-content">
+         <div>
+          <h1><?= $language['title'];?></h1>
+          <p><?= $language['content']; ?></p> 
+        </div>
       </div>
     </div>
-
-  </nav>
-</header>
-
-
-
-
-	<div class="container">
-		<div class="slider">
-			<div class="slide slide1">
-				<div class="slide-content">
-					<p>Voluptatibus velit atque quis facilis quo voluptatem vel debitis.</p>
-				</div>
-			</div>
-			<div class="slide slide2">
-				<div class="slide-content">
-					<p>Placeat aut nihil ut aliquid sequi corrupti consectetur ut ipsam.</p>
-				</div>
-			</div>
-			<div class="slide slide3">
-				<div class="slide-content">
-					<p>Odit reiciendis quod vel velit rerum eum earum temporibus et.</p>
-				</div>
-			</div>
-			<div class="buttons">
-				<div class=""></div>
-				<div class=""></div>
-				<div class=""></div>
-			</div>
-		</div>
-	</div>
+    <div class="slide slide2">
+      <div class="slide-content">
+       <h1><?= $language['title'];?></h1>
+       <p><?= $language['content']; ?></p> 
+     </div>
+   </div>
+   <div class="slide slide3">
+    <div class="slide-content">
+     <h1><?= $language['title'];?></h1>
+     <p><?= $language['content']; ?></p> 
+   </div>
+ </div>
+ <div class="buttons">
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
+</div>
+</div>
+</div>
+<div class="container2">
+ <h1><?= $language['title'];?></h1>
+ <p><?= $language['content']; ?></p> 
+</div>
+<div class="container3">
+  <h1><?= $language['title'];?></h1>
+  <p><?= $language['content']; ?></p> 
+</div>
 
 
-  <script src="assets/script.js" charset="utf-8"></script>
+<script src="assets/script.js" charset="utf-8"></script>
 
 </body>
 </html>
->>>>>>> master
