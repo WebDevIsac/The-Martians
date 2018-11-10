@@ -47,23 +47,13 @@ if(empty($language)) {
       <!-- Mobile menu  -->
 
       <div class="mobileMenu" id="mobileMenu">
-
-<<<<<<< HEAD
         <div class="emailMobile"><a href="#">Email</a></div>
         <div class="catalogueMobile"><a href="#">Produkt katalog</a></div>
         <div class="langContainer">
           <div class="langSV"><a href="?lang=sv">SV</a></div>
           <div class="langENG"><a href="?lang=en">ENG</a></div>
         </div>
-=======
-      <div class="emailMobile"><a href="#">Email</a></div>
-      <div class="catalogueMobile"><a href="#">Produkt katalog</a></div>
-      <div class="langContainer">
-        <div class="langSvMobile"><a href="#">SV</a></div>
-        <div class="langEngMobile"><a href="#">ENG</a></div>
->>>>>>> master
       </div>
-
     </nav>
   </header>
 
@@ -100,12 +90,16 @@ if(empty($language)) {
 </div>
 </div>
 <div class="container2">
- <h1><?= $language['title'];?></h1>
- <p><?= $language['content']; ?></p> 
+  <div class="slide-content">
+   <h1><?= $language['title'];?></h1>
+   <p><?= $language['content']; ?></p> 
+ </div>
 </div>
 <div class="container3">
-  <h1><?= $language['title'];?></h1>
-  <p><?= $language['content']; ?></p> 
+  <div class="slide-content">
+    <h1><?= $language['title'];?></h1>
+    <p><?= $language['content']; ?></p> 
+  </div>
 </div>
 
 

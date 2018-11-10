@@ -219,20 +219,40 @@ Body
 ==============================================
 */
 
-.container {
+.container, .container2, .container3 {
   position: relative;
   height: 100vh;
   width: 100%;
   z-index: 1;
 }
-.container2, .container3 {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  z-index: 1;
+
+.container2 {
+  background: url(https://wallpapercave.com/wp/dLyrKWw.jpg);
+}
+
+.container3 {
+  background: url(/assets/images/arctic.jpg);
+}
+
+.slide {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url(https://i.pinimg.com/736x/6f/fe/99/6ffe994320b9a03aef4dab8a1045bd6c--sportscar-hd-wallpaper.jpg);
+}
+
+.slide2 {
+  background-image: url(https://d3rvezpmgp265q.cloudfront.net/lexusone/lexeuenv11/2017-lexus-hybrid-portrait-lc-ready-to-perform-810x1080_tcm-3154-1157459.jpg);
+}
+
+.slide3 {
+  background-image: url(https://i.pinimg.com/736x/88/3c/ca/883ccadff0c0f53ce87dd6d9e53a2c88--lamborghini-cars-lamborghini-photos.jpg);
+}
+
+.slide-content {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -240,36 +260,32 @@ Body
   align-items: center;
   text-align: center;
 }
-.container2 {
-  background-image: url(/assets/images/arctic.jpg);
+
+.slide-content h1 {
+  width: 15em;
+  font-size: 2em;
+  color: white;
 }
-.container3 {
-  background-image: url(https://i.pinimg.com/736x/88/3c/ca/883ccadff0c0f53ce87dd6d9e53a2c88--lamborghini-cars-lamborghini-photos.jpg);
+
+.slide-content p {
+  width: 30em;
+  font-size: 1em;
+  color: white;
 }
-/*.container2 .container3 {
 
-  }*/
+.buttons {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  .container2 h1, .container3 h1 {
-    width: 10em;
-    font-size: 2em;
-    color: white;
-    margin-bottom: 1em;
-  }
-  .container2 p, .container3 p {
-    width: 20em;
-    font-size: 1em;
-    color: white;
-  }
-
-
-<<<<<<< HEAD
-  .slide {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-=======
 .buttons > div {
   width: 25px;
   height: 25px;
@@ -278,74 +294,12 @@ Body
   border-radius: 100%;
   cursor: pointer;
 }
->>>>>>> master
 
-  .slide1 {
-    background-image: url(https://i.pinimg.com/736x/6f/fe/99/6ffe994320b9a03aef4dab8a1045bd6c--sportscar-hd-wallpaper.jpg);
-  }
+.buttons > div:hover {
+  background: #8c8c8c;
+  border-color: #d3d3d3;
+}
 
-<<<<<<< HEAD
-  .slide2 {
-    background-image: url(https://d3rvezpmgp265q.cloudfront.net/lexusone/lexeuenv11/2017-lexus-hybrid-portrait-lc-ready-to-perform-810x1080_tcm-3154-1157459.jpg);
-  }
-
-  .slide3 {
-    background-image: url(https://i.pinimg.com/736x/88/3c/ca/883ccadff0c0f53ce87dd6d9e53a2c88--lamborghini-cars-lamborghini-photos.jpg);
-  }
-
-  .slide-content {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .slide-content h1 {
-    width: 10em;
-    font-size: 2em;
-    color: white;
-    margin-bottom: 1em;
-  }
-  .slide-content p {
-    width: 20em;
-    font-size: 1em;
-    color: white;
-  }
-
-
-  .buttons {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 20px;
-    left: 50%;
-    margin-left: -50px;
-    width: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .buttons > div {
-    width: 25px;
-    height: 25px;
-    background: #d3d3d3;
-    border: 0.8px solid #8c8c8c;
-    border-radius: 100%;
-  }
-
-  .buttons > div:hover {
-    background: #8c8c8c;
-    border-color: #d3d3d3;
-  }
-
-  #active {
-    background: #8c8c8c;
-    border-color: #d3d3d3;
-  }
-=======
 #active {
   background: #8c8c8c;
   border-color: #d3d3d3;
@@ -405,4 +359,3 @@ Media Queries
 @media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
 
 }
->>>>>>> master
