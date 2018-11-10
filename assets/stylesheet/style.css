@@ -304,7 +304,7 @@ Media Queries
     display: none;
   }
 
-  .slide{
+  .toggle{
     transform: none;
   }
 }
