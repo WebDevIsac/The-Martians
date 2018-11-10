@@ -40,7 +40,7 @@ We chose: <b>Capsule - one-seater electric terrain vehicle</b>
 $ git clone https://github.com/WebDevIsac/The-Martians.git
 ```
 
-- Setup a dedicated webserver root in the cloned directory e.g: `/home/${USER}/sites/fake-news/`.
+- Setup a dedicated webserver root in the cloned directory e.g: `/home/${USER}/sites/The-Martians/`.
 
 
 - Enjoy the The landing page!
