@@ -81,6 +81,12 @@ Desktop navigation
 
 .navContainer {
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 5px 8px 15px;
   top:0;
   width: 100%;
   z-index: 2;
@@ -172,6 +178,16 @@ Burger icon
 Mobile menu
 ==============================================
 */
+.mobileMenu {
+  margin-top: 85vh;
+  width: 150px;
+  height: 100vh;
+  padding: 15px;
+  background-color: white;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s;
+}
 
 .langContainer {
   display: flex;
@@ -341,92 +357,52 @@ Media Queries
 ==============================================
 */
 
-
-/* Media Queries for desktop view. portrait */
-@media only screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait){
-  .burgerIcon {
-    display: none;
-  }
-
-  .mobileMenu {
-    display: none;
-  }
-}
-
-/* Media Queries for mobile view. portrait */
-@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+/* Media Queries for mobile view. desktop and portrait */
+@media only screen and (max-width: 900px ) and (-webkit-min-device-pixel-ratio: 2) {
   .button {
     display: none;
   }
 
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
-  .mobileMenu {
-    margin-top: 85vh;
-    width: 150px;
-    height: 100vh;
-    padding: 15px;
-    background-color: white;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s;
-  }
-
-  .slide{
+  .toggle{
     transform: none;
   }
 }
 
-/* Media Queries for desktop view. landscape */
-@media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape){
-  .burgerIcon {
-    display: none;
-  }
+/* Media Queries for mobile view. portrait */
+@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
-  .mobileMenu {
-    display: none;
-  }
 }
 
 /* Media Queries for mobile view. landcape */
-@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
-
+@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .mobileMenu {
     margin-top: 75vh;
-    width: 150px;
-    height: 100vh;
-    padding: 15px;
-    background-color: white;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s;
   }
 
   .catalogueMobile {
     margin-bottom: 35vh;
   }
 
-  .slide{
-    transform: none;
+}
+
+/* Media Queries for desktoo view. desktop and portrait */
+@media only screen and (min-widht: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+  .burgerIcon {
+    display: none;
   }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+/* Media Queries for desktop view. portrait */
+@media only screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+
+}
+
+/* Media Queries for desktop view. landscape */
+@media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
 
 }
 >>>>>>> master
