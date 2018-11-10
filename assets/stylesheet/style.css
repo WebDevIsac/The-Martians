@@ -131,21 +131,6 @@ Desktop navigation
   margin-top: 24px;
 }
 
-@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
-}
-
 /*
 ==============================================
 Burger icon
@@ -181,25 +166,6 @@ Burger icon
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media only screen and (min-width: 600px) and (orientation: portrait){
-  .burgerIcon {
-    display: none;
-  }
-
-  .mobileMenu {
-    display: none;
-  }
-}
-@media only screen and (min-width: 600px) and (orientation: landscape){
-  .burgerIcon {
-    display: none;
-  }
-
-  .mobileMenu {
-    display: none;
-  }
-}
-
 /*
 ==============================================
 Mobile menu
@@ -228,70 +194,6 @@ Mobile menu
 .catalogueMobile {
   margin-top: 15px;
   margin-bottom: 70vh;
-}
-
-@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
-  .mobileMenu {
-    margin-top: 85vh;
-    width: 150px;
-    height: 100vh;
-    padding: 15px;
-    background-color: white;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s;
-  }
-
-  .slide{
-    transform: none;
-  }
-}
-
-@media only screen and (max-width: 900px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: landscape) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
-
-  .mobileMenu {
-    margin-top: 75vh;
-    width: 150px;
-    height: 100vh;
-    padding: 15px;
-    background-color: white;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s;
-  }
-
-  .catalogueMobile {
-    margin-bottom: 35vh;
-  }
-
-  .slide{
-    transform: none;
-  }
-
 }
 
 /*
@@ -370,4 +272,99 @@ Body
 #active {
   background: #8c8c8c;
   border-color: #d3d3d3;
+}
+
+/*
+==============================================
+Media Queries
+==============================================
+*/
+
+
+/* Media Queries for desktop view. portrait */
+@media only screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait){
+  .burgerIcon {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+/* Media Queries for mobile view. portrait */
+@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .button {
+    display: none;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 5px 8px 15px;
+  }
+  .mobileMenu {
+    margin-top: 85vh;
+    width: 150px;
+    height: 100vh;
+    padding: 15px;
+    background-color: white;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s;
+  }
+
+  .slide{
+    transform: none;
+  }
+}
+
+/* Media Queries for desktop view. landscape */
+@media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape){
+  .burgerIcon {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+/* Media Queries for mobile view. landcape */
+@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .button {
+    display: none;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 5px 8px 15px;
+  }
+
+  .mobileMenu {
+    margin-top: 75vh;
+    width: 150px;
+    height: 100vh;
+    padding: 15px;
+    background-color: white;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s;
+  }
+
+  .catalogueMobile {
+    margin-bottom: 35vh;
+  }
+
+  .slide{
+    transform: none;
+  }
+
 }
