@@ -330,4 +330,13 @@ Media Queries
     padding: 10px;
     border-left: 1px solid black;
   }
+  
+  .buttons {
+    left: 100%;
+    bottom: 50%;
+    margin-bottom: -50px;
+    flex-direction: column;
+    height: 100px;
+    width: 25px;
+  }
 }
