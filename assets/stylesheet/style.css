@@ -69,66 +69,40 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
-a:hover {
+.nav-button a:hover {
+  transition: 0.3s ease;
   color: tomato;
+  border-top: 4px solid tomato;
+  border-bottom: 4px solid tomato;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
 
 /*
 ==============================================
-Desktop navigation
+Navigation bar
 ==============================================
 */
 
-.navContainer {
+.logo-img {
+  z-index: 2;
+  width: 130px;
+  margin: 10px;
+}
+
+.nav-container {
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
   z-index: 2;
 }
 
-.desktopNav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 65px;
-  padding: 5px 8px 15px;
-}
-
-.desktopNav a {
-  font-size: 20px;
-}
-
-.button  {
-  padding: 20px 0 0 10px;
-}
-
-.email {
-  flex-grow: .1;
-}
-
-.catalogue {
-  flex-grow: .1;
-}
-
-.langSV {
-  margin-top: auto;
-  padding: 10px;
-  border-right: 1px solid black
-}
-
-.langENG {
-  margin-top: auto;
-  padding: 10px;
-  border-left: 1px solid black
-}
-
-.logoContainer {
-  flex-grow: 1.5;
-}
-
-.logoImg {
-  width: 130px;
-  margin-top: 24px;
+.desk-nav {
+  display: none;
 }
 
 /*
@@ -137,16 +111,17 @@ Burger icon
 ==============================================
 */
 
-.burgerIcon {
+.burger-icon {
   position: absolute;
   display: block;
-  right: 20px;
+  height: auto;
+  right: 10px;
   z-index: 3;
-  padding-right: 10px;
+  padding: 10px;
   cursor: pointer;
 }
 
-.barOne, .barTwo, .barThree {
+.bar-one, .bar-two, .bar-three {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -155,15 +130,15 @@ Burger icon
   border-radius: 10px;
 }
 
-.transform .barOne {
+.transform .bar-one {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.transform .barTwo {
+.transform .bar-two {
   opacity: 0;
 }
 
-.transform .barThree {
+.transform .bar-three {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
@@ -172,41 +147,47 @@ Burger icon
 Mobile menu
 ==============================================
 */
-.mobileMenu {
-  margin-top: 85vh;
-  width: 150px;
+
+.mobile-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  padding: 60px 0 0 15px;
+  width: 50%;
   height: 100vh;
-  padding: 15px;
   background-color: white;
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  transition: transform 0.5s;
+  transition: 0.5s;
 }
 
-.emailMobile {
-  margin-top: 100px;
+.toggle {
+  transform: none;
 }
 
-.catalogueMobile {
-  margin-top: 15px;
-  margin-bottom: 75vh;
+.mobile-menu div {
+  padding: 10px;
 }
 
-.langContainer {
+.catalogue {
+  margin-bottom: 72vh;
+}
+
+.lang-container {
   display: flex;
   justify-content: center;
 }
 
-.langSvMobile {
+.lang-sv {
   padding: 10px;
   border-right: 1px solid black
 }
 
-.langEngMobile {
+.lang-eng {
   padding: 10px;
   border-left: 1px solid black
 }
-
 /*
 ==============================================
 Mobile body
@@ -311,68 +292,42 @@ Media Queries
 ==============================================
 */
 
-/* Media Queries for mobile view. Portrait and landscape */
-@media only screen and (max-width: 900px ) and (-webkit-min-device-pixel-ratio: 2) {
-  .button {
-    display: none;
-  }
-
-  .toggle{
-    transform: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
-    padding: 5px 8px 15px;
+@media only screen and (max-width: 850px) and (orientation: landscape) {
+  .catalogue {
+    margin-bottom: 40vh;
   }
 }
 
-/* Media Queries for mobile view. portrait */
-@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-
-}
-
-/* Media Queries for mobile view. landcape */
-@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .mobileMenu {
-    margin-top: 75vh;
-  }
-  
-  .catalogueMobile {
-    margin-bottom: 35vh;
-  } 
-}
-
-/* Media Queries for desktop view. portrait and landscape */
 @media only screen and (min-width: 900px) {
+  .logo-container {
+    flex-grow: 1;
+  }
 
-}
-
-/* Media Queries for desktop view. portrait */
-@media only screen and (min-width: 600px) and (orientation: portrait){
-
-}
-
-/* Media Queries for desktop view. landscape */
-@media only screen and (min-width: 900px) and (orientation: landscape){
-  .burgerIcon {
+  .burger-icon {
     display: none;
   }
 
-  .mobileMenu {
-    display: none;
+  .desk-nav {
+    display: flex;
+    align-items: center;
   }
 
-  .buttons {
-    left: 100%;
-    bottom: 50%;
-    margin-bottom: -50px;
-    flex-direction: column;
-    height: 100px;
-    width: 25px;
+  .email-desk {
+    margin: -5px 20px 0 0;
+  }
+
+  .catalogue-desk {
+    margin: -5px 20px 0 0;
+  }
+
+  .lang-sv-desk {
+    margin-top: -5px;
+    padding: 10px;
+    border-right: 1px solid black;
+  }
+  .lang-eng-desk {
+    margin: -5px 20px 0 0;
+    padding: 10px;
+    border-left: 1px solid black;
   }
 }
