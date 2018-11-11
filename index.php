@@ -13,8 +13,10 @@
   <link rel="icon" href="assets/images/saabfavicon.png">
   <title>The Martians</title>
 </head>
+<body>
+  <div id="top">
 
-<body id="body">
+  </div>
 <header>
 
   <!-- Desktop Navigation  -->
