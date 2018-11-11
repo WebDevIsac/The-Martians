@@ -6,7 +6,7 @@ document.getElementById("burgerIcon").addEventListener("click",  () => {
 
   document.getElementById("burgerIcon").classList.toggle("transform");
 
-  document.getElementById("mobileMenu").classList.toggle("slide");
+  document.getElementById("mobileMenu").classList.toggle("toggle");
 
 });
 

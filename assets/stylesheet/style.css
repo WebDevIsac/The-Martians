@@ -58,10 +58,10 @@ Costum styles
 }
 
 body {
-  font-size: 16px;
+  font-size: 1.2rem;
   letter-spacing: .5px;
   font-family: 'Roboto', sans-serif;
-  height: 2000px;
+  height: 200vh;
 }
 
 a {
@@ -81,6 +81,12 @@ Desktop navigation
 
 .navContainer {
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 5px 8px 15px;
   top:0;
   width: 100%;
   z-index: 2;
@@ -102,10 +108,6 @@ Desktop navigation
   padding: 20px 0 0 10px;
 }
 
-.logoContainer {
-  flex-grow: 1.5;
-}
-
 .email {
   flex-grow: .1;
 }
@@ -114,24 +116,25 @@ Desktop navigation
   flex-grow: .1;
 }
 
+.langSV {
+  margin-top: auto;
+  padding: 10px;
+  border-right: 1px solid black
+}
+
+.langENG {
+  margin-top: auto;
+  padding: 10px;
+  border-left: 1px solid black
+}
+
+.logoContainer {
+  flex-grow: 1.5;
+}
+
 .logoImg {
   width: 130px;
   margin-top: 24px;
-}
-
-@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
 }
 
 /*
@@ -170,34 +173,35 @@ Burger icon
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media only screen and (min-width: 900px) {
-  .burgerIcon {
-    display: none;
-  }
-
-  .mobileMenu {
-    display: none;
-  }
-}
-
 /*
 ==============================================
 Mobile menu
 ==============================================
 */
+.mobileMenu {
+  margin-top: 85vh;
+  width: 150px;
+  height: 100vh;
+  padding: 15px;
+  background-color: white;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s;
+}
 
 .langContainer {
   display: flex;
   justify-content: center;
 }
 
-.langSV {
+.langSvMobile {
   padding: 10px;
-  border-right: 2px solid black
+  border-right: 1px solid black
 }
 
-.langENG {
+.langEngMobile {
   padding: 10px;
+  border-left: 1px solid black
 }
 
 .emailMobile {
@@ -207,64 +211,6 @@ Mobile menu
 .catalogueMobile {
   margin-top: 15px;
   margin-bottom: 70vh;
-}
-
-@media only screen and (max-width: 600px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: portrait) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
-  .mobileMenu {
-    margin-top: 85vh;
-    width: 150px;
-    height: 100vh;
-    padding: 15px;
-    background-color: white;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s;
-  }
-  .slide{
-    transform: none;
-  }
-}
-
-@media only screen and (max-width: 900px) and (-webkit-max-device-pixel-ratio: 3) and (orientation: landscape) {
-  .button {
-    display: none;
-  }
-
-  .navContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 5px 8px 15px;
-  }
-
-  .mobileMenu {
-    margin-top: 75vh;
-    width: 150px;
-    height: 100vh;
-    padding: 15px;
-    background-color: white;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s;
-  }
-  .slide{
-    transform: none;
-  }
-
 }
 
 /*
@@ -365,6 +311,7 @@ Mobile body
   border-color: #d3d3d3;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -388,3 +335,59 @@ Mobile body
 } 
 
 
+=======
+/*
+==============================================
+Media Queries
+==============================================
+*/
+
+/* Media Queries for mobile view. desktop and portrait */
+@media only screen and (max-width: 900px ) and (-webkit-min-device-pixel-ratio: 2) {
+  .button {
+    display: none;
+  }
+
+  .toggle{
+    transform: none;
+  }
+}
+
+/* Media Queries for mobile view. portrait */
+@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+}
+
+/* Media Queries for mobile view. landcape */
+@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .mobileMenu {
+    margin-top: 75vh;
+  }
+
+  .catalogueMobile {
+    margin-bottom: 35vh;
+  }
+
+}
+
+/* Media Queries for desktoo view. desktop and portrait */
+@media only screen and (min-widht: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+  .burgerIcon {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+/* Media Queries for desktop view. portrait */
+@media only screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+
+}
+
+/* Media Queries for desktop view. landscape */
+@media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+
+}
+>>>>>>> master
