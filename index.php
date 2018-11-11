@@ -10,9 +10,8 @@
   <title>The Martians</title>
 </head>
 <body>
-  
 
-<body id="body">
+
 <header>
 
   <!-- Desktop Navigation  -->

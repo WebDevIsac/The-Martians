@@ -1,6 +1,6 @@
 
 
-// function to toggle class for the mobileMenu menu
+// function to toggle class for the mobile menu
 
 document.getElementById("burgerIcon").addEventListener("click",  () => {
 
@@ -23,13 +23,13 @@ let current = 0;
 
 // Clear all images
 function reset () {
-  // For mobile 
+  // For mobile
   if (window.innerWidth < 900) {
     for (let i = 0; i < sliderImages.length; i++) {
       allButtons[i].classList.remove('active-button');
       sliderImages[i].classList.remove('active-image');
     }
-  } 
+  }
   // For desktop
   else if (window.innerWidth >= 900) {
     for (let i = 0; i < sliderImages.length; i++) {}
@@ -45,7 +45,7 @@ function startSlide () {
     allButtons[0].classList.add('active-button');
     sliderImages[0].classList.add('active-image');
     current = 0;
-  } 
+  }
   // For desktop
   else if (window.innerWidth >= 900) {
     sliderImages[0].classList.add('desktop-image');
@@ -62,7 +62,7 @@ allButtons[0].addEventListener('click', () => {
       sliderImages[0].classList.add('active-image');
       current = 0;
     }
-  } 
+  }
   // For desktop
   else if (window.innerWidth >= 900) {
     sliderImages[0].classList.add('desktop-image');
@@ -79,7 +79,7 @@ allButtons[1].addEventListener('click', () => {
       sliderImages[1].classList.add('active-image');
       current = 1;
     }
-  } 
+  }
   // For desktop
   else if (window.innerWidth >= 900) {
     sliderImages[1].classList.add('desktop-image');
@@ -97,7 +97,7 @@ allButtons[2].addEventListener('click', () => {
       sliderImages[2].classList.add('active-image');
       current = 2;
     }
-  } 
+  }
   // For desktop
   else if (window.innerWidth >= 900) {
     sliderImages[2].classList.add('desktop-image');
@@ -107,4 +107,3 @@ allButtons[2].addEventListener('click', () => {
 
 
 startSlide();
-
