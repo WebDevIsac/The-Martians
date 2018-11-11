@@ -27,7 +27,6 @@ if(empty($language)) {
     <!-- Desktop Navigation  -->
 
     <nav class="navContainer">
-
       <div class="desktopNav">
         <div class="logoContainer"><a href="#top"><img class="logoImg" src="assets/images/saabLogo.png" alt=""></a></div>
         <div class="email button"><a href="#">Email</a></div>
