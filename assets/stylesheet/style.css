@@ -81,12 +81,6 @@ Desktop navigation
 
 .navContainer {
   position: fixed;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  padding: 5px 8px 15px;
   top:0;
   width: 100%;
   z-index: 2;
@@ -189,6 +183,15 @@ Mobile menu
   transition: transform 0.5s;
 }
 
+.emailMobile {
+  margin-top: 100px;
+}
+
+.catalogueMobile {
+  margin-top: 15px;
+  margin-bottom: 75vh;
+}
+
 .langContainer {
   display: flex;
   justify-content: center;
@@ -202,15 +205,6 @@ Mobile menu
 .langEngMobile {
   padding: 10px;
   border-left: 1px solid black
-}
-
-.emailMobile {
-  margin-top: 100px;
-}
-
-.catalogueMobile {
-  margin-top: 15px;
-  margin-bottom: 70vh;
 }
 
 /*
@@ -257,7 +251,6 @@ Body
   width: 10em;
   font-size: 2em;
   color: white;
-
 }
 
 .buttons {
@@ -298,7 +291,7 @@ Media Queries
 ==============================================
 */
 
-/* Media Queries for mobile view. desktop and portrait */
+/* Media Queries for mobile view. Portrait and landscape */
 @media only screen and (max-width: 900px ) and (-webkit-min-device-pixel-ratio: 2) {
   .button {
     display: none;
@@ -306,6 +299,15 @@ Media Queries
 
   .toggle{
     transform: none;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 5px 8px 15px;
   }
 }
 
@@ -321,20 +323,17 @@ Media Queries
   }
 
   .catalogueMobile {
-    margin-bottom: 35vh;
+    margin-bottom: 45vh;
   }
 
+  .navContainer {
+    padding: 15px 1px 0 0;
+  }
 }
 
-/* Media Queries for desktoo view. desktop and portrait */
+/* Media Queries for desktop view. portrait and landscape */
 @media only screen and (min-widht: 900px) and (-webkit-min-device-pixel-ratio: 2) {
-  .burgerIcon {
-    display: none;
-  }
 
-  .mobileMenu {
-    display: none;
-  }
 }
 
 /* Media Queries for desktop view. portrait */
@@ -344,5 +343,11 @@ Media Queries
 
 /* Media Queries for desktop view. landscape */
 @media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+  .burgerIcon {
+    display: none;
+  }
 
+  .mobileMenu {
+    display: none;
+  }
 }
