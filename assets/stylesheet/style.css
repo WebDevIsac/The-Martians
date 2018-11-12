@@ -306,10 +306,40 @@ Media Queries
     display: flex;
     align-items: center;
   }
+<<<<<<< HEAD
+=======
+}
+
+/* Media Queries for mobile view. portrait */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .catalogueMobile {
+    margin-top: 15px;
+    margin-bottom: 50vh;
+  }
+}
+>>>>>>> changed vh on @media
 
   .email-desk {
     margin: -5px 20px 0 0;
   }
+<<<<<<< HEAD
+=======
+  
+  .catalogueMobile {
+    margin-bottom: 35vh;
+  } 
+}
+
+/* Media Queries for desktop view. portrait and landscape */
+@media only screen and (min-width: 900px) {
+
+}
+
+/* Media Queries for desktop view. portrait */
+@media only screen and (min-width: 600px) and (orientation: portrait){
+  
+}
+>>>>>>> changed vh on @media
 
   .catalogue-desk {
     margin: -5px 20px 0 0;
