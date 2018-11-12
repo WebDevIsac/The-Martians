@@ -1,21 +1,345 @@
-/**
- * Colors template
- * Primary #202B51, #D0D7DC, #05080A
- * Secondary #387E80, #52B5BE
- *
- */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote:after,
+q:before, q::after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+==============================================
+Costum styles
+==============================================
+*/
 * {
-	box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-	font-family: 'Open Sans', sans-serif;		
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-size: 1.2rem;
+  letter-spacing: .5px;
+  font-family: 'Roboto', sans-serif;
+}
+
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
 }
-#jumbotron {
-	background:no-repeat;
-	background-size: cover;
+
+.nav-button a:hover {
+  transition: 0.3s ease;
+  color: tomato;
+  border-top: 4px solid tomato;
+  border-bottom: 4px solid tomato;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/*
+==============================================
+Navigation bar
+==============================================
+*/
+
+.logo-img {
+  z-index: 2;
+  width: 130px;
+  margin: 10px;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.desk-nav {
+  display: none;
+}
+
+/*
+==============================================
+Burger icon
+==============================================
+*/
+
+.burger-icon {
+  position: absolute;
+  display: block;
+  height: auto;
+  right: 10px;
+  z-index: 3;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.bar-one, .bar-two, .bar-three {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+
+.transform .bar-one {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.transform .bar-two {
+  opacity: 0;
+}
+
+.transform .bar-three {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*
+==============================================
+Mobile menu
+==============================================
+*/
+
+.mobile-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  padding: 60px 0 0 15px;
+  width: 50%;
+  height: 100vh;
+  background-color: white;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: 0.5s;
+}
+
+.toggle {
+  transform: none;
+}
+
+.mobile-menu div {
+  padding: 10px;
+}
+
+.catalogue {
+  margin-bottom: 72vh;
+}
+
+.lang-container {
+  display: flex;
+  justify-content: center;
+}
+
+.lang-sv {
+  padding: 10px;
+  border-right: 1px solid black
+}
+
+.lang-eng {
+  padding: 10px;
+  border-left: 1px solid black
+}
+/*
+==============================================
+Mobile body
+==============================================
+*/
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s linear, transform 0.8s linear;
+}
+
+.active-image {
+  position: static;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slide1 {
+  background-image: url(https://i.pinimg.com/736x/6f/fe/99/6ffe994320b9a03aef4dab8a1045bd6c--sportscar-hd-wallpaper.jpg);
+}
+
+.slide2 {
+  background-image: url(https://d3rvezpmgp265q.cloudfront.net/lexusone/lexeuenv11/2017-lexus-hybrid-portrait-lc-ready-to-perform-810x1080_tcm-3154-1157459.jpg);
+}
+
+.slide3 {
+  background-image: url(https://i.pinimg.com/736x/88/3c/ca/883ccadff0c0f53ce87dd6d9e53a2c88--lamborghini-cars-lamborghini-photos.jpg);
+}
+
+.slide-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content p {
+  width: 10em;
+  font-size: 2em;
+  color: white;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons > div {
+  width: 25px;
+  height: 25px;
+  background: #d3d3d3;
+  border: 0.8px solid #8c8c8c;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.buttons > div:hover {
+  background: #8c8c8c;
+  border-color: #d3d3d3;
+}
+
+.buttons > .active-button {
+  background-color: #8c8c8c;
+  border-color: #d3d3d3;
+}
+
+
+/*
+==============================================
+Media Queries
+==============================================
+*/
+
+/* Mobile view landscape  */
+@media only screen and (max-width: 850px) and (orientation: landscape) {
+  .catalogue {
+    margin-bottom: 40vh;
+  }
+}
+
+/* desktop view */
+@media only screen and (min-width: 900px) {
+  .logo-container {
+    flex-grow: 1;
+  }
+
+  .burger-icon {
+    display: none;
+  }
+
+  .desk-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .email-desk {
+    margin: -5px 20px 0 0;
+  }
+
+  .catalogue-desk {
+    margin: -5px 20px 0 0;
+  }
+
+  .lang-sv-desk {
+    margin-top: -5px;
+    padding: 10px;
+    border-right: 1px solid black;
+  }
+  .lang-eng-desk {
+    margin: -5px 20px 0 0;
+    padding: 10px;
+    border-left: 1px solid black;
+  }
+
+  .slide {
+    position: relative;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0s, transform 0s;
+  }
+
+  .buttons {
+    position: fixed;
+    left: 100%;
+    bottom: 50%;
+    margin-bottom: -50px;
+    flex-direction: column;
+    height: 100px;
+    width: 25px;
+  }
 }
