@@ -22,8 +22,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-
-
 // Variables for image slide
 let sliderImages = document.querySelectorAll('.slide');
 let buttons = document.querySelector('.buttons');
@@ -41,8 +39,9 @@ function reset () {
   }
   // For desktop
   else if (window.innerWidth >= 900) {
-    for (let i = 0; i < sliderImages.length; i++) {}
+    for (let i = 0; i < sliderImages.length; i++) {
       allButtons[i].classList.remove('active-button');
+    }
   }
 }
 
@@ -57,7 +56,8 @@ function startSlide () {
   }
   // For desktop
   else if (window.innerWidth >= 900) {
-    sliderImages[0].classList.add('desktop-image');
+    reset();
+    allButtons[0].classList.add('active-button');
   }
 }
 
@@ -74,7 +74,9 @@ allButtons[0].addEventListener('click', () => {
   }
   // For desktop
   else if (window.innerWidth >= 900) {
-    sliderImages[0].classList.add('desktop-image');
+    reset();
+    allButtons[0].classList.add('active-button');
+    window.location = '#image1';
   }
 });
 
@@ -91,7 +93,9 @@ allButtons[1].addEventListener('click', () => {
   }
   // For desktop
   else if (window.innerWidth >= 900) {
-    sliderImages[1].classList.add('desktop-image');
+    reset();
+    allButtons[1].classList.add('active-button');
+    window.location = '#image2';
   }
 });
 
@@ -109,7 +113,9 @@ allButtons[2].addEventListener('click', () => {
   }
   // For desktop
   else if (window.innerWidth >= 900) {
-    sliderImages[2].classList.add('desktop-image');
+    reset();
+    allButtons[2].classList.add('active-button');
+    window.location = '#image3';
   }
 });
 
