@@ -1,3 +1,14 @@
+<?php
+require __DIR__.'/assets/functions.php';
+require __DIR__.'/assets/data.php';
+
+$language = $data[$_GET['lang']];
+if(empty($language)) {
+	header('Location: /?lang=sv');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -10,70 +21,65 @@
   <title>The Martians</title>
 </head>
 <body>
-  <div id="top"></div>
-
-
-  <nav class="nav-container">
-    <div class="logo-container"><a href="#top"><img class="logo-img" src="assets/images/saabLogo.png" alt=""></a></div>
 
     <!-- Desktop Navigation  -->
 
-    <div class="desk-nav">
-      <div class="email-desk nav-button"><a href="#">Email</a></div>
-      <div class="catalogue-desk nav-button"><a  href="#">Produkt katalog</a></div>
-      <div class="lang-sv-desk nav-button"><a href="#">SV</a></div>
-      <div class="lang-eng-desk nav-button"><a href="#">ENG</a></div>
-    </div>
+    <nav class="navContainer">
+      <div class="desktopNav">
+        <div class="logoContainer"><a href="#top"><img class="logoImg" src="assets/images/saabLogo.png" alt=""></a></div>
+        <div class="email button"><a href="#">Email</a></div>
+        <div class="catalogue button"><a  href="#">Produkt katalog</a></div>
+        <div class="langSV button"><a href="?lang=sv">SV</a></div>
+        <div class="langENG button"><a href="?lang=en">ENG</a></div>
+      </div>
 
-    <!-- Burger menu icon -->
+      <!-- Burger menu icon -->
 
-    <div class="burger-icon" id="burger-icon">
-      <div id="bar-one" class="bar-one"></div>
-      <div id="bar-two" class="bar-two"></div>
-      <div id="bar-three" class="bar-three"></div>
-    </div>
+      <div class="burgerIcon" id="burgerIcon">
+        <div id="barOne" class="barOne"></div>
+        <div id="barTwo" class="barTwo"></div>
+        <div id="barThree" class="barThree"></div>
+      </div>
 
-    <!-- Mobile menu  -->
 
-    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobileMenu" id="mobileMenu">
+        <div class="emailMobile"><a href="#">Email</a></div>
+        <div class="catalogueMobile"><a href="#">Produkt katalog</a></div>
+        <div class="langContainer">
+          <div class="langSV"><a href="?lang=sv">SV</a></div>
+          <div class="langENG"><a href="?lang=en">ENG</a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-      <div class="email"><a href="#">Email</a></div>
-      <div class="catalogue"><a href="#">Produkt katalog</a></div>
-      <div class="lang-container">
-        <div class="lang-sv"><a href="#">SV</a></div>
-        <div class="lang-eng"><a href="#">ENG</a></div>
+
+  <div class="container">
+    <div class="slider">
+      <div class="slide slide1">
+        <div class="slide-content">
+         <div>
+          <h1><?= $language['title'];?></h1>
+          <p><?= $language['content']; ?></p> 
+        </div>
       </div>
     </div>
-  </nav>
-
-
-<!-- Start -->
-
-<div class="container">
-  <div class="slider">
-    <div class="slide slide1" id="image1">
+    <div class="slide slide2">
       <div class="slide-content">
-        <p>Voluptatibus velit atque quis facilis quo voluptatem vel debitis.</p>
-      </div>
-    </div>
-    <div class="slide slide2" id="image2">
-      <div class="slide-content">
-        <p>Placeat aut nihil ut aliquid sequi corrupti consectetur ut ipsam.</p>
-      </div>
-    </div>
-    <div class="slide slide3" id="image3">
-      <div class="slide-content">
-        <p>Odit reiciendis quod vel velit rerum eum earum temporibus et.</p>
-      </div>
-    </div>
-    <div class="buttons">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-</div>
-
+       <h1><?= $language['title'];?></h1>
+       <p><?= $language['content']; ?></p> 
+     </div>
+   </div>
+   <div class="slide slide3">
+    <div class="slide-content">
+     <h1><?= $language['title'];?></h1>
+     <p><?= $language['content']; ?></p> 
+   </div>
+ </div>
+ <div class="buttons">
+  <div class=""></div>
+  <div class=""></div>
+  <div class=""></div>
 
 <script src="assets/script.js" charset="utf-8"></script>
 

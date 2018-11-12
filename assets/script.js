@@ -2,24 +2,15 @@
 
 // function to toggle class for the mobile menu
 
-document.getElementById("burger-icon").addEventListener("click",  () => {
+document.getElementById("burgerIcon").addEventListener("click",  () => {
 
-  document.getElementById("burger-icon").classList.toggle("transform");
+  document.getElementById("burgerIcon").classList.toggle("transform");
 
-  document.getElementById("mobile-menu").classList.toggle("toggle");
+  document.getElementById("mobileMenu").classList.toggle("toggle");
 
 });
 
-// Function for smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 
 
 // Variables for image slide
@@ -123,3 +114,20 @@ allButtons[2].addEventListener('click', () => {
 
 
 startSlide();
+
+
+//automatic slideshow function
+let slideIndex = 0;
+carousel();
+
+function carousel() {
+    let i;
+    let x = document.getElementsByClassName("slide");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
