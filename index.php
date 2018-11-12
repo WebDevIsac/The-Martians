@@ -1,3 +1,10 @@
+<?php
+require __DIR__.'/assets/data.php';
+$language = $data[$_GET['lang']];
+if(!isset($language)) {
+  header('Location: /?lang=en');
+}
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -21,8 +28,8 @@
     <div class="desk-nav">
       <div class="email-desk nav-button"><a href="#">Email</a></div>
       <div class="catalogue-desk nav-button"><a  href="#">Produkt katalog</a></div>
-      <div class="lang-sv-desk nav-button"><a href="#">SV</a></div>
-      <div class="lang-eng-desk nav-button"><a href="#">ENG</a></div>
+      <div class="lang-sv-desk nav-button"><a href="?lang=sv">SV</a></div>
+      <div class="lang-eng-desk nav-button"><a href="?lang=en">ENG</a></div>
     </div>
 
     <!-- Burger menu icon -->
@@ -53,7 +60,8 @@
   <div class="slider">
     <div class="slide slide1" id="image1">
       <div class="slide-content">
-        <p>Voluptatibus velit atque quis facilis quo voluptatem vel debitis.</p>
+        <h1><?= $language['title']; ?></h1>
+        <p><?= $language['content']; ?></p>
       </div>
     </div>
     <div class="slide slide2" id="image2">
