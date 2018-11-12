@@ -114,3 +114,8 @@ allButtons[2].addEventListener('click', () => {
 
 
 startSlide();
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> e4b1a9afc7add6166ceb3debbab518abb4bc0f84

@@ -3,7 +3,7 @@ require __DIR__.'/assets/functions.php';
 require __DIR__.'/assets/data.php';
 
 $language = $data[$_GET['lang']];
-if(empty($language)) {
+if(!isset($language)) {
 	header('Location: /?lang=sv');
 }
 
