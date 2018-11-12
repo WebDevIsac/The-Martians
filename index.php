@@ -47,8 +47,8 @@ if(!isset($language)) {
       <div class="email"><a href="#">Email</a></div>
       <div class="catalogue"><a href="#">Produkt katalog</a></div>
       <div class="lang-container">
-        <div class="lang-sv"><a href="#">SV</a></div>
-        <div class="lang-eng"><a href="#">ENG</a></div>
+        <div class="lang-sv"><a href="?lang=sv">SV</a></div>
+        <div class="lang-eng"><a href="?lang=en">ENG</a></div>
       </div>
     </div>
   </nav>
