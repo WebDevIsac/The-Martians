@@ -51,25 +51,25 @@
 
 <div class="container">
   <div class="slider">
-    <div class="slide slide1">
+    <div class="slide slide1" id="image1">
       <div class="slide-content">
         <p>Voluptatibus velit atque quis facilis quo voluptatem vel debitis.</p>
       </div>
     </div>
-    <div class="slide slide2">
+    <div class="slide slide2" id="image2">
       <div class="slide-content">
         <p>Placeat aut nihil ut aliquid sequi corrupti consectetur ut ipsam.</p>
       </div>
     </div>
-    <div class="slide slide3">
+    <div class="slide slide3" id="image3">
       <div class="slide-content">
         <p>Odit reiciendis quod vel velit rerum eum earum temporibus et.</p>
       </div>
     </div>
     <div class="buttons">
-      <div class=""></div>
-      <div class=""></div>
-      <div class=""></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 </div>
