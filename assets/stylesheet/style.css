@@ -165,8 +165,14 @@ Mobile menu
   transform: none;
 }
 
+<<<<<<< HEAD
 .mobile-menu div {
   padding: 10px;
+=======
+.catalogueMobile {
+  margin-top: 15px;
+  margin-bottom: 70vh;
+>>>>>>> Added scroll function for desktop mode
 }
 
 .catalogue {
@@ -285,6 +291,7 @@ Media Queries
 ==============================================
 */
 
+<<<<<<< HEAD
 /* Mobile view landscape  */
 @media only screen and (max-width: 850px) and (orientation: landscape) {
   .catalogue {
@@ -296,6 +303,12 @@ Media Queries
 @media only screen and (min-width: 900px) {
   .logo-container {
     flex-grow: 1;
+=======
+/* Media Queries for mobile view. Portrait and landscape */
+@media only screen and (max-width: 900px ) {
+  .button {
+    display: none;
+>>>>>>> Added scroll function for desktop mode
   }
 
   .burger-icon {
@@ -307,8 +320,20 @@ Media Queries
     align-items: center;
   }
 
+<<<<<<< HEAD
   .email-desk {
     margin: -5px 20px 0 0;
+=======
+/* Media Queries for mobile view. portrait */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  
+}
+
+/* Media Queries for mobile view. landcape */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  .mobileMenu {
+    margin-top: 75vh;
+>>>>>>> Added scroll function for desktop mode
   }
 
   .catalogue-desk {
@@ -331,6 +356,13 @@ Media Queries
     opacity: 1;
     transform: scale(1);
     transition: opacity 0s, transform 0s;
+  }
+
+  .slide {
+    position: relative;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0s, transform 0s; 
   }
 
   .buttons {
