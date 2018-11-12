@@ -289,7 +289,6 @@ Media Queries
 @media only screen and (max-width: 850px) and (orientation: landscape) {
   .catalogue {
     margin-bottom: 40vh;
-<<<<<<< HEAD
   }
 }
 
@@ -306,11 +305,8 @@ Media Queries
   .desk-nav {
     display: flex;
     align-items: center;
-=======
->>>>>>> fixed conflict with css FOLDER
   }
 
-<<<<<<< HEAD
   .email-desk {
     margin: -5px 20px 0 0;
   }
@@ -335,29 +331,6 @@ Media Queries
     opacity: 1;
     transform: scale(1);
     transition: opacity 0s, transform 0s;
-=======
-/* desktop view */
-@media only screen and (min-width: 900px) {
-  .logo-container {
-    flex-grow: 1;
-  }
-
-  .burger-icon {
-    display: none;
-  }
-
-  .desk-nav {
-    display: flex;
-    align-items: center;
-  }
-
-  .email-desk {
-    margin: -5px 20px 0 0;
-  }
-
-  .catalogue-desk {
-    margin: -5px 20px 0 0;
->>>>>>> fixed conflict with css FOLDER
   }
 
   .lang-sv-desk {
