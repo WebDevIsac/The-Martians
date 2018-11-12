@@ -112,4 +112,5 @@ allButtons[2].addEventListener('click', () => {
 
 
 
+
 startSlide();
