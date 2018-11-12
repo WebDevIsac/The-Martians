@@ -292,12 +292,14 @@ Media Queries
 ==============================================
 */
 
+/* Mobile view landscape  */
 @media only screen and (max-width: 850px) and (orientation: landscape) {
   .catalogue {
     margin-bottom: 40vh;
   }
 }
 
+/* desktop view */
 @media only screen and (min-width: 900px) {
   .logo-container {
     flex-grow: 1;
@@ -330,7 +332,7 @@ Media Queries
     padding: 10px;
     border-left: 1px solid black;
   }
-  
+
   .buttons {
     left: 100%;
     bottom: 50%;
