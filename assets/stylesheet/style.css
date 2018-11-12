@@ -61,7 +61,6 @@ body {
   font-size: 1.2rem;
   letter-spacing: .5px;
   font-family: 'Roboto', sans-serif;
-  height: 200vh;
 }
 
 a {
@@ -81,12 +80,6 @@ Desktop navigation
 
 .navContainer {
   position: fixed;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  padding: 5px 8px 15px;
   top:0;
   width: 100%;
   z-index: 2;
@@ -189,6 +182,15 @@ Mobile menu
   transition: transform 0.5s;
 }
 
+.emailMobile {
+  margin-top: 100px;
+}
+
+.catalogueMobile {
+  margin-top: 15px;
+  margin-bottom: 70vh;
+}
+
 .langContainer {
   display: flex;
   justify-content: center;
@@ -204,18 +206,9 @@ Mobile menu
   border-left: 1px solid black
 }
 
-.emailMobile {
-  margin-top: 100px;
-}
-
-.catalogueMobile {
-  margin-top: 15px;
-  margin-bottom: 70vh;
-}
-
 /*
 ==============================================
-Body
+Mobile body
 ==============================================
 */
 
@@ -230,6 +223,18 @@ Body
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s linear, transform 0.8s linear;
+}
+
+.active-image {
+  position: static;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .slide1 {
@@ -244,14 +249,6 @@ Body
   background-image: url(https://i.pinimg.com/736x/88/3c/ca/883ccadff0c0f53ce87dd6d9e53a2c88--lamborghini-cars-lamborghini-photos.jpg);
 }
 
-.container2 {
-  background: url(https://wallpapercave.com/wp/dLyrKWw.jpg);
-}
-
-.container3 {
-  background: url(/assets/images/arctic.jpg);
-}
-
 .slide-content {
   height: 100vh;
   display: flex;
@@ -262,17 +259,12 @@ Body
 }
 
 .slide-content h1 {
-  width: 15em;
   font-size: 2em;
   color: white;
-  margin-bottom: 1em;
 }
-
 .slide-content p {
-  width: 30em;
   font-size: 1em;
   color: white;
-
 }
 
 .buttons {
@@ -295,6 +287,7 @@ Body
   border: 0.8px solid #8c8c8c;
   border-radius: 100%;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
 .buttons > div:hover {
@@ -302,10 +295,11 @@ Body
   border-color: #d3d3d3;
 }
 
-#active {
-  background: #8c8c8c;
+.buttons > .active-button {
+  background-color: #8c8c8c;
   border-color: #d3d3d3;
 }
+
 
 /*
 ==============================================
@@ -313,8 +307,8 @@ Media Queries
 ==============================================
 */
 
-/* Media Queries for mobile view. desktop and portrait */
-@media only screen and (max-width: 900px ) and (-webkit-min-device-pixel-ratio: 2) {
+/* Media Queries for mobile view. Portrait and landscape */
+@media only screen and (max-width: 900px ) {
   .button {
     display: none;
   }
@@ -322,46 +316,48 @@ Media Queries
   .toggle{
     transform: none;
   }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 5px 8px 15px;
+  }
 }
 
 /* Media Queries for mobile view. portrait */
-@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .slide-content h1 {
-    margin-top: 1em;
-    font-size: 1em;
-    color: white;
-  }
-
-  .slide-content p {
-    font-size: 0.5em;
-    color: white;
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .catalogueMobile {
+    margin-top: 15px;
+    margin-bottom: 50vh;
   }
 }
 
 /* Media Queries for mobile view. landcape */
-@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: landscape) {
   .mobileMenu {
     margin-top: 75vh;
   }
-  .slide-content h1 {
-    margin-top: 1em;
-    font-size: 1em;
-    color: white;
-  }
-
-  .slide-content p {
-    font-size: 0.5em;
-    color: white;
-  }
-
+  
   .catalogueMobile {
     margin-bottom: 35vh;
-  }
+  } 
+}
+
+/* Media Queries for desktop view. portrait and landscape */
+@media only screen and (min-width: 900px) {
 
 }
 
-/* Media Queries for desktoo view. desktop and portrait */
-@media only screen and (min-widht: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+/* Media Queries for desktop view. portrait */
+@media only screen and (min-width: 600px) and (orientation: portrait){
+
+}
+
+/* Media Queries for desktop view. landscape */
+@media only screen and (min-width: 900px) and (orientation: landscape){
   .burgerIcon {
     display: none;
   }
@@ -369,23 +365,21 @@ Media Queries
   .mobileMenu {
     display: none;
   }
-}
 
-/* Media Queries for desktop view. portrait */
-@media only screen and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
-.slide-content h1 {
-    margin-top: 1em;
-    font-size: 2em;
-    color: white;
+  .slide {
+    position: relative;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0s, transform 0s; 
   }
 
-  .slide-content p {
-    font-size: 1em;
-    color: white;
+  .buttons {
+    position: fixed;
+    left: 100%;
+    bottom: 50%;
+    margin-bottom: -50px;
+    flex-direction: column;
+    height: 100px;
+    width: 25px;
   }
-}
-
-/* Media Queries for desktop view. landscape */
-@media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
-
 }

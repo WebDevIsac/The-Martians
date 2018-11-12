@@ -1,6 +1,6 @@
 
 
-// function to toggle class for the mobileMenu menu
+// function to toggle class for the mobile menu
 
 document.getElementById("burgerIcon").addEventListener("click",  () => {
 
@@ -13,9 +13,7 @@ document.getElementById("burgerIcon").addEventListener("click",  () => {
 
 
 
-
-
-// Variables for body
+// Variables for image slide
 let sliderImages = document.querySelectorAll('.slide');
 let buttons = document.querySelector('.buttons');
 let allButtons = document.querySelectorAll('.buttons > div');
@@ -23,57 +21,97 @@ let current = 0;
 
 // Clear all images
 function reset () {
-  for (let i = 0; i < sliderImages.length; i++) {
-    sliderImages[i].style.display = 'none';
-    allButtons[i].removeAttribute('id', 'active');
+  // For mobile
+  if (window.innerWidth < 900) {
+    for (let i = 0; i < sliderImages.length; i++) {
+      allButtons[i].classList.remove('active-button');
+      sliderImages[i].classList.remove('active-image');
+    }
   }
-  buttons.style.display = 'none';
+  // For desktop
+  else if (window.innerWidth >= 900) {
+    for (let i = 0; i < sliderImages.length; i++) {
+      allButtons[i].classList.remove('active-button');
+    }
+  }
 }
 
-// Show first slide after reload
+// Show first image after reload
 function startSlide () {
-  reset();
-  sliderImages[0].style.display = 'block';
-  allButtons[0].setAttribute('id', 'active');
-  buttons.style.display = 'flex';
-  current = 0;
-}
-
-// Show first after click
-allButtons[0].addEventListener('click', () => {
-  if (current !== 0) {
+  // For mobile
+  if (window.innerWidth < 900) {
     reset();
-    sliderImages[0].style.display = 'block';
-    allButtons[0].setAttribute('id', 'active');
-    buttons.style.display = 'flex';
+    allButtons[0].classList.add('active-button');
+    sliderImages[0].classList.add('active-image');
     current = 0;
   }
+  // For desktop
+  else if (window.innerWidth >= 900) {
+    reset();
+    allButtons[0].classList.add('active-button');
+  }
+}
+
+// Show first image after click
+allButtons[0].addEventListener('click', () => {
+  // For mobile
+  if (window.innerWidth < 900) {
+    if (current !== 0) {
+      reset();
+      allButtons[0].classList.add('active-button');
+      sliderImages[0].classList.add('active-image');
+      current = 0;
+    }
+  }
+  // For desktop
+  else if (window.innerWidth >= 900) {
+    reset();
+    allButtons[0].classList.add('active-button');
+    window.location = '#image1';
+  }
 });
 
-// Show second after click
+// Show second image after click
 allButtons[1].addEventListener('click', () => {
-  if (current !== 1) {
+  // For mobile
+  if (window.innerWidth < 900) {
+    if (current !== 1) {
+      reset();
+      allButtons[1].classList.add('active-button');
+      sliderImages[1].classList.add('active-image');
+      current = 1;
+    }
+  }
+  // For desktop
+  else if (window.innerWidth >= 900) {
     reset();
-    sliderImages[1].style.display = 'block';
-    allButtons[1].setAttribute('id', 'active');
-    buttons.style.display = 'flex';
-    current = 1;
+    allButtons[1].classList.add('active-button');
+    window.location = '#image2';
   }
 });
 
 
-// Show third after click
+// Show third image after click
 allButtons[2].addEventListener('click', () => {
-  if (current !== 2) {
+  // For mobile
+  if (window.innerWidth < 900) {
+    if (current !== 2) {
+      reset();
+      allButtons[2].classList.add('active-button');
+      sliderImages[2].classList.add('active-image');
+      current = 2;
+    }
+  }
+  // For desktop
+  else if (window.innerWidth >= 900) {
     reset();
-    sliderImages[2].style.display = 'block';
-    allButtons[2].setAttribute('id', 'active');
-    buttons.style.display = 'flex';
-    current = 2;
+    allButtons[2].classList.add('active-button');
+    window.location = '#image3';
   }
 });
 
-// Calling function to start slide
+
+
 startSlide();
 
 

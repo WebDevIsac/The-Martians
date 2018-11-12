@@ -20,9 +20,7 @@ if(empty($language)) {
   <link rel="icon" href="assets/images/saabfavicon.png">
   <title>The Martians</title>
 </head>
-
-<body id="body">
-  <header>
+<body>
 
     <!-- Desktop Navigation  -->
 
@@ -43,7 +41,6 @@ if(empty($language)) {
         <div id="barThree" class="barThree"></div>
       </div>
 
-      <!-- Mobile menu  -->
 
       <div class="mobileMenu" id="mobileMenu">
         <div class="emailMobile"><a href="#">Email</a></div>
@@ -55,8 +52,6 @@ if(empty($language)) {
       </div>
     </nav>
   </header>
-
-
 
 
   <div class="container">
@@ -85,22 +80,6 @@ if(empty($language)) {
   <div class=""></div>
   <div class=""></div>
   <div class=""></div>
-</div>
-</div>
-</div>
-<div class="container2">
-  <div class="slide-content">
-   <h1><?= $language['title'];?></h1>
-   <p><?= $language['content']; ?></p> 
- </div>
-</div>
-<div class="container3">
-  <div class="slide-content">
-    <h1><?= $language['title'];?></h1>
-    <p><?= $language['content']; ?></p> 
-  </div>
-</div>
-
 
 <script src="assets/script.js" charset="utf-8"></script>
 
