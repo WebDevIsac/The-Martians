@@ -1,6 +1,20 @@
 
+// ScrollSpy
+const sections = document.querySelectorAll( '.section' );
 
-// function to toggle class for the mobile menu
+window.onscroll = ( ) => {
+  const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+  for ( let s in sections )
+    if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+      const id = sections[ s ].id;
+      document.querySelector( '.active' ).classList.remove( 'active' );
+      document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'active' );
+    }
+}
+
+
+// Function to toggle class for the mobile menu
 
 document.getElementById("burger-icon").addEventListener("click",  () => {
 
@@ -118,8 +132,6 @@ allButtons[2].addEventListener('click', () => {
     window.location = '#image3';
   }
 });
-
-
 
 
 startSlide();

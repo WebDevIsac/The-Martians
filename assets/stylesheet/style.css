@@ -77,25 +77,37 @@ Navigation bar
 ==============================================
 */
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo-img {
+  align-items: center;
   z-index: 2;
   width: 130px;
   margin: 10px;
 }
+.nav-button a{
+  font-size: 1.4rem;
+  position: relative;
+  padding-left: 5px;
+}
+
 .nav-button a:hover {
   transition: 0.3s ease;
   color: tomato;
   border-top: 4px solid tomato;
   border-bottom: 4px solid tomato;
-  padding-top: 10px;
+  padding-top: 1px;
   padding-bottom: 10px;
 }
 
 .nav-container {
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 10%;
+  width: 100vw;
+  height: 9vh;
   display: flex;
   flex-direction: row;
   z-index: 2;
@@ -115,9 +127,9 @@ Burger icon
   position: absolute;
   display: block;
   height: auto;
-  right: 10px;
+  right: 1vw;
   z-index: 3;
-  padding: 10px;
+  padding: 15px 10px;
   cursor: pointer;
 }
 
@@ -170,7 +182,7 @@ Mobile menu
 }
 
 .email {
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 .catalogue {
   margin-bottom: 70vh;
@@ -182,12 +194,12 @@ Mobile menu
 }
 
 .lang-sv {
-  padding: 10px;
+  padding: 5px;
   border-right: 1px solid black
 }
 
 .lang-eng {
-  padding: 10px;
+  padding: 5px;
   border-left: 1px solid black
 }
 /*
@@ -297,6 +309,10 @@ Media Queries
 
 /* desktop view */
 @media only screen and (min-width: 900px) {
+  .nav-container {
+    width: 100vw;
+    height: 15vh;
+  }
   .logo-container {
     flex-grow: 1;
   }
@@ -311,22 +327,20 @@ Media Queries
   }
 
   .email-desk {
-    margin: -5px 20px 0 0;
+    margin: 0px 9vw 0 0;
   }
 
   .catalogue-desk {
-    margin: -5px 20px 0 0;
+    margin: 0 13vw 0 0;
   }
 
   .lang-sv-desk {
-    margin-top: -5px;
-    padding: 10px;
     border-right: 1px solid black;
+    padding-right: 5px;
   }
   .lang-eng-desk {
-    margin: -5px 20px 0 0;
-    padding: 10px;
     border-left: 1px solid black;
+    margin-right: 7vw;
   }
 
   .slide {
@@ -334,17 +348,6 @@ Media Queries
     opacity: 1;
     transform: scale(1);
     transition: opacity 0s, transform 0s;
-  }
-
-  .lang-sv-desk {
-    margin-top: -5px;
-    padding: 10px;
-    border-right: 1px solid black;
-  }
-  .lang-eng-desk {
-    margin: -5px 20px 0 0;
-    padding: 10px;
-    border-left: 1px solid black;
   }
 
   .slide {
@@ -362,5 +365,10 @@ Media Queries
     flex-direction: column;
     height: 100px;
     width: 25px;
+  }
+
+  .active::before{
+    content: url('../images/snowflake.png');
+    align-items: center;
   }
 }
