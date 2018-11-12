@@ -15,14 +15,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-<<<<<<< HEAD
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
-=======
->>>>>>> Added scroll function for desktop mode
 
 
 // Variables for image slide
