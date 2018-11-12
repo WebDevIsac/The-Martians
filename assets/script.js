@@ -2,15 +2,24 @@
 
 // function to toggle class for the mobile menu
 
-document.getElementById("burgerIcon").addEventListener("click",  () => {
+document.getElementById("burger-icon").addEventListener("click",  () => {
 
-  document.getElementById("burgerIcon").classList.toggle("transform");
+  document.getElementById("burger-icon").classList.toggle("transform");
 
-  document.getElementById("mobileMenu").classList.toggle("toggle");
+  document.getElementById("mobile-menu").classList.toggle("toggle");
 
 });
 
+// Function for smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 
 // Variables for image slide

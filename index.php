@@ -10,44 +10,44 @@
   <title>The Martians</title>
 </head>
 <body>
+  <div id="top"></div>
 
 
-<header>
+  <nav class="nav-container">
+    <div class="logo-container"><a href="#top"><img class="logo-img" src="assets/images/saabLogo.png" alt=""></a></div>
 
-  <!-- Desktop Navigation  -->
+    <!-- Desktop Navigation  -->
 
-  <nav class="navContainer">
-
-    <div class="desktopNav">
-      <div class="logoContainer"><a href="#top"><img class="logoImg" src="assets/images/saabLogo.png" alt=""></a></div>
-      <div class="email button"><a href="#">Email</a></div>
-      <div class="catalogue button"><a  href="#">Produkt katalog</a></div>
-      <div class="langSV button"><a href="#">SV</a></div>
-      <div class="langENG button"><a href="#">ENG</a></div>
+    <div class="desk-nav">
+      <div class="email-desk nav-button"><a href="#">Email</a></div>
+      <div class="catalogue-desk nav-button"><a  href="#">Produkt katalog</a></div>
+      <div class="lang-sv-desk nav-button"><a href="#">SV</a></div>
+      <div class="lang-eng-desk nav-button"><a href="#">ENG</a></div>
     </div>
 
     <!-- Burger menu icon -->
 
-    <div class="burgerIcon" id="burgerIcon">
-      <div id="barOne" class="barOne"></div>
-      <div id="barTwo" class="barTwo"></div>
-      <div id="barThree" class="barThree"></div>
+    <div class="burger-icon" id="burger-icon">
+      <div id="bar-one" class="bar-one"></div>
+      <div id="bar-two" class="bar-two"></div>
+      <div id="bar-three" class="bar-three"></div>
     </div>
 
     <!-- Mobile menu  -->
 
-    <div class="mobileMenu" id="mobileMenu">
+    <div class="mobile-menu" id="mobile-menu">
 
-      <div class="emailMobile"><a href="#">Email</a></div>
-      <div class="catalogueMobile"><a href="#">Produkt katalog</a></div>
-      <div class="langContainer">
-        <div class="langSvMobile"><a href="#">SV</a></div>
-        <div class="langEngMobile"><a href="#">ENG</a></div>
+      <div class="email"><a href="#">Email</a></div>
+      <div class="catalogue"><a href="#">Produkt katalog</a></div>
+      <div class="lang-container">
+        <div class="lang-sv"><a href="#">SV</a></div>
+        <div class="lang-eng"><a href="#">ENG</a></div>
       </div>
     </div>
-
   </nav>
-</header>
+
+
+<!-- Start -->
 
 <div class="container">
   <div class="slider">
