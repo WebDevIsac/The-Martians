@@ -56,7 +56,7 @@ if(empty($language)) {
 
   <div class="container">
     <div class="slider">
-      <div class="slide slide1">
+      <div class="slide slide1" id="image1">
         <div class="slide-content">
          <div>
           <h1><?= $language['title'];?></h1>
@@ -64,13 +64,13 @@ if(empty($language)) {
         </div>
       </div>
     </div>
-    <div class="slide slide2">
+    <div class="slide slide2" id="image2">
       <div class="slide-content">
        <h1><?= $language['title'];?></h1>
        <p><?= $language['content']; ?></p> 
      </div>
    </div>
-   <div class="slide slide3">
+   <div class="slide slide3" id="image3">
     <div class="slide-content">
      <h1><?= $language['title'];?></h1>
      <p><?= $language['content']; ?></p> 
