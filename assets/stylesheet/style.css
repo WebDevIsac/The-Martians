@@ -326,7 +326,10 @@ Media Queries
 
 /* Media Queries for mobile view. portrait */
 @media only screen and (max-width: 600px) and (orientation: portrait) {
-  
+  .catalogueMobile {
+    margin-top: 15px;
+    margin-bottom: 50vh;
+  }
 }
 
 /* Media Queries for mobile view. landcape */
@@ -347,7 +350,7 @@ Media Queries
 
 /* Media Queries for desktop view. portrait */
 @media only screen and (min-width: 600px) and (orientation: portrait){
-
+  
 }
 
 /* Media Queries for desktop view. landscape */
