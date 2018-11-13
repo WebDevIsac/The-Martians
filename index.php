@@ -38,19 +38,22 @@ if(!isset($language)) {
       <div id="bar-two" class="bar-two"></div>
       <div id="bar-three" class="bar-three"></div>
     </div>
+  </nav>
 
     <!-- Mobile menu  -->
 
     <div class="mobile-menu" id="mobile-menu">
-
-      <div class="email"><a href="#">Email</a></div>
-      <div class="catalogue"><a href="#">Produkt katalog</a></div>
+      <div class="mobile-menu-top">
+        <div class="email"><a href="#">Email</a></div>
+        <div class="catalogue"><a href="#">Produkt katalog</a></div>
+      </div>
+      <div class="mobile-menu-bot">
       <div class="lang-container">
         <div class="lang-sv"><a href="?lang=sv">SV</a></div>
         <div class="lang-eng"><a href="?lang=en">EN</a></div>
       </div>
+      </div>
     </div>
-  </nav>
 
 
 <!-- Start -->
@@ -80,8 +83,6 @@ if(!isset($language)) {
     </div>
   </div>
 </div>
-
-
 <script src="assets/script.js" charset="utf-8"></script>
 
 </body>
