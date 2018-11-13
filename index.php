@@ -38,7 +38,6 @@ if(!isset($language)) {
       <div id="bar-two" class="bar-two"></div>
       <div id="bar-three" class="bar-three"></div>
     </div>
-  </nav>
 
     <!-- Mobile menu  -->
 
@@ -54,6 +53,7 @@ if(!isset($language)) {
       </div>
       </div>
     </div>
+  </nav>
 
 
 <!-- Start -->
