@@ -254,11 +254,19 @@ Mobile body
   text-align: center;
 }
 
-.slide-content p {
-  width: 10em;
+.slide-content h1 {
+  width: 15rem;
   font-size: 2em;
   color: white;
+  padding-bottom: 1.5rem;
 }
+.slide-content p {
+  width: 20rem;
+  font-size: 0.8em;
+  color: white;
+  line-height: normal;
+}
+
 
 .buttons {
   position: absolute;
