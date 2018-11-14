@@ -47,10 +47,14 @@ $ git clone https://github.com/WebDevIsac/The-Martians.git
 
 
 ### Creators:
-- [Isac Larrson](https://github.com/WebDevIsac)
-- [Mikael Ravantti](https://github.com/MRavantti)
-- [Laureta Dzika](https://github.com/xhika)
-
+- Alexander Moyle (CG)
+- Ebba Olsson (DD)
+- [Isac Larrson](https://github.com/WebDevIsac) (WU)
+- Jimmy Haavisto (CG)
+- Kristoffer Sandberg (CG)
+- [Laureta Dzika](https://github.com/xhika) (WU)
+- [Mikael Ravantti](https://github.com/MRavantti) (WU)
+- Sofia Grönvall (DD)
 
 ### Testers:
 
