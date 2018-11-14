@@ -9,7 +9,7 @@ window.onscroll = ( ) => {
     if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
       const id = sections[ s ].id;
       document.querySelector( '.active' ).classList.remove( 'active' );
-      document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'active' );
+      document.querySelector( `a[href*=${ id }]` ).classList.add( 'active' );
     }
 }
 
