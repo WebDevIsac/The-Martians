@@ -39,7 +39,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Variables for image slide
 let sliderImages = document.querySelectorAll('.slide');
 let buttons = document.querySelector('.buttons');
-let allButtons = document.querySelectorAll('.buttons > div');
+let allButtons = document.querySelectorAll('.buttons > a');
 let current = 0;
 
 // Clear all images

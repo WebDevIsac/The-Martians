@@ -280,9 +280,11 @@ Mobile body
   align-items: center;
 }
 
-.buttons > div {
+.buttons > a {
   width: 25px;
   height: 25px;
+  display: block;
+  text-decoration: none;
   background-color: #d3d3d3;
   border: 0.8px solid #8c8c8c;
   border-radius: 100%;
@@ -290,7 +292,7 @@ Mobile body
   transition: 0.5s ease-in-out;
 }
 
-.buttons > div:hover {
+.buttons > a:hover {
   background-color: #8c8c8c;
   border-color: #d3d3d3;
 }
@@ -298,13 +300,6 @@ Mobile body
 .buttons > .active-button {
   background-color: #8c8c8c;
   border-color: #d3d3d3;
-}
-
-.buttons > div > a {
-  width: 25px;
-  height: 25px;
-  text-decoration: none;
-  color: transparent;
 }
 
 /*

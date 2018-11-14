@@ -82,9 +82,9 @@ if(!isset($language)) {
       </div>
     </div>
     <div class="buttons">
-      <div><a href="#image1"></a></div>
-      <div><a href="#image2"></a></div>
-      <div><a href="#image3"></a></div>
+      <a href="#image1"></a>
+      <a href="#image2"></a>
+      <a href="#image3"></a>
     </div>
   </div>
 </div>
