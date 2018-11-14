@@ -2,11 +2,7 @@
 require __DIR__.'/assets/data.php';
 $language = $data[$_GET['lang']];
 if(!isset($language)) {
-<<<<<<< HEAD
-  header('Location: index.php?lang=en');
-=======
 	header('Location: index.php?lang=en');
->>>>>>> master
 }
 ?>
 <!DOCTYPE html>
