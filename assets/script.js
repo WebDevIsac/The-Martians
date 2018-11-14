@@ -90,7 +90,7 @@ allButtons[0].addEventListener('click', () => {
   else if (window.innerWidth >= 900) {
     reset();
     allButtons[0].classList.add('active-button');
-    window.location = '#image1';
+    // window.location = '#image1';
   }
 });
 
@@ -109,7 +109,7 @@ allButtons[1].addEventListener('click', () => {
   else if (window.innerWidth >= 900) {
     reset();
     allButtons[1].classList.add('active-button');
-    window.location = '#image2';
+    // window.location = '#image2';
   }
 });
 
@@ -129,7 +129,7 @@ allButtons[2].addEventListener('click', () => {
   else if (window.innerWidth >= 900) {
     reset();
     allButtons[2].classList.add('active-button');
-    window.location = '#image3';
+    // window.location = '#image3';
   }
 });
 

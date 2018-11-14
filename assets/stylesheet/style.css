@@ -300,6 +300,15 @@ Mobile body
   border-color: #d3d3d3;
 }
 
+.buttons > div > a {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  text-decoration: none;
+  color: transparent;
+  z-index: 4;
+  
+}
 
 /*
 ==============================================
