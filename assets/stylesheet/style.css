@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
 blockquote, q {
-  quotes: none;
+	quotes: none;
 }
 blockquote::before, blockquote:after,
 q:before, q::after {
-  content: '';
-  content: none;
+	content: '';
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /*
@@ -52,24 +52,23 @@ table {
 Costum styles
 ==============================================
 */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-size: 1.2rem;
-  letter-spacing: .5px;
-  font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	letter-spacing: .5px;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
 }
-
-
 
 /*
 ==============================================
@@ -78,44 +77,44 @@ Navigation bar
 */
 
 .logo-container {
-  display: flex;
-  align-items: center;
+	align-self: center;
+}
+
+.logo-wrapper a{
+	position: relative;
+	padding-bottom: 28px;
 }
 
 .logo-img {
-  align-items: center;
-  z-index: 2;
-  width: 130px;
-  margin: 10px;
+	z-index: 2;
+	width: 130px;
 }
+
 .nav-button a{
-  font-size: 1.4rem;
-  position: relative;
-  padding-left: 5px;
+	font-size: 1.4rem;
+	padding-bottom: 40px;
 }
 
 .nav-button a:hover {
-  transition: 0.3s ease;
-  color: tomato;
-  border-top: 4px solid tomato;
-  border-bottom: 4px solid tomato;
-  padding-top: 1px;
-  padding-bottom: 10px;
+	transition: 0.3s ease;
+	color: green;
+	border-bottom: 6px solid green;
 }
 
 .nav-container {
-  position: fixed;
-  background-color: white;
-  top: 0;
-  width: 100vw;
-  height: 9vh;
-  display: flex;
-  flex-direction: row;
-  z-index: 2;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: white;
+	top: 0;
+	width: 100vw;
+	height: 9vh;
+	z-index: 2;
 }
 
 .desk-nav {
-  display: none;
+	display: none;
 }
 
 /*
@@ -125,34 +124,34 @@ Burger icon
 */
 
 .burger-icon {
-  position: absolute;
-  display: block;
-  height: auto;
-  right: 1vw;
-  z-index: 4;
-  padding: 15px 10px;
-  cursor: pointer;
+	position: absolute;
+	display: block;
+	height: auto;
+	right: 1vw;
+	z-index: 4;
+	padding: 15px 10px;
+	cursor: pointer;
 }
 
 .bar-one, .bar-two, .bar-three {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.6s;
-  border-radius: 10px;
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.6s;
+	border-radius: 10px;
 }
 
 .transform .bar-one {
-  transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .transform .bar-two {
-  opacity: 0;
+	opacity: 0;
 }
 
 .transform .bar-three {
-  transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
 }
 
 /*
@@ -162,46 +161,46 @@ Mobile menu
 */
 
 .mobile-menu {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background-color: white;
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  transition: 0.5s;
-  justify-content: space-between;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: white;
+	transform-origin: 0% 0%;
+	transform: translate(100%, 0);
+	transition: 0.5s;
+	justify-content: space-between;
 }
 
 .toggle {
-  transform: none;
+	transform: none;
 }
 
 .mobile-menu div {
-  padding: 10px;
+	padding: 10px;
 }
 
 .email {
-  margin-top: 10vh;
+	margin-top: 10vh;
 }
 .catalogue {
 }
 
 .lang-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .lang-sv {
-  padding: 5px;
-  border-right: 1px solid black
+	padding: 5px;
+	border-right: 1px solid black
 }
 
-.lang-eng {
-  padding: 5px;
-  border-left: 1px solid black
+.lang-en {
+	padding: 5px;
+	border-left: 1px solid black
 }
 /*
 ==============================================
@@ -210,97 +209,97 @@ Mobile body
 */
 
 .container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  z-index: 1;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	z-index: 1;
 }
 
 .slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 1s linear, transform 0.8s linear;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transform: scale(0.9);
+	transition: opacity 1s linear, transform 0.8s linear;
 }
 
 .active-image {
-  position: static;
-  opacity: 1;
-  transform: scale(1);
+	position: static;
+	opacity: 1;
+	transform: scale(1);
 }
 
 .slide1 {
-  background-image: url(https://i.pinimg.com/736x/6f/fe/99/6ffe994320b9a03aef4dab8a1045bd6c--sportscar-hd-wallpaper.jpg);
+	background-image: url(https://i.pinimg.com/736x/6f/fe/99/6ffe994320b9a03aef4dab8a1045bd6c--sportscar-hd-wallpaper.jpg);
 }
 
 .slide2 {
-  background-image: url(https://d3rvezpmgp265q.cloudfront.net/lexusone/lexeuenv11/2017-lexus-hybrid-portrait-lc-ready-to-perform-810x1080_tcm-3154-1157459.jpg);
+	background-image: url(https://d3rvezpmgp265q.cloudfront.net/lexusone/lexeuenv11/2017-lexus-hybrid-portrait-lc-ready-to-perform-810x1080_tcm-3154-1157459.jpg);
 }
 
 .slide3 {
-  background-image: url(https://i.pinimg.com/736x/88/3c/ca/883ccadff0c0f53ce87dd6d9e53a2c88--lamborghini-cars-lamborghini-photos.jpg);
+	background-image: url(https://i.pinimg.com/736x/88/3c/ca/883ccadff0c0f53ce87dd6d9e53a2c88--lamborghini-cars-lamborghini-photos.jpg);
 }
 
 .slide-content {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .slide-content h1 {
-  width: 80vw;
-  font-size: 2.2rem;
-  color: white;
-  padding-bottom: 1.5rem;
+	width: 80vw;
+	font-size: 2.2rem;
+	color: white;
+	padding-bottom: 1.5rem;
 }
 .slide-content p {
-  width: 80vw;
-  color: white;
-  line-height: normal;
+	width: 80vw;
+	color: white;
+	line-height: normal;
 }
 
 
 .buttons {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 20px;
-  left: 50%;
-  margin-left: -50px;
-  width: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 20px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .buttons > a {
-  width: 25px;
-  height: 25px;
-  display: block;
-  text-decoration: none;
-  background-color: #d3d3d3;
-  border: 0.8px solid #8c8c8c;
-  border-radius: 100%;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
+	width: 25px;
+	height: 25px;
+	display: block;
+	text-decoration: none;
+	background-color: #d3d3d3;
+	border: 0.8px solid #8c8c8c;
+	border-radius: 100%;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
 }
 
 .buttons > a:hover {
-  background-color: #8c8c8c;
-  border-color: #d3d3d3;
+	background-color: #8c8c8c;
+	border-color: #d3d3d3;
 }
 
 .buttons > .active-button {
-  background-color: #8c8c8c;
-  border-color: #d3d3d3;
+	background-color: #8c8c8c;
+	border-color: #d3d3d3;
 }
 
 /*
@@ -311,83 +310,83 @@ Media Queries
 
 /* Mobile view landscape  */
 @media only screen and (max-width: 850px) and (orientation: landscape) {
-  .catalogue {
-  }
+	.catalogue {
+	}
 }
 
 /* desktop view */
 @media only screen and (min-width: 900px) {
-  .nav-container {
-    width: 100vw;
-    height: 15vh;
-  }
-  .logo-container {
-    flex-grow: 1;
-  }
+	.nav-container {
+		width: 100vw;
+		height: 15vh;
+	}
 
-  .burger-icon {
-    display: none;
-  }
+	.burger-icon {
+		display: none;
+	}
 
-  .desk-nav {
-    display: flex;
-    align-items: center;
-  }
+	.desk-nav {
+		display: flex;
+		align-items: center;
+	}
 
-  .email-desk {
-    margin: 0px 9vw 0 0;
-  }
+	.email-desk {
+		margin: 0px 9vw 0 0;
+	}
 
-  .catalogue-desk {
-    margin: 0 13vw 0 0;
-  }
+	.catalogue-desk {
+		margin: 0 13vw 0 0;
+	}
 
-  .lang-sv-desk {
-    border-right: 1px solid black;
-    padding-right: 5px;
-  }
-  .lang-eng-desk {
-    border-left: 1px solid black;
-    margin-right: 7vw;
-  }
+	.lang-sv-desk {
+		border-right: 1px solid black;
+		padding-right: 5px;
+	}
+	.lang-en-desk {
+		border-left: 1px solid black;
+		padding-left: 5px;
+		margin-right: 7vw;
+	}
 
-  .slide {
-    position: relative;
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0s, transform 0s;
-  }
+	.slide {
+		position: relative;
+		opacity: 1;
+		transform: scale(1);
+		transition: opacity 0s, transform 0s;
+	}
 
-  .slide {
-    position: relative;
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0s, transform 0s;
-  }
+	.slide {
+		position: relative;
+		opacity: 1;
+		transform: scale(1);
+		transition: opacity 0s, transform 0s;
+	}
 
-  .buttons {
-    position: fixed;
-    left: 100%;
-    bottom: 50%;
-    margin-bottom: -50px;
-    flex-direction: column;
-    height: 100px;
-    width: 25px;
-  }
+	.buttons {
+		position: fixed;
+		left: 100%;
+		bottom: 50%;
+		margin-bottom: -50px;
+		flex-direction: column;
+		height: 100px;
+		width: 25px;
+	}
 
-  .active{
-    border-bottom: 5px solid green;
-  }
-  .slide-content h1 {
-    width: 45vw;
-    font-size: 2rem;
-    color: white;
-    padding-bottom: 1.5rem;
-  }
-  .slide-content p {
-    width: 45vw;
-    font-size: 1.4rem;
-    color: white;
-    line-height: normal;
-  }
+	.active{
+		border-bottom: 6px solid green;
+		transition: 0.3s ease;
+	}
+
+	.slide-content h1 {
+		width: 45vw;
+		font-size: 2rem;
+		color: white;
+		padding-bottom: 1.5rem;
+	}
+	.slide-content p {
+		width: 45vw;
+		font-size: 1.4rem;
+		color: white;
+		line-height: normal;
+	}
 }
