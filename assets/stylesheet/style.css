@@ -110,7 +110,7 @@ Navigation bar
   height: 9vh;
   display: flex;
   flex-direction: row;
-  z-index: 100;
+  z-index: 2;
 }
 
 .desk-nav {
@@ -128,7 +128,7 @@ Burger icon
   display: block;
   height: auto;
   right: 1vw;
-  z-index: 3;
+  z-index: 4;
   padding: 15px 10px;
   cursor: pointer;
 }
@@ -164,7 +164,6 @@ Mobile menu
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   right: 0;
   width: 50%;
   height: 100vh;
@@ -172,7 +171,7 @@ Mobile menu
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: 0.5s;
-  z-index: 99;;
+  justify-content: space-between;
 }
 
 .toggle {
@@ -187,13 +186,11 @@ Mobile menu
   margin-top: 10vh;
 }
 .catalogue {
-
 }
 
 .lang-container {
   display: flex;
   justify-content: center;
-  align-self: flex
 }
 
 .lang-sv {
@@ -213,7 +210,7 @@ Mobile body
 
 .container {
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   z-index: 1;
 }
@@ -319,7 +316,6 @@ Media Queries
 /* Mobile view landscape  */
 @media only screen and (max-width: 850px) and (orientation: landscape) {
   .catalogue {
-    margin-bottom: 40vh;
   }
 }
 

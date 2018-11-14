@@ -42,16 +42,19 @@ if(!isset($language)) {
     <!-- Mobile menu  -->
 
     <div class="mobile-menu" id="mobile-menu">
+
       <div class="mobile-menu-top">
         <div class="email"><a href="#">Email</a></div>
         <div class="catalogue"><a href="#">Produkt katalog</a></div>
       </div>
+
       <div class="mobile-menu-bot">
       <div class="lang-container">
         <div class="lang-sv"><a href="?lang=sv">SV</a></div>
         <div class="lang-eng"><a href="?lang=en">EN</a></div>
       </div>
       </div>
+      
     </div>
   </nav>
 
