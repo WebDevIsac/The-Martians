@@ -110,7 +110,7 @@ Navigation bar
   height: 9vh;
   display: flex;
   flex-direction: row;
-  z-index: 2;
+  z-index: 100;
 }
 
 .desk-nav {
@@ -164,6 +164,7 @@ Mobile menu
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   right: 0;
   width: 50%;
   height: 100vh;
@@ -171,6 +172,7 @@ Mobile menu
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: 0.5s;
+  z-index: 99;;
 }
 
 .toggle {
@@ -185,12 +187,13 @@ Mobile menu
   margin-top: 10vh;
 }
 .catalogue {
-  margin-bottom: 70vh;
+
 }
 
 .lang-container {
   display: flex;
   justify-content: center;
+  align-self: flex
 }
 
 .lang-sv {
@@ -210,7 +213,7 @@ Mobile body
 
 .container {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 1;
 }
