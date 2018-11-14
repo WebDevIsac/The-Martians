@@ -70,6 +70,12 @@ a {
 	color: rgba(0, 0, 0, 1);
 }
 
+a:hover {
+	transition: 0.3s ease;
+	color: green;
+	border-bottom: 6px solid green;
+}
+
 /*
 ==============================================
 Navigation bar
@@ -93,12 +99,6 @@ Navigation bar
 .nav-button a{
 	font-size: 1.4rem;
 	padding-bottom: 40px;
-}
-
-.nav-button a:hover {
-	transition: 0.3s ease;
-	color: green;
-	border-bottom: 6px solid green;
 }
 
 .nav-container {
