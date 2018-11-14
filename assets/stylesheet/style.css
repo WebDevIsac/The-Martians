@@ -286,7 +286,7 @@ Mobile body
 .buttons > div {
   width: 25px;
   height: 25px;
-  background: #d3d3d3;
+  background-color: #d3d3d3;
   border: 0.8px solid #8c8c8c;
   border-radius: 100%;
   cursor: pointer;
@@ -294,7 +294,7 @@ Mobile body
 }
 
 .buttons > div:hover {
-  background: #8c8c8c;
+  background-color: #8c8c8c;
   border-color: #d3d3d3;
 }
 
@@ -306,11 +306,8 @@ Mobile body
 .buttons > div > a {
   width: 25px;
   height: 25px;
-  overflow: hidden;
   text-decoration: none;
   color: transparent;
-  z-index: 4;
-  
 }
 
 /*
