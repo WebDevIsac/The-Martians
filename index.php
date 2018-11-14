@@ -65,12 +65,14 @@ if(!isset($language)) {
     </div>
     <div class="slide slide2 section" id="image2">
       <div class="slide-content">
-        <p>Placeat aut nihil ut aliquid sequi corrupti consectetur ut ipsam.</p>
+        <h1><?= $language['title']; ?></h1>
+        <p><?= $language['content']; ?></p>
       </div>
     </div>
     <div class="slide slide3 section" id="image3">
       <div class="slide-content">
-        <p>Odit reiciendis quod vel velit rerum eum earum temporibus et.</p>
+        <h1><?= $language['title']; ?></h1>
+        <p><?= $language['content']; ?></p>
       </div>
     </div>
     <div class="buttons">
