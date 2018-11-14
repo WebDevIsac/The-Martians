@@ -105,6 +105,7 @@ Navigation bar
 
 .nav-container {
   position: fixed;
+  background-color: white;
   top: 0;
   width: 100vw;
   height: 9vh;
@@ -161,12 +162,12 @@ Mobile menu
 */
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   right: 0;
   width: 50%;
-  height: 100vh;
+  height: 100%;
   background-color: white;
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
@@ -374,9 +375,8 @@ Media Queries
     width: 25px;
   }
 
-  .active::before{
-    content: url('../images/snowflake.png');
-    align-items: center;
+  .active{
+    border-bottom: 5px solid green;
   }
   .slide-content h1 {
     width: 45vw;
