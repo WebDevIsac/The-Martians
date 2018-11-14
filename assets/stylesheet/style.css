@@ -255,14 +255,13 @@ Mobile body
 }
 
 .slide-content h1 {
-  width: 15rem;
-  font-size: 2em;
+  width: 80vw;
+  font-size: 2.2rem;
   color: white;
   padding-bottom: 1.5rem;
 }
 .slide-content p {
-  width: 20rem;
-  font-size: 0.8em;
+  width: 80vw;
   color: white;
   line-height: normal;
 }
@@ -378,5 +377,17 @@ Media Queries
   .active::before{
     content: url('../images/snowflake.png');
     align-items: center;
+  }
+  .slide-content h1 {
+    width: 45vw;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 1.5rem;
+  }
+  .slide-content p {
+    width: 45vw;
+    font-size: 1.4rem;
+    color: white;
+    line-height: normal;
   }
 }
