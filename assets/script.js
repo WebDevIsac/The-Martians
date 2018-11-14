@@ -1,6 +1,20 @@
 
+// ScrollSpy
+const sections = document.querySelectorAll( '.section' );
 
-// function to toggle class for the mobile menu
+window.onscroll = ( ) => {
+  const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+  for ( let s in sections )
+    if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+      const id = sections[ s ].id;
+      document.querySelector( '.active' ).classList.remove( 'active' );
+      document.querySelector( `a[href*=${ id }]` ).classList.add( 'active' );
+    }
+}
+
+
+// Function to toggle class for the mobile menu
 
 document.getElementById("burger-icon").addEventListener("click",  () => {
 
@@ -25,7 +39,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Variables for image slide
 let sliderImages = document.querySelectorAll('.slide');
 let buttons = document.querySelector('.buttons');
-let allButtons = document.querySelectorAll('.buttons > div');
+let allButtons = document.querySelectorAll('.buttons > a');
 let current = 0;
 
 // Clear all images
@@ -76,7 +90,6 @@ allButtons[0].addEventListener('click', () => {
   else if (window.innerWidth >= 900) {
     reset();
     allButtons[0].classList.add('active-button');
-    window.location = '#image1';
   }
 });
 
@@ -95,7 +108,6 @@ allButtons[1].addEventListener('click', () => {
   else if (window.innerWidth >= 900) {
     reset();
     allButtons[1].classList.add('active-button');
-    window.location = '#image2';
   }
 });
 
@@ -115,11 +127,8 @@ allButtons[2].addEventListener('click', () => {
   else if (window.innerWidth >= 900) {
     reset();
     allButtons[2].classList.add('active-button');
-    window.location = '#image3';
   }
 });
-
-
 
 
 startSlide();
