@@ -353,13 +353,6 @@ Media Queries
 		margin-right: 7vw;
 	}
 
-	.slide {
-		position: relative;
-		opacity: 1;
-		transform: scale(1);
-		transition: opacity 0s, transform 0s;
-	}
-
 	.buttons {
 		position: fixed;
 		left: 100%;
