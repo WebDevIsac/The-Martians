@@ -81,31 +81,41 @@ Form section mobile
 ==============================================
 */
 .form {
+	width: 100vw;
+	height: 50vh;
+	background-color: white;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
 }
 .form-left {
-	height: 30vh;
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	background-image: url(https://timedotcom.files.wordpress.com/2016/02/icberg-tiny-ship-optical-illusion.jpg);
 	background-size: cover;
 }
 .form-left div {
+	height: 45%;
 	text-transform: uppercase;
-}
-.form-right {
-	background-color: #FFFFFF;
-	height: 40vh;
 }
 .form-right span {
 	color: black;
 	font-weight: bold;
-
+	width:1rem;
+}
+.form-right {
+	border-left: 1px solid #e3e3e3;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .form-right h1 {
 	font-size: 1rem;
-	padding: 1rem;
+	padding-bottom: 0.5rem;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: black !important;
@@ -113,23 +123,26 @@ Form section mobile
 .form-right p {
 	font-size: 1rem;
 	color: black !important;
+	width: 30vw;
+	padding-bottom: 1rem;
 	font-weight: 300;
 }
 .form-right input {
 	background-color: #F7F5F6;
-	height: 40px;
+	height:40px;
 	overflow: wrap;
 	border: none;
+	width: 10rem;
 }
 .form-right button {
 	background-color: black;
-	color: white;
+	color:white;
 	height: 40px;
 	border: none;
 	padding: 4px 4px;
-	font-weight: 500;
+	font-weight:
+	500;
 }
-
 /*
 ==============================================
 Navigation bar
@@ -140,7 +153,7 @@ Navigation bar
 	align-self: center;
 }
 
-.logo-wrapper a {
+.logo-wrapper a{
 	position: relative;
 	padding-bottom: 28px;
 }
