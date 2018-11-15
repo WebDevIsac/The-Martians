@@ -285,15 +285,15 @@ Mobile body
 }
 
 .slide1 {
-	background-image: url(/assets/images/Terrangbil_Jimmy_Haavisto.jpg);
+	background-image: url(../images/Terrangbil_Jimmy_Haavisto.jpg);
 }
 
 .slide2 {
-	background-image: url(/assets/images/Terrangbilmsno.png);
+	background-image: url(../images/Terrangbilmsno.jpg);
 }
 
 .slide3 {
-	background-image: url(/assets/images/arctic_capsule_kristoffer_sandberg.jpg);
+	background-image: url(../images/arctic_capsule_kristoffer_sandberg.jpg);
 }
 
 .slide-content {
