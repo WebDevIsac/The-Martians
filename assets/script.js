@@ -1,18 +1,28 @@
 
 // ScrollSpy
-const sections = document.querySelectorAll( '.section' );
+(function() {
+  'use strict';
 
-window.onscroll = ( ) => {
-  const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+  var section = document.querySelectorAll(".section");
+  var sections = {};
+  var i = 0;
 
-  for ( let s in sections )
-    if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
-      const id = sections[ s ].id;
-      document.querySelector( '.active' ).classList.remove( 'active' );
-      document.querySelector( `a[href*=${ id }]` ).classList.add( 'active' );
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop;
+  });
+
+  window.onscroll = function() {
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        document.querySelector('.active').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+      }
     }
-}
 
+  };
+})();
 
 // Function to toggle class for the mobile menu
 
