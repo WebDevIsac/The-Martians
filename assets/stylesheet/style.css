@@ -176,10 +176,10 @@ Mobile menu
 	padding: 10px;
 }
 
-.email {
+.email-mobile {
 	margin-top: 10vh;
 }
-.catalogue {
+.catalogue-mobile {
 }
 
 .lang-container {
@@ -187,12 +187,12 @@ Mobile menu
 	justify-content: center;
 }
 
-.lang-sv {
+.lang-sv-mobile {
 	padding: 5px;
 	border-right: 1px solid black
 }
 
-.lang-en {
+.lang-en-mobile {
 	padding: 5px;
 	border-left: 1px solid black
 }
@@ -385,5 +385,12 @@ Media Queries
 	.container {
 		position: relative;
 		height: 100vh;
+	}
+
+	.slide {
+		position: relative;
+		opacity: 1;
+		transform: scale(1);
+		transition: opacity 0s, transform 0s;
 	}
 }

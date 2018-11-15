@@ -21,13 +21,13 @@ if(!isset($language)) {
 
 
 	<nav class="nav-container">
-		<div class="logo-container"><div class="logo-wrapper"><a class="active" href="#image1"><img class="logo-img" src="assets/images/saabLogo.png" alt=""></a></div></div>
+		<div class="logo-container"><div class="logo-wrapper"><a class="active" href="#home"><img class="logo-img" src="assets/images/saabLogo.png" alt=""></a></div></div>
 
 		<!-- Desktop Navigation  -->
 
 		<div class="desk-nav">
-			<div class="email-desk nav-button"><a href="#image2">Email</a></div>
-			<div class="catalogue-desk nav-button"><a  href="#image3">Produkt katalog</a></div>
+			<div class="email-desk nav-button"><a href="#email">Email</a></div>
+			<div class="catalogue-desk nav-button"><a  href="#catalogue">Produkt katalog</a></div>
 			<div class="lang-sv-desk nav-button"><a href="?lang=sv">SV</a></div>
 			<div class="lang-en-desk nav-button"><a href="?lang=en">EN</a></div>
 		</div>
@@ -44,14 +44,14 @@ if(!isset($language)) {
 		<div class="mobile-menu" id="mobile-menu">
 
 			<div class="mobile-menu-top">
-				<div class="email"><a href="#">Email</a></div>
-				<div class="catalogue"><a href="#">Produkt katalog</a></div>
+				<div class="email-mobile"><a href="#email">Email</a></div>
+				<div class="catalogue-mobile"><a href="#catalogue">Produkt katalog</a></div>
 			</div>
 
 			<div class="mobile-menu-bot">
 				<div class="lang-container">
-					<div class="lang-sv"><a href="?lang=sv">SV</a></div>
-					<div class="lang-en"><a href="?lang=en">EN</a></div>
+					<div class="lang-sv-mobile"><a href="?lang=sv">SV</a></div>
+					<div class="lang-en-mobile"><a href="?lang=en">EN</a></div>
 				</div>
 			</div>
 
@@ -63,28 +63,28 @@ if(!isset($language)) {
 
 	<div class="container">
 		<div class="slider">
-			<div class="slide slide1 section" id="image1">
+			<div class="slide slide1 section" id="home">
 				<div class="slide-content">
 					<h1><?= $language['title']; ?></h1>
 					<p><?= $language['content']; ?></p>
 				</div>
 			</div>
-			<div class="slide slide2 section" id="image2">
+			<div class="slide slide2 section" id="email">
 				<div class="slide-content">
 					<h1><?= $language['title']; ?></h1>
 					<p><?= $language['content']; ?></p>
 				</div>
 			</div>
-			<div class="slide slide3 section" id="image3">
+			<div class="slide slide3 section" id="catalogue">
 				<div class="slide-content">
 					<h1><?= $language['title']; ?></h1>
 					<p><?= $language['content']; ?></p>
 				</div>
 			</div>
 			<div class="buttons">
-				<a href="#image1"></a>
-				<a href="#image2"></a>
-				<a href="#image3"></a>
+				<a href="#home"></a>
+				<a href="#email"></a>
+				<a href="#catalogue"></a>
 			</div>
 		</div>
 	</div>

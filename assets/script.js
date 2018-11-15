@@ -1,18 +1,21 @@
 
-// ScrollSpy
-(function() {
-  'use strict';
+'use strict';
 
-  var section = document.querySelectorAll(".section");
-  var sections = {};
-  var i = 0;
+// ScrollSpy function
+
+(function() {
+
+
+  let section = document.querySelectorAll(".section");
+  let sections = {};
+  let i = 0;
 
   Array.prototype.forEach.call(section, function(e) {
     sections[e.id] = e.offsetTop;
   });
 
   window.onscroll = function() {
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
     for (i in sections) {
       if (sections[i] <= scrollPosition) {
@@ -50,6 +53,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 let sliderImages = document.querySelectorAll('.slide');
 let buttons = document.querySelector('.buttons');
 let allButtons = document.querySelectorAll('.buttons > a');
+
 let current = 0;
 
 // Clear all images
