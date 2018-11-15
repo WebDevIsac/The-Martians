@@ -71,8 +71,7 @@ if(!isset($language)) {
 			</div>
 			<div class="slide slide2 section" id="image2">
 				<div class="slide-content">
-					<h1><?= $language['title']; ?></h1>
-					<p><?= $language['content']; ?></p>
+					<?php require __DIR__.'/assets/form.php'; ?>
 				</div>
 			</div>
 			<div class="slide slide3 section" id="image3">
