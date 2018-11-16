@@ -1,18 +1,31 @@
 
-// ScrollSpy
-const sections = document.querySelectorAll( '.section' );
+'use strict';
 
-window.onscroll = ( ) => {
-  const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+// ScrollSpy function
 
-  for ( let s in sections )
-    if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
-      const id = sections[ s ].id;
-      document.querySelector( '.active' ).classList.remove( 'active' );
-      document.querySelector( `a[href*=${ id }]` ).classList.add( 'active' );
+(function() {
+
+
+  let section = document.querySelectorAll(".section");
+  let sections = {};
+  let i = 0;
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = e.offsetTop;
+  });
+
+  window.onscroll = function() {
+    let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        document.querySelector('.active').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+      }
     }
-}
 
+  };
+})();
 
 // Function to toggle class for the mobile menu
 
@@ -40,6 +53,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 let sliderImages = document.querySelectorAll('.slide');
 let buttons = document.querySelector('.buttons');
 let allButtons = document.querySelectorAll('.buttons > a');
+
 let current = 0;
 
 // Clear all images

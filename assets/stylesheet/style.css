@@ -127,6 +127,7 @@ Form section mobile
 		opacity: 0.4;
 	}
 
+
 /*
 ==============================================
 Navigation bar
@@ -139,7 +140,7 @@ Navigation bar
 
 .logo-wrapper a{
 	position: relative;
-	padding-bottom: 28px;
+	padding-bottom: 4px;
 }
 
 .logo-img {
@@ -149,7 +150,7 @@ Navigation bar
 
 .nav-button a{
 	font-size: 1.4rem;
-	padding-bottom: 40px;
+	padding-bottom: 17px;
 }
 
 .nav-container {
@@ -233,10 +234,10 @@ Mobile menu
 	padding: 10px;
 }
 
-.email {
+.email-mobile {
 	margin-top: 10vh;
 }
-.catalogue {
+.catalogue-mobile {
 }
 
 .lang-container {
@@ -244,12 +245,12 @@ Mobile menu
 	justify-content: center;
 }
 
-.lang-sv {
+.lang-sv-mobile {
 	padding: 5px;
 	border-right: 1px solid black
 }
 
-.lang-en {
+.lang-en-mobile {
 	padding: 5px;
 	border-left: 1px solid black
 }
@@ -260,8 +261,8 @@ Mobile body
 */
 
 .container {
-	position: relative;
-	height: 100vh;
+	position: fixed;
+	height: 100%;
 	width: 100%;
 	z-index: 1;
 }
@@ -271,6 +272,7 @@ Mobile body
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
+	margin-top: 20px;
 	position: absolute;
 	top: 0;
 	opacity: 0;
@@ -377,15 +379,25 @@ Media Queries
 
 /* Mobile view landscape  */
 @media only screen and (max-width: 850px) and (orientation: landscape) {
-	.catalogue {
+	.nav-container {
+		height: 15vh;
+	}
+	.burger-icon {
+		margin: -5px 5px 0 0;
 	}
 }
 
 /* desktop view */
 @media only screen and (min-width: 900px) {
+	a:hover {
+		transition: 0.3s ease;
+		color: green;
+		border-bottom: 10px solid green;
+	}
+
 	.nav-container {
 		width: 100vw;
-		height: 15vh;
+		height: 10vh;
 	}
 
 	.burger-icon {
@@ -415,20 +427,6 @@ Media Queries
 		margin-right: 7vw;
 	}
 
-	.slide {
-		position: relative;
-		opacity: 1;
-		transform: scale(1);
-		transition: opacity 0s, transform 0s;
-	}
-
-	.slide {
-		position: relative;
-		opacity: 1;
-		transform: scale(1);
-		transition: opacity 0s, transform 0s;
-	}
-
 	.buttons {
 		position: fixed;
 		left: 100%;
@@ -440,7 +438,7 @@ Media Queries
 	}
 
 	.active{
-		border-bottom: 6px solid green;
+		border-bottom: 10px solid green;
 		transition: 0.3s ease;
 	}
 	.start-header {
@@ -454,6 +452,7 @@ Media Queries
 		color: white;
 		padding-bottom: 1.5rem;
 	}
+
 	.slide-content p {
 		width: 45vw;
 		font-size: 1.4rem;
@@ -526,5 +525,18 @@ Form section desktop
 	::-ms-input-placeholder { /* Microsoft Edge */
 		font-size: 1rem;
 		opacity: 0.4;
+  }
+  
+	.container {
+		position: relative;
+		height: 100vh;
+	}
+
+	.slide {
+		position: relative;
+		opacity: 1;
+		transform: scale(1);
+		transition: opacity 0s, transform 0s;
+
 	}
 }
