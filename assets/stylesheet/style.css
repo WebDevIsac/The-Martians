@@ -427,10 +427,14 @@ Media Queries
 		border-bottom: 6px solid green;
 		transition: 0.3s ease;
 	}
-
+	.start-header {
+		height: 1rem !important;
+		font-size: 5rem !important;
+		width: 80vw !important;
+	}
 	.slide-content h1 {
 		width: 45vw;
-		font-size: 2rem;
+		font-size: 4rem;
 		color: white;
 		padding-bottom: 1.5rem;
 	}

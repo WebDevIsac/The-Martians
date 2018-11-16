@@ -65,8 +65,7 @@ if(!isset($language)) {
 		<div class="slider">
 			<div class="slide slide1 section" id="image1">
 				<div class="slide-content">
-					<h1><?= $language['title']; ?></h1>
-					<p><?= $language['content']; ?></p>
+					<h1 class="start-header"><?= $language['title']; ?></h1>
 				</div>
 			</div>
 			<div class="slide slide2 section" id="image2">
