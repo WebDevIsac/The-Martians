@@ -14,6 +14,7 @@ if(!isset($language)) {
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="fonts">
 	<link rel="stylesheet" href="assets/stylesheet/style.css">
 	<link rel="icon" href="assets/images/saabfavicon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<title>The Martians</title>
 </head>
 <body>
@@ -69,8 +70,11 @@ if(!isset($language)) {
 				</div>
 			</div>
 			<div class="slide slide2 section" id="image2">
-				<div class="slide-content">
-					<?php require __DIR__.'/assets/form.php'; ?>
+				<div class="slide-content test">
+					<div>
+
+						<?php require __DIR__.'/assets/form.php'; ?>
+					</div>
 				</div>
 			</div>
 			<div class="slide slide3 section" id="image3">
@@ -84,6 +88,22 @@ if(!isset($language)) {
 				<a href="#image2"></a>
 				<a href="#image3"></a>
 			</div>
+			<footer>
+				<div>
+					<ul>
+						<li><a href="#"><span class="fab fa-facebook"></span> Facebook</a></li>
+						<li><a href="#"><span class="fab fa-twitter"></span> Twitter</a></li>
+						<li><a href="#"><span class="fab fa-instagram"></span> Instagram</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><a href="#">FS 1.0</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Privacy policy</a></li>
+					</ul>
+				</div>
+			</footer>
 		</div>
 	</div>
 	<script src="assets/script.js" charset="utf-8"></script>

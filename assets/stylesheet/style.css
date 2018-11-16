@@ -293,7 +293,7 @@ Mobile body
 }
 
 .slide3 {
-	background-image: url(../images/arctic_capsule_kristoffer_sandberg.jpg);
+	background-image: url(../images/TeaserShot.jpg);
 }
 
 .slide-content {
@@ -317,6 +317,22 @@ Mobile body
 	line-height: normal;
 }
 
+	footer {
+		bottom: 0;
+		border-top: 1px solid lightgrey;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		font-weight: 200;
+	}
+
+	footer div {
+		margin: 1rem;
+	}
+
+	footer li {
+		margin: 0.6rem;
+	}
 
 .buttons {
 	position: absolute;
@@ -444,13 +460,30 @@ Media Queries
 		color: white;
 		line-height: normal;
 	}
+
+	footer {
+		bottom: 0;
+		border-top: 1px solid lightgrey;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		font-weight: 200;
+	}
+
+	footer div {
+		margin: 1rem;
+	}
+
+	footer li {
+		margin: 0.6rem;
+	}
 	/*
 ==============================================
-Form section
+Form section desktop
 ==============================================
 */
 	.form {
-		width: 50vw;
+		width: 30vw;
 		height: 40vh;
 		background-color: white;
 		display: flex;
@@ -468,7 +501,7 @@ Form section
 	.form input {
 		background-color: #FFF;
 		border: 2px solid lightgrey;
-		width: 45vw;
+		width: 25vw;
 		margin-bottom: 1rem;
 		padding: 1rem;
 	}
