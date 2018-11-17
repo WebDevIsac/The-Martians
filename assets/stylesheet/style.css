@@ -272,7 +272,6 @@ Mobile body
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	margin-top: 20px;
 	position: absolute;
 	top: 0;
 	opacity: 0;
@@ -526,7 +525,7 @@ Form section desktop
 		font-size: 1rem;
 		opacity: 0.4;
   }
-  
+
 	.container {
 		position: relative;
 		height: 100vh;
