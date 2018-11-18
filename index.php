@@ -104,6 +104,5 @@ if(!isset($language)) {
 		</div>
 	</div>
 	<script src="assets/script.js" charset="utf-8"></script>
-
 </body>
 </html>

@@ -369,6 +369,19 @@ Mobile body
 	background-color: #8c8c8c;
 	border-color: #d3d3d3;
 }
+	@keyframes easeIn {
+		0% {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+		100% {
+		transform: translateY(0);
+		}
+	}
+	.start-header {
+		animation: 1s ease-in 0s 1 easeIn;
+		height: 1rem;
+	}
 
 /*
 ==============================================
@@ -536,6 +549,20 @@ Form section desktop
 		opacity: 1;
 		transform: scale(1);
 		transition: opacity 0s, transform 0s;
+	}
+
+		@keyframes easeIn {
+		0% {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+		100% {
+		transform: translateY(0);
+		}
+	}
+	.start-header {
+		animation: 1s ease-in 0s 1 easeIn;
 
 	}
+
 }
