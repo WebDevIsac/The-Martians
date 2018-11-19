@@ -151,7 +151,7 @@ Navigation bar
 
 .logo-wrapper a{
 	position: relative;
-	padding-bottom: 4px;
+	padding-bottom: 5px;
 }
 
 .logo-img {
@@ -161,7 +161,7 @@ Navigation bar
 
 .nav-button a{
 	font-size: 1.4rem;
-	padding-bottom: 17px;
+	padding-bottom: 18px;
 }
 
 .nav-container {
@@ -279,6 +279,7 @@ Mobile body
 }
 
 .slide {
+	display: none;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -291,6 +292,9 @@ Mobile body
 }
 
 .active-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: static;
 	opacity: 1;
 	transform: scale(1);
@@ -547,6 +551,9 @@ Media Queries
 
 	.slide {
 		position: relative;
+		display: flex;
+		justify-content: center;
+
 		opacity: 1;
 		transform: scale(1);
 		transition: opacity 0s, transform 0s;
