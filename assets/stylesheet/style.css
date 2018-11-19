@@ -70,6 +70,10 @@ a {
 	color: rgba(0, 0, 0, 1);
 }
 
+footer {
+	display: none;
+}
+
 /*
 ==============================================
 Form section mobile
@@ -311,23 +315,6 @@ Mobile body
 	width: 80vw;
 	color: white;
 	line-height: normal;
-}
-
-footer {
-	bottom: 0;
-	border-top: 1px solid lightgrey;
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-	font-weight: 200;
-}
-
-footer div {
-	margin: 1rem;
-}
-
-footer li {
-	margin: 0.6rem;
 }
 
 .buttons {
