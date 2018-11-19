@@ -66,12 +66,6 @@ function reset () {
 			sliderImages[i].classList.remove('active-image');
 		}
 	}
-	// For desktop
-	else if (window.innerWidth >= 900) {
-		for (let i = 0; i < sliderImages.length; i++) {
-			allButtons[i].classList.remove('active-button');
-		}
-	}
 }
 
 // Show first image after reload
@@ -82,11 +76,6 @@ function startSlide () {
 		allButtons[0].classList.add('active-button');
 		sliderImages[0].classList.add('active-image');
 		current = 0;
-	}
-	// For desktop
-	else if (window.innerWidth >= 900) {
-		reset();
-		allButtons[0].classList.add('active-button');
 	}
 }
 
@@ -101,11 +90,6 @@ allButtons[0].addEventListener('click', () => {
 			current = 0;
 		}
 	}
-	// For desktop
-	else if (window.innerWidth >= 900) {
-		reset();
-		allButtons[0].classList.add('active-button');
-	}
 });
 
 // Show second image after click
@@ -118,11 +102,6 @@ allButtons[1].addEventListener('click', () => {
 			sliderImages[1].classList.add('active-image');
 			current = 1;
 		}
-	}
-	// For desktop
-	else if (window.innerWidth >= 900) {
-		reset();
-		allButtons[1].classList.add('active-button');
 	}
 });
 
@@ -137,11 +116,6 @@ allButtons[2].addEventListener('click', () => {
 			sliderImages[2].classList.add('active-image');
 			current = 2;
 		}
-	}
-	// For desktop
-	else if (window.innerWidth >= 900) {
-		reset();
-		allButtons[2].classList.add('active-button');
 	}
 });
 
