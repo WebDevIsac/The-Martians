@@ -70,62 +70,57 @@ a {
 	color: rgba(0, 0, 0, 1);
 }
 
-a:hover {
-	transition: 0.3s ease;
-	color: green;
-	border-bottom: 6px solid green;
-}
 /*
 ==============================================
 Form section mobile
 ==============================================
 */
-	.form {
-		width: 55vw;
-		height: 35vh;
-		background-color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	.form h1 {
-		color: black !important;
-		font-size: 1rem !important;
-		margin-bottom: 0.2rem;
-		width: 45vw !important;
-	}
+.form {
+	width: 55vw;
+	height: 35vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.form h1 {
+	color: black !important;
+	font-size: 1rem !important;
+	margin-bottom: 0.2rem;
+	width: 45vw !important;
+}
 
-	.form input {
-		background-color: #FFF;
-		border: 1px solid darkgrey;
-		width: 45vw;
-		margin-bottom: 0.3rem;
-		padding: 0.5rem;
-	}
-	.form button {
-		color: white;
-		background-color: #202B51;
-		height: 4vh;
-		border: none;
-		width: 20vw;
-		font-size: 0.6rem;
-	}
-	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-		font-size: 0.6rem;
-		opacity: 0.4;
-	}
+.form input {
+	background-color: #FFF;
+	border: 1px solid darkgrey;
+	width: 45vw;
+	margin-bottom: 0.3rem;
+	padding: 0.5rem;
+}
+.form button {
+	color: white;
+	background-color: #202B51;
+	height: 4vh;
+	border: none;
+	width: 20vw;
+	font-size: 0.6rem;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-size: 0.6rem;
+	opacity: 0.4;
+}
 
-	:-ms-input-placeholder { /* Internet Explorer 10-11 */
-		font-size: 0.6rem;
-		opacity: 0.4;
-	}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-size: 0.6rem;
+	opacity: 0.4;
+}
 
-	::-ms-input-placeholder { /* Microsoft Edge */
-		font-size: 0.5rem;
-		opacity: 0.4;
-	}
+::-ms-input-placeholder { /* Microsoft Edge */
+	font-size: 0.5rem;
+	opacity: 0.4;
+}
 
 
 /*
@@ -318,22 +313,22 @@ Mobile body
 	line-height: normal;
 }
 
-	footer {
-		bottom: 0;
-		border-top: 1px solid lightgrey;
-		display: flex;
-		justify-content: space-between;
-		align-content: center;
-		font-weight: 200;
-	}
+footer {
+	bottom: 0;
+	border-top: 1px solid lightgrey;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	font-weight: 200;
+}
 
-	footer div {
-		margin: 1rem;
-	}
+footer div {
+	margin: 1rem;
+}
 
-	footer li {
-		margin: 0.6rem;
-	}
+footer li {
+	margin: 0.6rem;
+}
 
 .buttons {
 	position: absolute;
@@ -369,19 +364,19 @@ Mobile body
 	background-color: #8c8c8c;
 	border-color: #d3d3d3;
 }
-	@keyframes easeIn {
-		0% {
-			opacity: 0;
-			transform: translateY(-100%);
-		}
-		100% {
+@keyframes easeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	100% {
 		transform: translateY(0);
-		}
 	}
-	.start-header {
-		animation: 1s ease-in 0s 1 easeIn;
-		height: 1rem;
-	}
+}
+.start-header {
+	animation: 1s ease-in 0s 1 easeIn;
+	height: 1rem;
+}
 
 /*
 ==============================================
@@ -401,7 +396,7 @@ Media Queries
 
 /* desktop view */
 @media only screen and (min-width: 900px) {
-	a:hover {
+	.nav-container a:hover {
 		transition: 0.3s ease;
 		color: green;
 		border-bottom: 10px solid green;
@@ -488,11 +483,12 @@ Media Queries
 	footer li {
 		margin: 0.6rem;
 	}
+
 	/*
-==============================================
-Form section desktop
-==============================================
-*/
+	==============================================
+	Form section desktop
+	==============================================
+	*/
 	.form {
 		width: 30vw;
 		height: 40vh;
@@ -537,7 +533,7 @@ Form section desktop
 	::-ms-input-placeholder { /* Microsoft Edge */
 		font-size: 1rem;
 		opacity: 0.4;
-  }
+	}
 
 	.container {
 		position: relative;
@@ -551,13 +547,13 @@ Form section desktop
 		transition: opacity 0s, transform 0s;
 	}
 
-		@keyframes easeIn {
+	@keyframes easeIn {
 		0% {
 			opacity: 0;
 			transform: translateY(-100%);
 		}
 		100% {
-		transform: translateY(0);
+			transform: translateY(0);
 		}
 	}
 	.start-header {

@@ -17,47 +17,49 @@ if(!isset($language)) {
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<title>The Martians</title>
 </head>
+
 <body>
-	<div id="top"></div>
 
+	<header>
 
-	<nav class="nav-container">
-		<div class="logo-container"><div class="logo-wrapper"><a class="active" href="#home"><img class="logo-img" src="assets/images/saabLogo.png" alt=""></a></div></div>
+		<nav class="nav-container">
+			<div class="logo-container"><div class="logo-wrapper"><a class="active" href="#home"><img class="logo-img" src="assets/images/saabLogo.png" alt=""></a></div></div>
 
-		<!-- Desktop Navigation  -->
+			<!-- Desktop Navigation  -->
 
-		<div class="desk-nav">
-			<div class="email-desk nav-button"><a href="#email">Email</a></div>
-			<div class="catalogue-desk nav-button"><a  href="#catalogue">Produkt katalog</a></div>
-			<div class="lang-sv-desk nav-button"><a href="?lang=sv">SV</a></div>
-			<div class="lang-en-desk nav-button"><a href="?lang=en">EN</a></div>
-		</div>
-		<!-- Burger menu icon -->
+			<div class="desk-nav">
+				<div class="email-desk nav-button"><a href="#email">Email</a></div>
+				<div class="catalogue-desk nav-button"><a  href="#catalogue">Produkt katalog</a></div>
+				<div class="lang-sv-desk nav-button"><a href="?lang=sv">SV</a></div>
+				<div class="lang-en-desk nav-button"><a href="?lang=en">EN</a></div>
+			</div>
+			<!-- Burger menu icon -->
 
-		<div class="burger-icon" id="burger-icon">
-			<div id="bar-one" class="bar-one"></div>
-			<div id="bar-two" class="bar-two"></div>
-			<div id="bar-three" class="bar-three"></div>
-		</div>
-
-		<!-- Mobile menu  -->
-
-		<div class="mobile-menu" id="mobile-menu">
-
-			<div class="mobile-menu-top">
-				<div class="email-mobile"><a href="#email">Email</a></div>
-				<div class="catalogue-mobile"><a href="#catalogue">Produkt katalog</a></div>
+			<div class="burger-icon" id="burger-icon">
+				<div id="bar-one" class="bar-one"></div>
+				<div id="bar-two" class="bar-two"></div>
+				<div id="bar-three" class="bar-three"></div>
 			</div>
 
-			<div class="mobile-menu-bot">
-				<div class="lang-container">
-					<div class="lang-sv-mobile"><a href="?lang=sv">SV</a></div>
-					<div class="lang-en-mobile"><a href="?lang=en">EN</a></div>
+			<!-- Mobile menu  -->
+
+			<div class="mobile-menu" id="mobile-menu">
+
+				<div class="mobile-menu-top">
+					<div class="email-mobile"><a href="#email">Email</a></div>
+					<div class="catalogue-mobile"><a href="#catalogue">Produkt katalog</a></div>
 				</div>
-			</div>
 
-		</div>
-	</nav>
+				<div class="mobile-menu-bot">
+					<div class="lang-container">
+						<div class="lang-sv-mobile"><a href="?lang=sv">SV</a></div>
+						<div class="lang-en-mobile"><a href="?lang=en">EN</a></div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</header>
 
 
 	<!-- Start -->
@@ -85,6 +87,7 @@ if(!isset($language)) {
 				<a href="#email"></a>
 				<a href="#catalogue"></a>
 			</div>
+
 			<footer>
 				<div>
 					<ul>
@@ -97,12 +100,15 @@ if(!isset($language)) {
 					<ul>
 						<li><a href="#">FS 1.0</a></li>
 						<li><a href="#">Contact us</a></li>
-						<li><a href="#">Privacy policy</a></li>
+						<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws">Privacy policy</a></li>
 					</ul>
 				</div>
 			</footer>
+
 		</div>
 	</div>
+
 	<script src="assets/script.js" charset="utf-8"></script>
+
 </body>
 </html>
