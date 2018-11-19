@@ -256,7 +256,7 @@ Mobile body
 */
 
 .container {
-	position: fixed;
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	z-index: 1;
@@ -484,6 +484,10 @@ Media Queries
 		margin: 0.6rem;
 	}
 
+	footer a:hover{
+		color: #D0D7DC;
+	}
+
 	/*
 	==============================================
 	Form section desktop
@@ -520,6 +524,10 @@ Media Queries
 		width: 23vw;
 		font-size: 1rem;
 	}
+	.form button:hover {
+		border: 1px solid white;
+		cursor: pointer;
+	}
 	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 		font-size: 1rem;
 		opacity: 0.4;
@@ -537,7 +545,6 @@ Media Queries
 
 	.container {
 		position: relative;
-		height: 100vh;
 	}
 
 	.slide {

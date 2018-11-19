@@ -88,25 +88,25 @@ if(!isset($language)) {
 				<a href="#catalogue"></a>
 			</div>
 
-			<footer>
-				<div>
-					<ul>
-						<li><a href="#"><span class="fab fa-facebook"></span> Facebook</a></li>
-						<li><a href="#"><span class="fab fa-twitter"></span> Twitter</a></li>
-						<li><a href="#"><span class="fab fa-instagram"></span> Instagram</a></li>
-					</ul>
-				</div>
-				<div>
-					<ul>
-						<li><a href="#">FS 1.0</a></li>
-						<li><a href="#">Contact us</a></li>
-						<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws">Privacy policy</a></li>
-					</ul>
-				</div>
-			</footer>
 
 		</div>
 	</div>
+	<footer>
+		<div>
+			<ul>
+				<li><a href="#"><span class="fab fa-facebook"></span> Facebook</a></li>
+				<li><a href="#"><span class="fab fa-twitter"></span> Twitter</a></li>
+				<li><a href="#"><span class="fab fa-instagram"></span> Instagram</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li><a href="#">FS 1.0</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws">Privacy policy</a></li>
+			</ul>
+		</div>
+	</footer>
 
 	<script src="assets/script.js" charset="utf-8"></script>
 
