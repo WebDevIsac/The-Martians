@@ -49,6 +49,17 @@ table {
 
 /*
 ==============================================
+Form section mobile
+==============================================
+*/
+
+@font-face {
+font-family: "AktivGrotesk";
+src: url("../fonts/AktivGrotesk.otf");
+}
+
+/*
+==============================================
 Costum styles
 ==============================================
 */
@@ -62,7 +73,7 @@ Costum styles
 body {
 	font-size: 1.2rem;
 	letter-spacing: .5px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Aktiv Grotesk', sans-serif;
 }
 
 a {
@@ -79,6 +90,7 @@ footer {
 Form section mobile
 ==============================================
 */
+
 .form {
 	width: 55vw;
 	height: 35vh;
