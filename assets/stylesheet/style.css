@@ -364,6 +364,7 @@ footer li {
 	background-color: #8c8c8c;
 	border-color: #d3d3d3;
 }
+
 @keyframes easeIn {
 	0% {
 		opacity: 0;
@@ -435,13 +436,11 @@ Media Queries
 	}
 
 	.buttons {
-		position: fixed;
-		left: 100%;
-		bottom: 50%;
-		margin-bottom: -50px;
-		flex-direction: column;
-		height: 100px;
-		width: 25px;
+		display: none;
+	}
+
+	.buttons > a {
+		display: none;
 	}
 
 	.active{
