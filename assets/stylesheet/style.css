@@ -90,6 +90,28 @@ footer {
 Form section mobile
 ==============================================
 */
+.download-form {
+		width: 55vw;
+		height: 35vh;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.download-form a {
+		color: inherit;
+	}
+
+	.download-form img {
+		background-repeat: no-repeat;
+		max-width:100%;
+		max-height:100%;
+		margin-top: 0;
+		height: 40vh;
+	}
 
 .form {
 	width: 55vw;
@@ -267,6 +289,7 @@ Mobile menu
 	padding: 5px;
 	border-left: 1px solid black
 }
+
 /*
 ==============================================
 Mobile body
@@ -329,6 +352,7 @@ Mobile body
 	color: white;
 	padding-bottom: 1.5rem;
 }
+
 .slide-content p {
 	width: 80vw;
 	color: white;
@@ -379,242 +403,9 @@ Mobile body
 		transform: translateY(0);
 	}
 }
+
 .start-header {
 	animation: 1s ease-in 0s 1 easeIn;
 	height: 1rem;
 }
 
-/*
-==============================================
-Media Queries
-==============================================
-*/
-
-/* Mobile view landscape  */
-@media only screen and (max-width: 850px) and (orientation: landscape) {
-	.nav-container {
-		height: 15vh;
-	}
-	.burger-icon {
-		margin: -5px 5px 0 0;
-	}
-}
-
-/* desktop view */
-@media only screen and (min-width: 900px) {
-
-/*
-==============================================
-Header
-==============================================
-*/
-
-	.nav-container {
-		justify-content: space-between;
-		width: 100vw;
-		height: 10vh;
-	}
-
-	.nav-container a:hover {
-		transition: 0.3s ease;
-		color: green;
-		border-bottom: 10px solid green;
-	}
-
-	.logo-container {
-		justify-content: flex-start;
-		width: auto;
-		margin: 4vw;
-	}
-
-	.burger-icon {
-		display: none;
-	}
-
-	.desk-nav {
-		display: flex;
-		align-items: center;
-	}
-
-	.email-desk {
-		margin: 0px 9vw 0 0;
-	}
-
-	.catalogue-desk {
-		margin: 0 13vw 0 0;
-	}
-
-	.lang-sv-desk {
-		border-right: 1px solid black;
-		padding-right: 5px;
-	}
-	.lang-en-desk {
-		border-left: 1px solid black;
-		padding-left: 5px;
-		margin-right: 7vw;
-	}
-
-	.active{
-		border-bottom: 10px solid green;
-		transition: 0.3s ease;
-	}
-
-/*
-==============================================
-body
-==============================================
-*/
-
-	.container {
-		position: relative;
-	}
-
-	.buttons {
-		display: none;
-	}
-
-	.buttons > a {
-		display: none;
-	}
-
-	.start-header {
-		height: 1rem ;
-		font-size: 5rem;
-		width: 80vw ;
-	}
-	.slide-content {
-		width: 45vw;
-		font-size: 4rem;
-		color: white;
-		padding-bottom: 1.5rem;
-	}
-
-	.slide-content p {
-		width: 45vw;
-		font-size: 1.4rem;
-		color: white;
-		line-height: normal;
-	}
-
-
-
-	.slide {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		opacity: 1;
-		transform: scale(1);
-		transition: opacity 0s, transform 0s;
-	}
-
-	footer {
-		bottom: 0;
-		border-top: 1px solid lightgrey;
-		display: flex;
-		justify-content: space-between;
-		align-content: center;
-		font-weight: 200;
-	}
-
-	footer div {
-		margin: 1rem;
-	}
-
-	footer li {
-		margin: 0.6rem;
-	}
-
-	footer a:hover{
-		color: #D0D7DC;
-	}
-
-	/*
-	==============================================
-	Form section desktop
-	==============================================
-	*/
-	.download-form {
-		width: 30vw;
-		background-color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	.download-form a {
-		color: inherit;
-	}
-	.download-form img {
-		background-repeat: no-repeat;
-		max-width:100%;
-		max-height:100%;
-		margin-top: 0;
-		height: 40vh;
-	}
-	.form {
-		width: 30vw;
-		height: 40vh;
-		background-color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	.form h1 {
-		color: black;
-		font-size: 1.5rem;
-		margin-bottom: 1rem;
-	}
-
-	.form input {
-		background-color: #FFF;
-		border: 2px solid lightgrey;
-		width: 25vw;
-		margin-bottom: 1rem;
-		padding: 1rem;
-	}
-	.form button, .download-form button {
-		color: white;
-		background-color: #202B51;
-		height: 6vh;
-		border: none;
-		width: 23vw;
-		font-size: 1rem;
-		margin: 2rem;
-	}
-	.form button:hover {
-		border: 1px solid white;
-		cursor: pointer;
-	}
-	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-		font-size: 1rem;
-		opacity: 0.4;
-	}
-
-	:-ms-input-placeholder { /* Internet Explorer 10-11 */
-		font-size: 1rem;
-		opacity: 0.4;
-	}
-
-	::-ms-input-placeholder { /* Microsoft Edge */
-		font-size: 1rem;
-		opacity: 0.4;
-	}
-
-	@keyframes easeIn {
-		0% {
-			opacity: 0;
-			transform: translateY(-100%);
-		}
-		100% {
-			transform: translateY(0);
-		}
-	}
-	.start-header {
-		animation: 1s ease-in 0s 1 easeIn;
-
-	}
-
-}
