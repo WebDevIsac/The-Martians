@@ -90,10 +90,9 @@ footer {
 Form section mobile
 ==============================================
 */
-.download-form {
-		width: 55vw;
-		height: 35vh;
-		background-color: white;
+	.download-form {
+		width: 30vw;
+		height: 40vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -110,7 +109,14 @@ Form section mobile
 		max-width:100%;
 		max-height:100%;
 		margin-top: 0;
-		height: 40vh;
+		height: 30vh;
+	}
+
+	.button-container {
+		background-color: white;
+		margin-top: 0;
+		width: 30vw;
+		padding-bottom: 1rem;
 	}
 
 .form {
@@ -137,12 +143,12 @@ Form section mobile
 	margin-bottom: 0.3rem;
 	padding: 0.5rem;
 }
-.form button {
+.form button, .download-form button {
 	color: white;
 	background-color: #202B51;
 	height: 4vh;
 	border: none;
-	width: 20vw;
+	width: 45vw;
 	font-size: 0.6rem;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
