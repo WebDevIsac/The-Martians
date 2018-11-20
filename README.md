@@ -61,4 +61,4 @@ $ git clone https://github.com/WebDevIsac/The-Martians.git
 
 ### License
 
-The MIT License ([MIT](https://raw.githubusercontent.com/MRavantti/fake-news/master/LICENSE))
+The MIT License ([MIT](https://raw.githubusercontent.com/WebDevIsac/The-Martians/master/LICENSE))
