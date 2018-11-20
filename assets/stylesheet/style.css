@@ -318,9 +318,6 @@ Mobile body
 	width: 100%;
 	position: absolute;
 	top: 0;
-	opacity: 0;
-	transform: scale(0.9);
-	transition: opacity 1s linear, transform 0.8s linear;
 }
 
 .active-image {
@@ -328,8 +325,18 @@ Mobile body
 	justify-content: center;
 	align-items: center;
 	position: static;
-	opacity: 1;
-	transform: scale(1);
+	animation: 1s ease-in 0s fadeIn;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 .slide1 {
@@ -410,7 +417,7 @@ Mobile body
 }
 
 .start-header {
-	animation: 1s ease-in 0s 1 easeIn;
+	animation: 2s ease-in 0s 1 easeIn;
 	height: 1rem;
 }
 
