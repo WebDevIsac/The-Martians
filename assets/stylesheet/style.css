@@ -323,7 +323,7 @@ Mobile body
 	text-align: center;
 }
 
-.slide-content h1 {
+.slide-content {
 	width: 80vw;
 	font-size: 2.2rem;
 	color: white;
@@ -402,6 +402,13 @@ Media Queries
 
 /* desktop view */
 @media only screen and (min-width: 900px) {
+
+/*
+==============================================
+Header
+==============================================
+*/
+
 	.nav-container {
 		justify-content: space-between;
 		width: 100vw;
@@ -427,8 +434,6 @@ Media Queries
 	.desk-nav {
 		display: flex;
 		align-items: center;
-		text-transform: uppercase;
-		font-weight: 700;
 	}
 
 	.email-desk {
@@ -449,6 +454,21 @@ Media Queries
 		margin-right: 7vw;
 	}
 
+	.active{
+		border-bottom: 10px solid green;
+		transition: 0.3s ease;
+	}
+
+/*
+==============================================
+body
+==============================================
+*/
+
+	.container {
+		position: relative;
+	}
+
 	.buttons {
 		display: none;
 	}
@@ -457,16 +477,12 @@ Media Queries
 		display: none;
 	}
 
-	.active{
-		border-bottom: 10px solid green;
-		transition: 0.3s ease;
-	}
 	.start-header {
-		height: 1rem !important;
-		font-size: 5rem !important;
-		width: 80vw !important;
+		height: 1rem ;
+		font-size: 5rem;
+		width: 80vw ;
 	}
-	.slide-content h1 {
+	.slide-content {
 		width: 45vw;
 		font-size: 4rem;
 		color: white;
@@ -478,6 +494,17 @@ Media Queries
 		font-size: 1.4rem;
 		color: white;
 		line-height: normal;
+	}
+
+
+
+	.slide {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		opacity: 1;
+		transform: scale(1);
+		transition: opacity 0s, transform 0s;
 	}
 
 	footer {
@@ -554,20 +581,6 @@ Media Queries
 	::-ms-input-placeholder { /* Microsoft Edge */
 		font-size: 1rem;
 		opacity: 0.4;
-	}
-
-	.container {
-		position: relative;
-	}
-
-	.slide {
-		position: relative;
-		display: flex;
-		justify-content: center;
-
-		opacity: 1;
-		transform: scale(1);
-		transition: opacity 0s, transform 0s;
 	}
 
 	@keyframes easeIn {

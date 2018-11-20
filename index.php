@@ -29,7 +29,7 @@ if(!isset($language)) {
 
 			<div class="desk-nav">
 				<div class="email-desk nav-button"><a href="#email">Email</a></div>
-				<div class="catalogue-desk nav-button"><a  href="#catalogue">Produkt katalog</a></div>
+				<div class="catalogue-desk nav-button"><a  href="#catalogue">Discover FS.1.0</a></div>
 				<div class="lang-sv-desk nav-button"><a href="?lang=sv">SV</a></div>
 				<div class="lang-en-desk nav-button"><a href="?lang=en">EN</a></div>
 			</div>
@@ -47,7 +47,7 @@ if(!isset($language)) {
 
 				<div class="mobile-menu-top">
 					<div class="email-mobile"><a href="#email">Email</a></div>
-					<div class="catalogue-mobile"><a href="#catalogue">Produkt katalog</a></div>
+					<div class="catalogue-mobile"><a href="#catalogue">Discover FS.1.0</a></div>
 				</div>
 
 				<div class="mobile-menu-bot">
