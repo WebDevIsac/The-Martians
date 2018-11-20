@@ -78,8 +78,7 @@ if(!isset($language)) {
 			</div>
 			<div class="slide slide3 section" id="catalogue">
 				<div class="slide-content">
-					<h1><?= $language['title']; ?></h1>
-					<p><?= $language['content']; ?></p>
+					<?php require __DIR__.'/assets/download.php' ;?>
 				</div>
 			</div>
 			<div class="buttons">
