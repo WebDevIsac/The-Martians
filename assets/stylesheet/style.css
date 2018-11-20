@@ -152,7 +152,7 @@ Navigation bar
 	align-self: center;
 }
 
-.logo-wrapper a{
+.logo-wrapper a {
 	position: relative;
 	padding-bottom: 5px;
 }
@@ -162,7 +162,7 @@ Navigation bar
 	width: 130px;
 }
 
-.nav-button a{
+.nav-button a {
 	font-size: 1.4rem;
 	padding-bottom: 18px;
 }
@@ -427,8 +427,6 @@ Media Queries
 	.desk-nav {
 		display: flex;
 		align-items: center;
-		text-transform: uppercase;
-		font-weight: 700;
 	}
 
 	.email-desk {
@@ -506,6 +504,25 @@ Media Queries
 	Form section desktop
 	==============================================
 	*/
+	.download-form {
+		width: 30vw;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.download-form a {
+		color: inherit;
+	}
+	.download-form img {
+		background-repeat: no-repeat;
+		max-width:100%;
+		max-height:100%;
+		margin-top: 0;
+		height: 40vh;
+	}
 	.form {
 		width: 30vw;
 		height: 40vh;
@@ -529,13 +546,14 @@ Media Queries
 		margin-bottom: 1rem;
 		padding: 1rem;
 	}
-	.form button {
+	.form button, .download-form button {
 		color: white;
 		background-color: #202B51;
 		height: 6vh;
 		border: none;
 		width: 23vw;
 		font-size: 1rem;
+		margin: 2rem;
 	}
 	.form button:hover {
 		border: 1px solid white;
