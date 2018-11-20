@@ -210,7 +210,7 @@ body
 		margin: 2rem;
 	}
 
-	.form button:hover {
+	.form button:hover, .download-form button:hover {
 		border: 1px solid white;
 		cursor: pointer;
 	}
