@@ -87,8 +87,6 @@ if(!isset($language)) {
 				<a href="#email"></a>
 				<a href="#catalogue"></a>
 			</div>
-
-
 		</div>
 	</div>
 	<footer>
