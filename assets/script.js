@@ -89,6 +89,9 @@ function home () {
 		reset();
 		allButtons[0].classList.add('active-button');
 		sliderImages[0].classList.add('active-image');
+		document.getElementById("burger-icon").classList.remove("transform");
+		document.getElementById("mobile-menu").classList.remove("toggle");
+
 		current = 1;
 	}
 }
@@ -99,6 +102,8 @@ function email () {
 		reset();
 		allButtons[1].classList.add('active-button');
 		sliderImages[1].classList.add('active-image');
+		document.getElementById("burger-icon").classList.remove("transform");
+		document.getElementById("mobile-menu").classList.remove("toggle");
 		current = 2;
 	}
 }
@@ -110,6 +115,8 @@ function catalogue () {
 		reset();
 		allButtons[2].classList.add('active-button');
 		sliderImages[2].classList.add('active-image');
+		document.getElementById("burger-icon").classList.remove("transform");
+		document.getElementById("mobile-menu").classList.remove("toggle");
 		current = 3;
 	}
 }
