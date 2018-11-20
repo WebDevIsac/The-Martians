@@ -91,7 +91,7 @@ Form section mobile
 ==============================================
 */
 	.download-form {
-		width: 30vw;
+		width: 55vw;
 		height: 40vh;
 		display: flex;
 		flex-direction: column;
@@ -110,12 +110,13 @@ Form section mobile
 		max-height:100%;
 		margin-top: 0;
 		height: 30vh;
+		width: 55vw;
 	}
 
 	.button-container {
 		background-color: white;
 		margin-top: 0;
-		width: 30vw;
+		width: 55vw;
 		padding-bottom: 1rem;
 	}
 
