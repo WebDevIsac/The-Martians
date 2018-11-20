@@ -184,10 +184,10 @@ Navigation bar
 .logo-wrapper a {
 	position: relative;
 	padding-bottom: 5px;
+	z-index: 10;
 }
 
 .logo-img {
-	z-index: 2;
 	width: 130px;
 }
 
@@ -318,9 +318,6 @@ Mobile body
 	width: 100%;
 	position: absolute;
 	top: 0;
-	opacity: 0;
-	transform: scale(0.9);
-	transition: opacity 1s linear, transform 0.8s linear;
 }
 
 .active-image {
@@ -328,8 +325,18 @@ Mobile body
 	justify-content: center;
 	align-items: center;
 	position: static;
-	opacity: 1;
-	transform: scale(1);
+	animation: 1s ease-in 0s fadeIn;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 .slide1 {
@@ -371,34 +378,32 @@ Mobile body
 	bottom: 0;
 	margin-bottom: 20px;
 	left: 50%;
-	margin-left: -50px;
-	width: 100px;
+	margin-left: -100px;
+	width: 200px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 	align-items: center;
 }
 
 .buttons > a {
-	width: 25px;
-	height: 25px;
+	width: 75px;
+	height: 10px;
 	display: block;
 	text-decoration: none;
-	background-color: #d3d3d3;
-	border: 0.8px solid #8c8c8c;
-	border-radius: 100%;
+	background-color: #008000;
+	border: 1px solid #004000;
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
 }
 
 .buttons > a:hover {
-	background-color: #8c8c8c;
-	border-color: #d3d3d3;
+	background-color: #004000;
+	border-color: #008000;
 }
 
 .buttons > .active-button {
-	background-color: #8c8c8c;
-	border-color: #d3d3d3;
+	background-color: #004000;
+	border-color: #008000;
 }
 
 @keyframes easeIn {
@@ -412,7 +417,6 @@ Mobile body
 }
 
 .start-header {
-	animation: 1s ease-in 0s 1 easeIn;
+	animation: 2s ease-in 0s 1 easeIn;
 	height: 1rem;
 }
-
