@@ -242,4 +242,9 @@ body
 	.start-header {
 		animation: 1s ease-in 0s 1 easeIn;
 	}
+	.start-header-bg {
+		background-color: rgba(255, 255, 255, 0.4);
+		color: #343b61;
+		padding: 25px;
+	}
 }
