@@ -418,6 +418,8 @@ Media Queries
 	.desk-nav {
 		display: flex;
 		align-items: center;
+		text-transform: uppercase;
+		font-weight: 700;
 	}
 
 	.email-desk {
