@@ -71,7 +71,7 @@ function reset () {
 // Show first image after reload
 function startSlide () {
 	reset();
-	current = -1;
+	current = 0;
 	home();
 }
 
@@ -85,32 +85,32 @@ allButtons[1].addEventListener('click', email);
 allButtons[2].addEventListener('click', catalogue);
 
 function home () {
-	if (current !== 0) {
+	if (current !== 1) {
 		reset();
 		allButtons[0].classList.add('active-button');
 		sliderImages[0].classList.add('active-image');
-		current = 0;
+		current = 1;
 	}
 }
 
 // Show second image after click¨
 function email () {
-	if (current !== 1) {
+	if (current !== 2) {
 		reset();
 		allButtons[1].classList.add('active-button');
 		sliderImages[1].classList.add('active-image');
-		current = 1;
+		current = 2;
 	}
 }
 
 
 // Show third image after click
 function catalogue () {
-	if (current !== 2) {
+	if (current !== 3) {
 		reset();
 		allButtons[2].classList.add('active-button');
 		sliderImages[2].classList.add('active-image');
-		current = 2;
+		current = 3;
 	}
 }
 
