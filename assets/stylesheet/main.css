@@ -1,0 +1,42 @@
+
+/*
+==============================================
+Fontface
+==============================================
+*/
+
+@font-face {
+font-family: "AktivGrotesk";
+src: url("../fonts/AktivGrotesk.otf");
+}
+
+/*
+==============================================
+General settings
+==============================================
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.2rem;
+	letter-spacing: .5px;
+	font-family: 'Aktiv Grotesk', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
+}
+
+li {
+	list-style: none;
+}
+
+footer {
+	display: none;
+}

@@ -11,11 +11,15 @@ if(!isset($language)) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="fonts">
-	<link rel="stylesheet" href="assets/stylesheet/style.css">
+	<link rel="css sanitize" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.css">
+	<link rel="stylesheet" href="assets/stylesheet/main.css">
+	<link rel="stylesheet" href="assets/stylesheet/navbar.css">
+	<link rel="stylesheet" href="assets/stylesheet/mobile-menu.css">
+	<link rel="stylesheet" href="assets/stylesheet/mobile-body.css">
+	<link rel="stylesheet" href="assets/stylesheet/form.css">
+	<link rel="stylesheet" href="assets/stylesheet/mediaquery.css">
 	<link rel="icon" href="assets/images/saabfavicon.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/stylesheet/mediaquery.css">
 	<title>The Martians</title>
 </head>
 
