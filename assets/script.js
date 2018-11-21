@@ -77,9 +77,17 @@ function startSlide () {
 }
 
 // Click event for slide
-homeBtn.addEventListener('click', home);
-emailBtn.addEventListener('click', email);
-catalogueBtn.addEventListener('click', catalogue);
+homeBtn.addEventListener('click', () => {
+	home();
+});
+emailBtn.addEventListener('click', () => {
+	toggleMenu();
+	email();
+});
+catalogueBtn.addEventListener('click', () => {
+	toggleMenu();
+	catalogue();
+});
 
 allButtons[0].addEventListener('click', home);
 allButtons[1].addEventListener('click', email);
@@ -88,7 +96,6 @@ allButtons[2].addEventListener('click', catalogue);
 function home () {
 	if (current !== 1) {
 		reset();
-		toggleMenu();
 		allButtons[0].classList.add('active-button');
 		sliderImages[0].classList.add('active-image');
 
@@ -100,7 +107,6 @@ function home () {
 function email () {
 	if (current !== 2) {
 		reset();
-		toggleMenu();
 		allButtons[1].classList.add('active-button');
 		sliderImages[1].classList.add('active-image');
 		current = 2;
@@ -112,7 +118,6 @@ function email () {
 function catalogue () {
 	if (current !== 3) {
 		reset();
-		toggleMenu();
 		allButtons[2].classList.add('active-button');
 		sliderImages[2].classList.add('active-image');
 		current = 3;
