@@ -1,0 +1,123 @@
+/*
+==============================================
+Mobile body
+==============================================
+*/
+
+.container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.slide {
+	display: none;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.active-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: static;
+	animation: 1s ease-in 0s fadeIn;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.slide1 {
+	background-image: url(../images/Terrangbil_Jimmy_Haavisto.jpg);
+}
+
+.slide2 {
+	background-image: url(../images/Terrangbilmsno.jpg);
+}
+
+.slide3 {
+	background-image: url(../images/TeaserShot.jpg);
+}
+
+.slide-content {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.slide-content {
+	width: 80vw;
+	font-size: 2.2rem;
+	color: white;
+	padding-bottom: 1.5rem;
+}
+
+.slide-content p {
+	width: 80vw;
+	color: white;
+	line-height: normal;
+}
+
+.buttons {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 20px;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.buttons > a {
+	width: 75px;
+	height: 10px;
+	display: block;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #1E2B54;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+}
+
+.buttons > a:hover {
+	background-color: #1E2B54;
+	border-color: #FFFFFF;
+}
+
+.buttons > .active-button {
+	background-color: #1E2B54;
+	border-color: #FFFFFF;
+}
+
+@keyframes easeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.start-header {
+	animation: 2s ease-in 0s 1 easeIn;
+	height: 1rem;
+}

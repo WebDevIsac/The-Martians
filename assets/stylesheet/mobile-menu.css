@@ -1,0 +1,85 @@
+/*
+==============================================
+Burger icon
+==============================================
+*/
+
+.burger-icon {
+	position: absolute;
+	display: block;
+	height: auto;
+	right: 1vw;
+	z-index: 4;
+	padding: 15px 10px;
+	cursor: pointer;
+}
+
+.bar-one, .bar-two, .bar-three {
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.6s;
+	border-radius: 10px;
+}
+
+.transform .bar-one {
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.transform .bar-two {
+	opacity: 0;
+}
+
+.transform .bar-three {
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*
+==============================================
+Mobile menu
+==============================================
+*/
+
+.mobile-menu {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: white;
+	transform-origin: 0% 0%;
+	transform: translate(100%, 0);
+	transition: 0.5s;
+	justify-content: space-between;
+}
+
+.toggle {
+	transform: none;
+}
+
+.mobile-menu div {
+	padding: 10px;
+}
+
+.email-mobile {
+	margin-top: 10vh;
+}
+.catalogue-mobile {
+}
+
+.lang-container {
+	display: flex;
+	justify-content: center;
+}
+
+.lang-sv-mobile {
+	padding: 5px;
+	border-right: 1px solid black
+}
+
+.lang-en-mobile {
+	padding: 5px;
+	border-left: 1px solid black
+}
