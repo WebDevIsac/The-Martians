@@ -34,7 +34,7 @@ if(!isset($language)) {
 
 			<div class="desk-nav">
 				<div class="email-desk nav-button"><a href="#email">Email</a></div>
-				<div class="catalogue-desk nav-button"><a  href="#catalogue">Discover FS.1.0</a></div>
+				<div class="catalogue-desk nav-button"><a  href="#catalogue"><?= $language['nav-discover']; ?></a></div>
 				<div class="lang-sv-desk nav-button"><a href="?lang=sv">SV</a></div>
 				<div class="lang-en-desk nav-button"><a href="?lang=en">EN</a></div>
 			</div>
@@ -52,7 +52,7 @@ if(!isset($language)) {
 
 				<div class="mobile-menu-top">
 					<div class="email-mobile"><a href="#email">Email</a></div>
-					<div class="catalogue-mobile"><a href="#catalogue">Discover FS.1.0</a></div>
+					<div class="catalogue-mobile"><a href="#catalogue"><?= $language['nav-discover']; ?></a></div>
 				</div>
 
 				<div class="mobile-menu-bot">
@@ -104,8 +104,8 @@ if(!isset($language)) {
 		<div>
 			<ul>
 				<li><a href="#">FS 1.0</a></li>
-				<li><a href="#">Contact us</a></li>
-				<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws">Privacy policy</a></li>
+				<li><a href="#"><?= $language['footer-contact']; ?></a></li>
+				<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws"><?= $language['footer-policy']; ?></a></li>
 			</ul>
 		</div>
 	</footer>

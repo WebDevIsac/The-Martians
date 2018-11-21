@@ -6,7 +6,7 @@
 		<div>
 			<input type="name" name="name" placeholder="Name">
 			<input type="email" name="email" placeholder="Email">
-			<button><?= $language['button']; ?></button>
+			<button><?= $language['register-button']; ?></button>
 		</div>
 	</div>
 </div>
