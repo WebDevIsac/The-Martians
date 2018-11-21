@@ -29,14 +29,15 @@
 
 // Function to toggle class for the mobile menu
 
-	document.getElementById("burger-icon").addEventListener("click", () => {
+function toggleMenu () {
 
-	document.getElementById("burger-icon").classList.toggle("transform");
+document.getElementById("burger-icon").classList.toggle("transform");
 
-	document.getElementById("mobile-menu").classList.toggle("toggle");
+document.getElementById("mobile-menu").classList.toggle("toggle");
 
-});
+}
 
+document.getElementById("burger-icon").addEventListener("click", toggleMenu);
 
 // Function for smooth scrolling
 
@@ -76,9 +77,17 @@ function startSlide () {
 }
 
 // Click event for slide
-homeBtn.addEventListener('click', home);
-emailBtn.addEventListener('click', email);
-catalogueBtn.addEventListener('click', catalogue);
+homeBtn.addEventListener('click', () => {
+	home();
+});
+emailBtn.addEventListener('click', () => {
+	toggleMenu();
+	email();
+});
+catalogueBtn.addEventListener('click', () => {
+	toggleMenu();
+	catalogue();
+});
 
 allButtons[0].addEventListener('click', home);
 allButtons[1].addEventListener('click', email);
@@ -89,8 +98,6 @@ function home () {
 		reset();
 		allButtons[0].classList.add('active-button');
 		sliderImages[0].classList.add('active-image');
-		document.getElementById("burger-icon").classList.remove("transform");
-		document.getElementById("mobile-menu").classList.remove("toggle");
 
 		current = 1;
 	}
@@ -102,8 +109,6 @@ function email () {
 		reset();
 		allButtons[1].classList.add('active-button');
 		sliderImages[1].classList.add('active-image');
-		document.getElementById("burger-icon").classList.remove("transform");
-		document.getElementById("mobile-menu").classList.remove("toggle");
 		current = 2;
 	}
 }
@@ -115,8 +120,6 @@ function catalogue () {
 		reset();
 		allButtons[2].classList.add('active-button');
 		sliderImages[2].classList.add('active-image');
-		document.getElementById("burger-icon").classList.remove("transform");
-		document.getElementById("mobile-menu").classList.remove("toggle");
 		current = 3;
 	}
 }
