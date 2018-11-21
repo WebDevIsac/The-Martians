@@ -146,7 +146,7 @@ Form section mobile
 }
 .form button, .download-form button {
 	color: white;
-	background-color: #202B51;
+	background-color: #1E2B54;
 	height: 4vh;
 	border: none;
 	width: 45vw;
@@ -184,10 +184,10 @@ Navigation bar
 .logo-wrapper a {
 	position: relative;
 	padding-bottom: 5px;
+	z-index: 10;
 }
 
 .logo-img {
-	z-index: 2;
 	width: 130px;
 }
 
@@ -390,20 +390,20 @@ Mobile body
 	height: 10px;
 	display: block;
 	text-decoration: none;
-	background-color: #F4F4F4;
-	border: 1px solid #F4F4F4;
+	background-color: #FFFFFF;
+	border: 1px solid #1E2B54;
 	cursor: pointer;
 	transition: 0.3s ease-in;
 }
 
 .buttons > a:hover {
-	background-color: #1E2A54;
-	border-color: #F4F4F4;
+	background-color: #1E2B54;
+	border-color: #FFFFFF;
 }
 
 .buttons > .active-button {
-	background-color: #1E2A54;
-	border-color: #F4F4F4;
+	background-color: #1E2B54;
+	border-color: #FFFFFF;
 }
 
 @keyframes easeIn {
@@ -420,4 +420,3 @@ Mobile body
 	animation: 2s ease-in 0s 1 easeIn;
 	height: 1rem;
 }
-
