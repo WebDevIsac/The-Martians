@@ -1,10 +1,12 @@
 <form id="form" action="/" method="post" class="hidden">
 	<div class="form">
-			<h1>Signup to be a part of the adventure</h1>
+		<div>
+			<h1><?= $language['signup']; ?></h1>
+		</div>
 		<div>
 			<input type="name" name="name" placeholder="Name">
 			<input type="email" name="email" placeholder="Email">
-			<button>Register</button>
+			<button><?= $language['register-button']; ?></button>
 		</div>
 	</div>
 </form>
