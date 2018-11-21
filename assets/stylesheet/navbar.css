@@ -4,8 +4,17 @@ Navigation bar
 ==============================================
 */
 
+.nav-container {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
 .logo-container {
-	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-self: center;
@@ -13,28 +22,11 @@ Navigation bar
 
 .logo-wrapper a {
 	position: relative;
-	padding-bottom: 5px;
 	z-index: 10;
 }
 
 .logo-img {
-	width: 130px;
-}
-
-.nav-button a {
-	font-size: 1.4rem;
-	padding-bottom: 18px;
-}
-
-.nav-container {
-	position: fixed;
-	display: flex;
-	flex-direction: row;
-	background-color: white;
-	top: 0;
-	width: 100vw;
-	height: 9vh;
-	z-index: 2;
+	width: 25vh;
 }
 
 .desk-nav {

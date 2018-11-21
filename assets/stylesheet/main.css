@@ -6,8 +6,22 @@ Fontface
 */
 
 @font-face {
-font-family: "AktivGrotesk";
-src: url("../fonts/AktivGrotesk.otf");
+font-family: 'AktivGrotesk';
+src: url("../fonts/AktivGrotesk/AktivGrotesk.otf");
+}
+
+@font-face {
+	font-family: 'AktivGrotesk-Light';
+	src: url("../fonts/AktivGrotesk/AktivGrotesk-Light.otf");
+}
+
+@font-face {
+	font-family: 'AktivGrotesk-Medium';
+	src: url("../fonts/AktivGrotesk/AktivGrotesk-Medium.otf");
+}
+@font-face {
+	font-family: 'AktivGrotesk-Regular';
+	src: url("../fonts/AktivGrotesk/AktivGrotesk-Regular.otf");
 }
 
 /*
@@ -25,7 +39,6 @@ General settings
 body {
 	font-size: 1.2rem;
 	letter-spacing: .5px;
-	font-family: 'Aktiv Grotesk', sans-serif;
 }
 
 a {

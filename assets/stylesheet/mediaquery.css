@@ -36,7 +36,7 @@ Header
 	.nav-container {
 		justify-content: space-between;
 		width: 100vw;
-		height: 10vh;
+		height: 14vh;
 	}
 
 	.nav-container a:hover {
@@ -48,7 +48,7 @@ Header
 	.logo-container {
 		justify-content: flex-start;
 		width: auto;
-		margin: 4vw;
+		margin-left: 3vw;
 	}
 
 	.burger-icon {
@@ -60,27 +60,51 @@ Header
 		align-items: center;
 	}
 
-	.email-desk {
-		margin: 0px 9vw 0 0;
+	.nav-button a {
+
 	}
 
-	.catalogue-desk {
-		margin: 0 13vw 0 0;
+	.email-desk a{
+	height: 24px;
+	width: 59px;
+	font-family: 'AktivGrotesk-Regular';
+	font-size: 24px;
+	line-height: 28px;
+
 	}
 
-	.lang-sv-desk {
-		border-right: 1px solid black;
-		padding-right: 5px;
+	.catalogue-desk a{
+	height: 24px;
+	width: 192px;
+	font-family: 'AktivGrotesk-Regular';
+	font-size: 24px;
+	letter-spacing: 1.1px;
+	line-height: 28px;
+	margin-left: 6vw;
 	}
 
-	.lang-en-desk {
-		border-left: 1px solid black;
-		padding-left: 5px;
-		margin-right: 7vw;
+
+	.lang-sv-desk a {
+		font-family: 'AktivGrotesk-Medium';
+		height: 20px;
+		font-size: 20px;
+		line-height: 24px;
+		padding: 0 .6vw 0 0;
+		margin: 0 0 0 6.8vw;
+	}
+
+	.lang-en-desk  a{
+		font-family: 'AktivGrotesk-Medium';
+		height: 20px;
+		font-size: 20px;
+		line-height: 24px;
+		padding: 0 0 0 .6vw;
+		margin: 0 6.56vw 0 0;
+		border-left: 1px solid #000;
 	}
 
 	.active {
-		border-bottom: 10px solid #1E2B54;
+
 		transition: 0.3s ease;
 	}
 

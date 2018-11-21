@@ -28,7 +28,7 @@ if(!isset($language)) {
 	<header>
 
 		<nav class="nav-container">
-			<div class="logo-container"><div class="logo-wrapper"><a class="active" href="#home"><img class="logo-img" src="assets/images/saabLogo.png" alt=""></a></div></div>
+			<div class="logo-container"><div class="logo-wrapper"><a class="active" href="#home"><img class="logo-img" src="assets/images/desk-logo.svg" alt=""></a></div></div>
 
 			<!-- Desktop Navigation  -->
 
