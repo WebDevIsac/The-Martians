@@ -55,7 +55,19 @@ if(!isset($language)) {
 				<div class="mobile-menu-top">
 					<div class="email-mobile"><a href="#email">Email</a></div>
 					<div class="catalogue-mobile"><a href="#catalogue"><?= $language['nav-discover']; ?></a></div>
+
+					<div class="line"></div>
+
+					<div class="mob-footer-content">
+					<div class="mob-facebook"><a href="#">Facebook</a></div>
+					<div class="mob-instagram"><a href="#">Instagram</a></div>
+					<div class="mob-twitter"><a href="#">Twitter</a></div>
+					<div class="mob-fs"><a href="#">FS.1.0</a></div>
+					<div class="mob-contact"><a href="#">Contact us</a></div>
+					<div class="mob-policy"><a href="#">Privacy policy</a></div>
 				</div>
+				</div>
+
 
 				<div class="mobile-menu-bot">
 					<div class="lang-container">

@@ -6,6 +6,7 @@ Burger icon
 
 .burger-icon {
 	position: absolute;
+	align-self: center;
 	display: block;
 	height: auto;
 	right: 1vw;
@@ -59,14 +60,35 @@ Mobile menu
 	transform: none;
 }
 
-.mobile-menu div {
-	padding: 10px;
+.mobile-menu-top {
+	margin: 13vh 0 0 8vw;
 }
 
 .email-mobile {
-	margin-top: 10vh;
+	margin-bottom: 3vh;
+	font-size: 1.125rem;
 }
 .catalogue-mobile {
+	font-size: 1.125rem;
+}
+
+.line {
+	background-color: #000;
+	height: 1px;
+	width: 33vw;
+	margin: 3vh 0;
+}
+.mob-footer-content a{
+	font-family: 'AktivGrotesk-Light';
+	font-size: 0.875rem;
+	margin: 1vh 0;
+}
+.mobile-menu-bot{
+	margin-bottom: 3vh;
+}
+.mobile-menu-bot a{
+	font-family: 'AktivGrotesk-Medium';
+	font-size: 1.125rem;
 }
 
 .lang-container {

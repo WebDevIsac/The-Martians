@@ -8,12 +8,20 @@ Navigation bar
 	display: none;
 }
 
+.desk-nav {
+	display: none;
+}
+
 .mob-logo-container {
+	width: 100%;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
 }
 .mob-logo-img {
-	width: 25vh;
-	padding-bottom: 8.3vh;
+	width: 7.583rem;
+	height: 2.33rem;
 }
 
 .nav-container {
@@ -22,10 +30,7 @@ Navigation bar
 	flex-direction: row;
 	background-color: white;
 	top: 0;
+	height: 82px;
 	width: 100%;
 	z-index: 2;
-}
-
-.desk-nav {
-	display: none;
 }
