@@ -15,6 +15,7 @@ if(!isset($language)) {
 	<link rel="stylesheet" href="assets/stylesheet/style.css">
 	<link rel="icon" href="assets/images/saabfavicon.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheet/effects.css">
 	<link rel="stylesheet" type="text/css" href="assets/stylesheet/mediaquery.css">
 	<title>The Martians</title>
 </head>
@@ -45,7 +46,6 @@ if(!isset($language)) {
 			<!-- Mobile menu  -->
 
 			<div class="mobile-menu" id="mobile-menu">
-
 				<div class="mobile-menu-top">
 					<div class="email-mobile"><a href="#email">Email</a></div>
 					<div class="catalogue-mobile"><a href="#catalogue">Discover FS.1.0</a></div>
@@ -57,7 +57,6 @@ if(!isset($language)) {
 						<div class="lang-en-mobile"><a href="?lang=en">EN</a></div>
 					</div>
 				</div>
-
 			</div>
 		</nav>
 	</header>
@@ -74,7 +73,13 @@ if(!isset($language)) {
 			</div>
 			<div class="slide slide2 section" id="email">
 				<div class="slide-content">
-					<?php require __DIR__.'/assets/form.php'; ?>
+					<div class="wrap">
+					  <div class="circle-container">
+					    <div id="circleBtn" class="box1 box"></div>
+					  </div>
+					</div>
+					<h1><?= $language['test']; ?></h1>
+						<?php require __DIR__.'/assets/form.php' ;?>
 				</div>
 			</div>
 			<div class="slide slide3 section" id="catalogue">

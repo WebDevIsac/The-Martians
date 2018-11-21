@@ -122,3 +122,18 @@ function catalogue () {
 }
 
 startSlide();
+
+
+//testing
+const circles = document.querySelector('.box');
+
+
+
+const form = document.querySelector('#form');
+const circleBtn = document.querySelector('#circleBtn');
+circleBtn.addEventListener('click', () => {
+   form.classList.toggle('hidden');
+})
+
+
+

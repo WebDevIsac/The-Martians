@@ -1,0 +1,48 @@
+.slide-content.wrap {
+	display: flex;
+	justify-content: flex-end;
+}
+.wrap {
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	/*justify-content: space-around;*/
+	/*align-content: flex-end;*/
+	/*margin: 50px;*/
+}
+
+.circle-container {
+	display: block;
+	width: 150px;
+}
+
+.box {
+	border-radius: 50%;
+	height: 40px;
+	margin: 50px auto;
+	width: 40px;
+}
+.wrap:hover .box {
+	transform: scale(2);
+}
+
+.box1 {
+	background: #60D4C8;
+	transition: all 300ms;
+}
+
+.box2 {
+	background: #46BAAF;
+	transition: all 1s;
+}
+.box3 {
+	background: #3EA69B;
+	transition: all 3s;
+}
+.toggle {
+	width: 200px;
+	height: 200px;
+}
+#form.hidden {
+	display: none;
+}
+
