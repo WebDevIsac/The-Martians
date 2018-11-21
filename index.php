@@ -28,7 +28,6 @@ if(!isset($language)) {
 	<header>
 
 		<nav class="nav-container">
-			<div class="mob-logo-container"><a class="active" href="#home"><img class="mob-logo-img" src="assets/images/mobile/logomobile.svg" alt=""></a></div>
 			<div class="desk-logo-container"><a class="active" href="#home"><img class="desk-logo-img" src="assets/images/desktop/desk-logo.svg" alt=""></a></div>
 
 			<!-- Desktop Navigation  -->
@@ -39,6 +38,8 @@ if(!isset($language)) {
 				<div class="lang-sv-desk nav-button"><a href="?lang=sv">SV</a></div>
 				<div class="lang-en-desk nav-button"><a href="?lang=en">EN</a></div>
 			</div>
+
+			<div class="mob-logo-container"><a href="#home"><img class="mob-logo-img" src="assets/images/mobile/logomobile.svg" alt=""></a></div>
 			<!-- Burger menu icon -->
 
 			<div class="burger-icon" id="burger-icon">

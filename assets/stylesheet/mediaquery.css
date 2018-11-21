@@ -70,12 +70,12 @@ Header
 	}
 
 	.email-desk a{
-	font-size: 24px;
+	font-size: 1.5rem;
 	padding-bottom: 4.2vh;
 	}
 
 	.catalogue-desk a{
-	font-size: 24px;
+	font-size: 1.5rem;
 	letter-spacing: 1.1px;
 	margin-left: 6vw;
 	padding-bottom: 4.2vh;
@@ -88,20 +88,20 @@ Header
 
 	.lang-sv-desk a {
 		font-family: 'AktivGrotesk-Medium';
-		font-size: 20px;
+		font-size: 1.25rem;
 		padding: 0 .6vw 4.7vh 0;
 		margin: 0 0 0 6.8vw;
 	}
 
 	.lang-en-desk  a{
 		font-family: 'AktivGrotesk-Medium';
-		font-size: 20px;
+		font-size: 1.25rem;
 		padding: 0 0 4.7vh  .6vw;
 		margin: 0 6.56vw 0 0;
 	}
 
 	.active {
-		border-bottom: 10px solid #1E2B54;
+		border-bottom: 12px solid #202B51;
 		transition: 0.3s ease;
 	}
 
