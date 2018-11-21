@@ -33,8 +33,8 @@ Header
 
 	.nav-container a:hover {
 		transition: 0.3s ease;
-		color: green;
-		border-bottom: 10px solid green;
+		color: #1E2A54;
+		border-bottom: 10px solid #1E2A54;
 	}
 
 	.logo-container {
@@ -72,7 +72,7 @@ Header
 	}
 
 	.active {
-		border-bottom: 10px solid green;
+		border-bottom: 10px solid #1E2A54;
 		transition: 0.3s ease;
 	}
 
