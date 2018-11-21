@@ -28,7 +28,8 @@ if(!isset($language)) {
 	<header>
 
 		<nav class="nav-container">
-			<div class="logo-container"><div class="logo-wrapper"><a class="active" href="#home"><img class="logo-img" src="assets/images/desk-logo.svg" alt=""></a></div></div>
+			<div class="mob-logo-container"><a class="active" href="#home"><img class="mob-logo-img" src="assets/images/mobile/logomobile.svg" alt=""></a></div>
+			<div class="desk-logo-container"><a class="active" href="#home"><img class="desk-logo-img" src="assets/images/desktop/desk-logo.svg" alt=""></a></div>
 
 			<!-- Desktop Navigation  -->
 

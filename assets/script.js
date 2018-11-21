@@ -53,7 +53,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // Variables for image slide
-const homeBtn = document.querySelector('.logo-wrapper');
+const mobHomeBtn = document.querySelector('.mob-logo-container');
 const emailBtn = document.querySelector('.email-mobile');
 const catalogueBtn = document.querySelector('.catalogue-mobile');
 const sliderImages = document.querySelectorAll('.slide');
@@ -77,7 +77,7 @@ function startSlide () {
 }
 
 // Click event for slide
-homeBtn.addEventListener('click', () => {
+mobHomeBtn.addEventListener('click', () => {
 	home();
 });
 emailBtn.addEventListener('click', () => {

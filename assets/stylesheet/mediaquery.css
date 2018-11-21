@@ -19,12 +19,6 @@ Media Queries
 /* desktop view */
 @media only screen and (min-width: 900px) {
 
-/*
-==============================================
-Header
-==============================================
-*/
-
 	.mobile-menu {
 		display: none;
 	}
@@ -32,6 +26,19 @@ Header
 	.burger-icon {
 		display: none;
 	}
+
+	.burger-icon {
+		display: none;
+	}
+	.mob-logo-container {
+		display: none;
+	}
+
+/*
+==============================================
+Header
+==============================================
+*/
 
 	.nav-container {
 		justify-content: space-between;
@@ -45,14 +52,16 @@ Header
 		border-bottom: 10px solid #1E2B54;
 	}
 
-	.logo-container {
+	.desk-logo-container {
+		display: flex;
 		justify-content: flex-start;
 		width: auto;
-		margin-left: 3vw;
+		margin: 1.2vh 0 0 3vw;
 	}
 
-	.burger-icon {
-		display: none;
+	.desk-logo-img {
+		width: 25vh;
+		padding-bottom: 8.3vh;
 	}
 
 	.desk-nav {
@@ -60,51 +69,39 @@ Header
 		align-items: center;
 	}
 
-	.nav-button a {
-
-	}
-
 	.email-desk a{
-	height: 24px;
-	width: 59px;
-	font-family: 'AktivGrotesk-Regular';
 	font-size: 24px;
-	line-height: 28px;
-
+	padding-bottom: 4.2vh;
 	}
 
 	.catalogue-desk a{
-	height: 24px;
-	width: 192px;
-	font-family: 'AktivGrotesk-Regular';
 	font-size: 24px;
 	letter-spacing: 1.1px;
-	line-height: 28px;
 	margin-left: 6vw;
+	padding-bottom: 4.2vh;
 	}
 
+	.lang-sv-desk {
+		border-right: 1px solid #000;
+		padding: .05vh 0;
+	}
 
 	.lang-sv-desk a {
 		font-family: 'AktivGrotesk-Medium';
-		height: 20px;
 		font-size: 20px;
-		line-height: 24px;
-		padding: 0 .6vw 0 0;
+		padding: 0 .6vw 4.7vh 0;
 		margin: 0 0 0 6.8vw;
 	}
 
 	.lang-en-desk  a{
 		font-family: 'AktivGrotesk-Medium';
-		height: 20px;
 		font-size: 20px;
-		line-height: 24px;
-		padding: 0 0 0 .6vw;
+		padding: 0 0 4.7vh  .6vw;
 		margin: 0 6.56vw 0 0;
-		border-left: 1px solid #000;
 	}
 
 	.active {
-
+		border-bottom: 10px solid #1E2B54;
 		transition: 0.3s ease;
 	}
 

@@ -4,6 +4,18 @@ Navigation bar
 ==============================================
 */
 
+.desk-logo-container {
+	display: none;
+}
+
+.mob-logo-container {
+	display: flex;
+}
+.mob-logo-img {
+	width: 25vh;
+	padding-bottom: 8.3vh;
+}
+
 .nav-container {
 	position: fixed;
 	display: flex;
@@ -12,21 +24,6 @@ Navigation bar
 	top: 0;
 	width: 100%;
 	z-index: 2;
-}
-
-.logo-container {
-	display: flex;
-	justify-content: center;
-	align-self: center;
-}
-
-.logo-wrapper a {
-	position: relative;
-	z-index: 10;
-}
-
-.logo-img {
-	width: 25vh;
 }
 
 .desk-nav {
