@@ -1,5 +1,5 @@
 <?php
-require __DIR__.'/assets/data.php';
+require __DIR__.'/assets/back-end/data.php';
 $language = $data[$_GET['lang']];
 if(!isset($language)) {
 	header('Location: index.php?lang=en');
@@ -92,12 +92,12 @@ if(!isset($language)) {
 			</div>
 			<div class="slide slide2 section" id="email">
 				<div class="slide-content">
-					<?php require __DIR__.'/assets/form.php'; ?>
+					<?php require __DIR__.'/assets/back-end/form.php'; ?>
 				</div>
 			</div>
 			<div class="slide slide3 section" id="catalogue">
 				<div class="slide-content">
-					<?php require __DIR__.'/assets/download.php' ;?>
+					<?php require __DIR__.'/assets/back-end/download.php' ;?>
 				</div>
 			</div>
 			<div class="buttons">
@@ -124,7 +124,7 @@ if(!isset($language)) {
 		</div>
 	</footer>
 
-	<script src="assets/script.js" charset="utf-8"></script>
+	<script src="assets/scripts/scripts.js" charset="utf-8"></script>
 
 </body>
 </html>

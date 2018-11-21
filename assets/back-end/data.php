@@ -12,7 +12,7 @@ $data =
 			 	'nav-discover' => 'Upptäck FS.1.0',
 			 	'footer-contact' => 'Kontakta Oss',
 			 	'footer-policy' => 'Integritets Policy',
-			 	'content' => file_get_contents(__DIR__.'/swe-lorem.txt')
+			 	'content' => file_get_contents(__DIR__.'/../content/swe-lorem.txt')
 			],
 	'en' =>
 			[
@@ -23,6 +23,6 @@ $data =
 				'nav-discover' => 'Discover FS.1.0',
 				'footer-contact' => 'Contact Us',
 				'footer-policy' => 'Privacy Policy',
-				'content' => file_get_contents(__DIR__.'/eng-lorem.txt')
+				'content' => file_get_contents(__DIR__.'/../content/eng-lorem.txt')
 			],
 ];
