@@ -25,6 +25,14 @@ Header
 ==============================================
 */
 
+	.mobile-menu {
+		display: none;
+	}
+
+	.burger-icon {
+		display: none;
+	}
+
 	.nav-container {
 		justify-content: space-between;
 		width: 100vw;
@@ -144,11 +152,11 @@ body
 		color: #D0D7DC;
 	}
 
-	/*
-	==============================================
-	Form section desktop
-	==============================================
-	*/
+/*
+==============================================
+Form section desktop
+==============================================
+*/
 
 	.download-form {
 		width: 30vw;

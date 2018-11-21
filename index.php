@@ -11,7 +11,7 @@ if(!isset($language)) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="css sanitize" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.css">
 	<link rel="stylesheet" href="assets/stylesheet/main.css">
 	<link rel="stylesheet" href="assets/stylesheet/navbar.css">
 	<link rel="stylesheet" href="assets/stylesheet/mobile-menu.css">
