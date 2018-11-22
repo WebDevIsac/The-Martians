@@ -112,12 +112,13 @@ Media Queries
 	*/
 
 	.slide1 {
-		background-image: url(../images/fastsecurity_omgivning_kristoffer_dd.jpg);
+		background-image: url(../images/FS_kristoffer.jpg);
 	}
 
 	.slide2 {
 		background-image: url(../images/folderbild.jpg);
 	}
+
 	.slide3 {
 		background-image: url(../images/TeaserShot.jpg);
 	}
@@ -225,13 +226,19 @@ Media Queries
 
 	.form {
 		width: 30vw;
-		height: 40vh;
+		height: 55vh;
 		background-color: white;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+	}
+	.form p {
+		padding-top: 2rem;
+		color: black;
+		max-width: 25vw;
+		font-family: 'AktivGrotesk-Light';
 	}
 
 	.form h1 {

@@ -74,7 +74,6 @@ if(!isset($language)) {
 						<div class="lang-en-mobile"><a href="?lang=en">EN</a></div>
 					</div>
 				</div>
-
 			</div>
 		</nav>
 	</header>
