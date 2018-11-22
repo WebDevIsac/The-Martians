@@ -112,6 +112,7 @@ Media Queries
 	*/
 
 	.slide1 {
+		margin-top: 14vh;
 		background-image: url(../images/fastsecurity_omgivning_kristoffer_dd.jpg);
 	}
 
