@@ -1,5 +1,5 @@
 <?php
-require __DIR__.'/assets/data.php';
+require __DIR__.'/assets/back-end/data.php';
 $language = $data[$_GET['lang']];
 if(!isset($language)) {
 	header('Location: index.php?lang=en');
@@ -11,7 +11,7 @@ if(!isset($language)) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="css sanitize" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.css">
 	<link rel="stylesheet" href="assets/stylesheet/main.css">
 	<link rel="stylesheet" href="assets/stylesheet/navbar.css">
 	<link rel="stylesheet" href="assets/stylesheet/mobile-menu.css">
@@ -19,7 +19,6 @@ if(!isset($language)) {
 	<link rel="stylesheet" href="assets/stylesheet/form.css">
 	<link rel="stylesheet" href="assets/stylesheet/mediaquery.css">
 	<link rel="icon" href="assets/images/saabfavicon.png">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<title>The Martians</title>
 </head>
 
@@ -28,7 +27,7 @@ if(!isset($language)) {
 	<header>
 
 		<nav class="nav-container">
-			<div class="logo-container"><div class="logo-wrapper"><a class="active" href="#home"><img class="logo-img" src="assets/images/saabLogo.png" alt=""></a></div></div>
+			<div class="desk-logo-container"><a class="active" href="#home"><img class="desk-logo-img" src="assets/images/desktop/desk-logo.svg" alt=""></a></div>
 
 			<!-- Desktop Navigation  -->
 
@@ -38,6 +37,8 @@ if(!isset($language)) {
 				<div class="lang-sv-desk nav-button"><a href="?lang=sv">SV</a></div>
 				<div class="lang-en-desk nav-button"><a href="?lang=en">EN</a></div>
 			</div>
+
+			<div class="mob-logo-container"><a href="#home"><img class="mob-logo-img" src="assets/images/mobile/logomobile.svg" alt=""></a></div>
 			<!-- Burger menu icon -->
 
 			<div class="burger-icon" id="burger-icon">
@@ -53,7 +54,19 @@ if(!isset($language)) {
 				<div class="mobile-menu-top">
 					<div class="email-mobile"><a href="#email">Email</a></div>
 					<div class="catalogue-mobile"><a href="#catalogue"><?= $language['nav-discover']; ?></a></div>
+
+					<div class="line"></div>
+
+					<div class="mob-footer-content">
+					<div class="mob-facebook"><a href="#">Facebook</a></div>
+					<div class="mob-instagram"><a href="#">Instagram</a></div>
+					<div class="mob-twitter"><a href="#">Twitter</a></div>
+					<div class="mob-fs"><a href="#">FS.1.0</a></div>
+					<div class="mob-contact"><a href="#"><?= $language['contact']; ?></a></div>
+					<div class="mob-policy"><a href="#"><?= $language['policy']; ?></a></div>
 				</div>
+				</div>
+
 
 				<div class="mobile-menu-bot">
 					<div class="lang-container">
@@ -61,13 +74,12 @@ if(!isset($language)) {
 						<div class="lang-en-mobile"><a href="?lang=en">EN</a></div>
 					</div>
 				</div>
-
 			</div>
 		</nav>
 	</header>
 
 
-	<!-- Start -->
+	<!-- body -->
 
 	<div class="container">
 		<div class="slider">
@@ -78,12 +90,12 @@ if(!isset($language)) {
 			</div>
 			<div class="slide slide2 section" id="email">
 				<div class="slide-content">
-					<?php require __DIR__.'/assets/form.php'; ?>
+					<?php require __DIR__.'/assets/back-end/form.php'; ?>
 				</div>
 			</div>
 			<div class="slide slide3 section" id="catalogue">
 				<div class="slide-content">
-					<?php require __DIR__.'/assets/download.php' ;?>
+					<?php require __DIR__.'/assets/back-end/download.php' ;?>
 				</div>
 			</div>
 			<div class="buttons">
@@ -93,24 +105,29 @@ if(!isset($language)) {
 			</div>
 		</div>
 	</div>
+
+	<!-- Footer -->
+
 	<footer>
 		<div>
 			<ul>
-				<li><a href="#"><span class="fab fa-facebook"></span> Facebook</a></li>
-				<li><a href="#"><span class="fab fa-twitter"></span> Twitter</a></li>
-				<li><a href="#"><span class="fab fa-instagram"></span> Instagram</a></li>
+				<li><a href="#"><span class="foot-facebook"></span> Facebook</a></li>
+				<li><a href="#"><span class="foot-twitter"></span> Twitter</a></li>
+				<li><a href="#"><span class="foot-instagram"></span> Instagram</a></li>
 			</ul>
 		</div>
 		<div>
 			<ul>
 				<li><a href="#">FS 1.0</a></li>
-				<li><a href="#"><?= $language['footer-contact']; ?></a></li>
-				<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws"><?= $language['footer-policy']; ?></a></li>
+				<li><a href="#"><?= $language['contact']; ?></a></li>
+				<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws"><?= $language['policy']; ?></a></li>
 			</ul>
 		</div>
 	</footer>
 
-	<script src="assets/script.js" charset="utf-8"></script>
+	<!-- Script -->
+
+	<script src="assets/scripts/scripts.js" charset="utf-8"></script>
 
 </body>
 </html>

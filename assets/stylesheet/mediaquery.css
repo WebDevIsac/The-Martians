@@ -19,32 +19,49 @@ Media Queries
 /* desktop view */
 @media only screen and (min-width: 900px) {
 
-/*
-==============================================
-Header
-==============================================
-*/
+	.mobile-menu {
+		display: none;
+	}
+
+	.burger-icon {
+		display: none;
+	}
+
+	.burger-icon {
+		display: none;
+	}
+	.mob-logo-container {
+		display: none;
+	}
+
+	/*
+	==============================================
+	Header
+	==============================================
+	*/
 
 	.nav-container {
 		justify-content: space-between;
 		width: 100vw;
-		height: 10vh;
+		height: 14vh;
 	}
 
 	.nav-container a:hover {
 		transition: 0.3s ease;
 		color: #1E2B54;
-		border-bottom: 10px solid #1E2B54;
+		border-bottom: 12px solid #1E2B54;
 	}
 
-	.logo-container {
+	.desk-logo-container {
+		display: flex;
 		justify-content: flex-start;
 		width: auto;
-		margin: 4vw;
+		margin: 1.2vh 0 0 3vw;
 	}
 
-	.burger-icon {
-		display: none;
+	.desk-logo-img {
+		width: 25vh;
+		padding-bottom: 8.3vh;
 	}
 
 	.desk-nav {
@@ -52,35 +69,59 @@ Header
 		align-items: center;
 	}
 
-	.email-desk {
-		margin: 0px 9vw 0 0;
+	.email-desk a{
+		font-size: 1.5rem;
+		padding-bottom: 4.2vh;
 	}
 
-	.catalogue-desk {
-		margin: 0 13vw 0 0;
+	.catalogue-desk a{
+		font-size: 1.5rem;
+		letter-spacing: 1.1px;
+		margin-left: 6vw;
+		padding-bottom: 4.2vh;
 	}
 
 	.lang-sv-desk {
-		border-right: 1px solid black;
-		padding-right: 5px;
+		border-right: 1px solid #000;
+		padding: .05vh 0;
 	}
 
-	.lang-en-desk {
-		border-left: 1px solid black;
-		padding-left: 5px;
-		margin-right: 7vw;
+	.lang-sv-desk a {
+		font-family: 'AktivGrotesk-Medium';
+		font-size: 1.25rem;
+		padding: 0 .6vw 4.7vh 0;
+		margin: 0 0 0 6.8vw;
+	}
+
+	.lang-en-desk  a{
+		font-family: 'AktivGrotesk-Medium';
+		font-size: 1.25rem;
+		padding: 0 0 4.7vh  .6vw;
+		margin: 0 6.56vw 0 0;
 	}
 
 	.active {
-		border-bottom: 10px solid #1E2B54;
+		border-bottom: 12px solid #202B51;
 		transition: 0.3s ease;
 	}
 
-/*
-==============================================
-body
-==============================================
-*/
+	/*
+	==============================================
+	body
+	==============================================
+	*/
+
+	.slide1 {
+		background-image: url(../images/FS_kristoffer.jpg);
+	}
+
+	.slide2 {
+		background-image: url(../images/folderbild.jpg);
+	}
+
+	.slide3 {
+		background-image: url(../images/TeaserShot.jpg);
+	}
 
 	.container {
 		position: relative;
@@ -123,12 +164,18 @@ body
 		transition: opacity 0s, transform 0s;
 	}
 
+	/*
+	==============================================
+	Footer
+	==============================================
+	*/
+
 	footer {
-		bottom: 0;
-		border-top: 1px solid lightgrey;
 		display: flex;
-		justify-content: space-between;
 		align-content: center;
+		height: 14vh;
+		width: 100%;
+		border-top: 1px solid lightgrey;
 		font-weight: 200;
 	}
 
@@ -137,7 +184,9 @@ body
 	}
 
 	footer li {
-		margin: 0.6rem;
+		margin: 1vh 4vw;
+		font-size: 	0.9375rem;
+		letter-spacing: 0.69px;
 	}
 
 	footer a:hover {
@@ -177,13 +226,19 @@ body
 
 	.form {
 		width: 30vw;
-		height: 40vh;
+		height: 55vh;
 		background-color: white;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+	}
+	.form p {
+		padding-top: 2rem;
+		color: black;
+		max-width: 25vw;
+		font-family: 'AktivGrotesk-Light';
 	}
 
 	.form h1 {
