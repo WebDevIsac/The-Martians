@@ -62,8 +62,8 @@ if(!isset($language)) {
 					<div class="mob-instagram"><a href="#">Instagram</a></div>
 					<div class="mob-twitter"><a href="#">Twitter</a></div>
 					<div class="mob-fs"><a href="#">FS.1.0</a></div>
-					<div class="mob-contact"><a href="#">Contact us</a></div>
-					<div class="mob-policy"><a href="#">Privacy policy</a></div>
+					<div class="mob-contact"><a href="#"><?= $language['contact']; ?></a></div>
+					<div class="mob-policy"><a href="#"><?= $language['policy']; ?></a></div>
 				</div>
 				</div>
 
@@ -120,8 +120,8 @@ if(!isset($language)) {
 		<div>
 			<ul>
 				<li><a href="#">FS 1.0</a></li>
-				<li><a href="#"><?= $language['footer-contact']; ?></a></li>
-				<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws"><?= $language['footer-policy']; ?></a></li>
+				<li><a href="#"><?= $language['contact']; ?></a></li>
+				<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws"><?= $language['policy']; ?></a></li>
 			</ul>
 		</div>
 	</footer>

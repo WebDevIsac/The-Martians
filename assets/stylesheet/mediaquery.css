@@ -49,7 +49,7 @@ Media Queries
 	.nav-container a:hover {
 		transition: 0.3s ease;
 		color: #1E2B54;
-		border-bottom: 10px solid #1E2B54;
+		border-bottom: 12px solid #1E2B54;
 	}
 
 	.desk-logo-container {
@@ -110,6 +110,17 @@ Media Queries
 	body
 	==============================================
 	*/
+
+	.slide1 {
+		background-image: url(../images/fastsecurity_omgivning_kristoffer_dd.jpg);
+	}
+
+	.slide2 {
+		background-image: url(../images/folderbild.jpg);
+	}
+	.slide3 {
+		background-image: url(../images/TeaserShot.jpg);
+	}
 
 	.container {
 		position: relative;

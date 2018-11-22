@@ -10,8 +10,8 @@ $data =
 			 	'register-button' => 'Registrera',
 			 	'download-button' => 'Broschyr',
 			 	'nav-discover' => 'Upptäck FS.1.0',
-			 	'footer-contact' => 'Kontakta Oss',
-			 	'footer-policy' => 'Integritets Policy',
+			 	'contact' => 'Kontakta Oss',
+			 	'policy' => 'Integritets Policy',
 			 	'content' => file_get_contents(__DIR__.'/../content/swe-lorem.txt')
 			],
 	'en' =>
@@ -21,8 +21,8 @@ $data =
 				'register-button' => 'Register',
 				'download-button' => 'Brochure',
 				'nav-discover' => 'Discover FS.1.0',
-				'footer-contact' => 'Contact Us',
-				'footer-policy' => 'Privacy Policy',
+				'contact' => 'Contact Us',
+				'policy' => 'Privacy Policy',
 				'content' => file_get_contents(__DIR__.'/../content/eng-lorem.txt')
 			],
 ];
