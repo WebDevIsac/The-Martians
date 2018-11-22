@@ -81,7 +81,7 @@ if(!isset($language)) {
 	</header>
 
 
-	<!-- Start -->
+	<!-- body -->
 
 	<div class="container">
 		<div class="slider">
@@ -107,12 +107,15 @@ if(!isset($language)) {
 			</div>
 		</div>
 	</div>
+
+	<!-- Footer -->
+
 	<footer>
 		<div>
 			<ul>
-				<li><a href="#"><span class="fab fa-facebook"></span> Facebook</a></li>
-				<li><a href="#"><span class="fab fa-twitter"></span> Twitter</a></li>
-				<li><a href="#"><span class="fab fa-instagram"></span> Instagram</a></li>
+				<li><a href="#"><span class="foot-facebook"></span> Facebook</a></li>
+				<li><a href="#"><span class="foot-twitter"></span> Twitter</a></li>
+				<li><a href="#"><span class="foot-instagram"></span> Instagram</a></li>
 			</ul>
 		</div>
 		<div>
@@ -123,6 +126,8 @@ if(!isset($language)) {
 			</ul>
 		</div>
 	</footer>
+
+	<!-- Script -->
 
 	<script src="assets/scripts/scripts.js" charset="utf-8"></script>
 

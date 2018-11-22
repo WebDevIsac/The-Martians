@@ -34,11 +34,11 @@ Media Queries
 		display: none;
 	}
 
-/*
-==============================================
-Header
-==============================================
-*/
+	/*
+	==============================================
+	Header
+	==============================================
+	*/
 
 	.nav-container {
 		justify-content: space-between;
@@ -70,15 +70,15 @@ Header
 	}
 
 	.email-desk a{
-	font-size: 1.5rem;
-	padding-bottom: 4.2vh;
+		font-size: 1.5rem;
+		padding-bottom: 4.2vh;
 	}
 
 	.catalogue-desk a{
-	font-size: 1.5rem;
-	letter-spacing: 1.1px;
-	margin-left: 6vw;
-	padding-bottom: 4.2vh;
+		font-size: 1.5rem;
+		letter-spacing: 1.1px;
+		margin-left: 6vw;
+		padding-bottom: 4.2vh;
 	}
 
 	.lang-sv-desk {
@@ -105,11 +105,11 @@ Header
 		transition: 0.3s ease;
 	}
 
-/*
-==============================================
-body
-==============================================
-*/
+	/*
+	==============================================
+	body
+	==============================================
+	*/
 
 	.container {
 		position: relative;
@@ -152,12 +152,18 @@ body
 		transition: opacity 0s, transform 0s;
 	}
 
+	/*
+	==============================================
+	Footer
+	==============================================
+	*/
+
 	footer {
-		bottom: 0;
-		border-top: 1px solid lightgrey;
 		display: flex;
-		justify-content: space-between;
 		align-content: center;
+		height: 14vh;
+		width: 100%;
+		border-top: 1px solid lightgrey;
 		font-weight: 200;
 	}
 
@@ -166,18 +172,20 @@ body
 	}
 
 	footer li {
-		margin: 0.6rem;
+		margin: 1vh 4vw;
+		font-size: 	0.9375rem;
+		letter-spacing: 0.69px;
 	}
 
 	footer a:hover {
 		color: #D0D7DC;
 	}
 
-/*
-==============================================
-Form section desktop
-==============================================
-*/
+	/*
+	==============================================
+	Form section desktop
+	==============================================
+	*/
 
 	.download-form {
 		width: 30vw;
