@@ -18,7 +18,7 @@ if(!isset($language)) {
 	<link rel="stylesheet" href="assets/stylesheet/mobile-body.css">
 	<link rel="stylesheet" href="assets/stylesheet/form.css">
 	<link rel="stylesheet" href="assets/stylesheet/mediaquery.css">
-	<link rel="icon" href="assets/images/saabfavicon.png">
+	<link rel="icon" href="assets/images/mobile/logomobile.svg">
 	<title>The Martians</title>
 </head>
 
@@ -63,7 +63,7 @@ if(!isset($language)) {
 					<div class="mob-twitter"><a href="#">Twitter</a></div>
 					<div class="mob-fs"><a href="#">FS.1.0</a></div>
 					<div class="mob-contact"><a href="#"><?= $language['contact']; ?></a></div>
-					<div class="mob-policy"><a href="#"><?= $language['policy']; ?></a></div>
+					<div class="mob-policy"><a href="https://youtu.be/TgqiSBxvdws"><?= $language['policy']; ?></a></div>
 				</div>
 				</div>
 
@@ -82,7 +82,7 @@ if(!isset($language)) {
 	<!-- body -->
 
 	<div class="container">
-		<div class="slider">
+		<div class="slider" id="slider">
 			<div class="slide slide1 section" id="home">
 				<div class="slide-content">
 					<h1 class="start-header"><?= $language['title']; ?></h1>

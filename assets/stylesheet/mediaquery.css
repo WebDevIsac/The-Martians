@@ -89,14 +89,14 @@ Media Queries
 	.lang-sv-desk a {
 		font-family: 'AktivGrotesk-Medium';
 		font-size: 1.25rem;
-		padding: 0 .6vw 4.7vh 0;
+		padding: 0 .6vw 4.4vh 0;
 		margin: 0 0 0 6.8vw;
 	}
 
 	.lang-en-desk  a{
 		font-family: 'AktivGrotesk-Medium';
 		font-size: 1.25rem;
-		padding: 0 0 4.7vh  .6vw;
+		padding: 0 0 4.4vh  .6vw;
 		margin: 0 6.56vw 0 0;
 	}
 
