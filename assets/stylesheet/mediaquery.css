@@ -144,11 +144,14 @@ Media Queries
 	.start-header {
 		color: #1E2B54;
 		display: flex;
-
+		text-align: left;
 		height: 1rem ;
-		font-size: 5rem;
-		max-width: 55%;
+		font-size: 6rem;
+		max-width: 40%;
+		font-family: 'AktivGrotesk-Light';
 		font-weight: lighter;
+		margin-top: -16vh;
+		margin-right: 10vh;
 	}
 
 	.slide-content {
