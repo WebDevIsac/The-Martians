@@ -60,14 +60,21 @@ Form section mobile
 .form input {
 	background-color: rgba(255,255,255, 0.8);
 	border: 1px solid darkgrey;
-	font-size: initial;
+	font-size: x-large;
+	padding: 0.4rem;
 }
 .download-form {
 	background-color: rgba(255,255,255, 0.8);
+	height: 15vh;
+}
+.download-form img {
+	display: none;
 }
 .download-form h1 {
-	font-size: 2rem;
+	font-size: 1rem;
 	color: black;
+	font-family: 'AktivGrotesk-Light';
+	max-width: 90%;
 }
 .form button, .download-form button {
 	color: white;

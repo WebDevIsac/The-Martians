@@ -33,6 +33,15 @@ Media Queries
 	.mob-logo-container {
 		display: none;
 	}
+	.download-form img {
+		display: flex;
+	}
+	.download-form h1 {
+		font-size: 2rem;
+		color: black;
+		margin-bottom: 0;
+		margin-top: 2rem;
+	}
 
 	/*
 	==============================================
