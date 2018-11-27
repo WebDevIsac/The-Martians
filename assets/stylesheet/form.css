@@ -85,6 +85,9 @@ Form section mobile
 	font-size: 0.6rem;
 	margin-bottom: 1rem;
 }
+.slide3 {
+	background-image: url(../images/Interior_TerrngBil_Jimmy.jpg);
+}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 	font-size: 0.6rem;
 	opacity: 0.4;
