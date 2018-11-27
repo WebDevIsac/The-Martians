@@ -134,11 +134,21 @@ Media Queries
 	.buttons > a {
 		display: none;
 	}
+	.start-header-container {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
 
+
+	}
 	.start-header {
+		color: #1E2B54;
+		display: flex;
+		align-items: center;
 		height: 1rem ;
 		font-size: 5rem;
-		width: 80vw ;
+		max-width: 50%;
+		font-weight: lighter;
 	}
 
 	.slide-content {
@@ -222,6 +232,8 @@ Media Queries
 	*/
 
 	.download-form {
+		background-color: rgba(255,255,255, 0.8);
+		height: 55vh;
 		width: 30vw;
 		display: flex;
 		flex-direction: column;
@@ -236,20 +248,16 @@ Media Queries
 
 	.download-form img {
 		background-repeat: no-repeat;
-		max-width:100%;
+		max-width:85%;
 		max-height:100%;
 		margin-top: 0;
 		height: 40vh;
-	}
-	.button-container {
-		background-color: white;
-		width: 30vw;
 	}
 
 	.form {
 		width: 30vw;
 		height: 55vh;
-		background-color: white;
+		background-color: rgba(255,255,255, 0.8);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -284,7 +292,7 @@ Media Queries
 		border: none;
 		width: 23vw;
 		font-size: 1rem;
-		margin: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	.form button:hover, .download-form button:hover {

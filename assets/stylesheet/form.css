@@ -27,16 +27,15 @@ Form section mobile
 	}
 
 	.button-container {
-		background-color: white;
 		margin-top: 0;
 		width: 60vw;
 		padding-bottom: 1rem;
 	}
 
 .form {
-	width: 60vw;
+	width: 70vw;
 	height: 40vh;
-	background-color: white;
+	background-color: rgba(255,255,255, 0.8);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -45,27 +44,30 @@ Form section mobile
 }
 
 .form p {
-		padding-top: 1rem;
 		color: black;
 		max-width: 50vw;
 		font-family: 'AktivGrotesk-Light';
-		font-size: 16px;
+		font-size: 1rem;
 	}
 
 .form h1 {
 	color: black;
 	font-size: 1rem;
 	margin-bottom: 0.2rem;
-	width: 50vw;
+	max-width: 50vw;
 }
 
 .form input {
-	background-color: #FFF;
+	background-color: rgba(255,255,255, 0.8);
 	border: 1px solid darkgrey;
-	width: 45vw;
-	margin-bottom: 0.3rem;
-	padding: 0.5rem;
 	font-size: initial;
+}
+.download-form {
+	background-color: rgba(255,255,255, 0.8);
+}
+.download-form h1 {
+	font-size: 2rem;
+	color: black;
 }
 .form button, .download-form button {
 	color: white;
@@ -74,6 +76,7 @@ Form section mobile
 	border: none;
 	width: 45vw;
 	font-size: 0.6rem;
+	margin-bottom: 1rem;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 	font-size: 0.6rem;
