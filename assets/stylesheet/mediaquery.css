@@ -61,7 +61,6 @@ Media Queries
 
 	.desk-logo-img {
 		width: 25vh;
-		padding-bottom: 8.3vh;
 	}
 
 	.desk-nav {
@@ -71,14 +70,12 @@ Media Queries
 
 	.email-desk a{
 		font-size: 1.5rem;
-		padding-bottom: 4.2vh;
 	}
 
 	.catalogue-desk a{
 		font-size: 1.5rem;
 		letter-spacing: 1.1px;
 		margin-left: 6vw;
-		padding-bottom: 4.2vh;
 	}
 
 	.lang-sv-desk {
@@ -89,8 +86,8 @@ Media Queries
 	.lang-sv-desk a {
 		font-family: 'AktivGrotesk-Medium';
 		font-size: 1.25rem;
-		padding: 0 .6vw 4.7vh 0;
-		margin: 0 0 0 6.8vw;
+		padding: 0 .6vw 0 0;
+		margin-left:6.8vw;
 	}
 
 	.lang-en-desk  a{

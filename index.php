@@ -18,7 +18,7 @@ if(!isset($language)) {
 	<link rel="stylesheet" href="assets/stylesheet/mobile-body.css">
 	<link rel="stylesheet" href="assets/stylesheet/form.css">
 	<link rel="stylesheet" href="assets/stylesheet/mediaquery.css">
-	<link rel="icon" href="assets/images/saabfavicon.png">
+	<link rel="icon" href="assets/images/favicon.jpg">
 	<title>The Martians</title>
 </head>
 
