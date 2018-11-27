@@ -134,11 +134,21 @@ Media Queries
 	.buttons > a {
 		display: none;
 	}
+	.start-header-container {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
 
+
+	}
 	.start-header {
+		color: #1E2B54;
+		display: flex;
+		align-items: center;
 		height: 1rem ;
 		font-size: 5rem;
-		width: 80vw ;
+		max-width: 50%;
+		font-weight: lighter;
 	}
 
 	.slide-content {
