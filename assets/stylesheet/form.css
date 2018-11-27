@@ -64,8 +64,6 @@ Form section mobile
 }
 .download-form {
 	background-color: rgba(255,255,255, 0.8);
-	margin-bottom: 0;
-	height: 20vh;
 }
 .download-form h1 {
 	font-size: 2rem;
@@ -78,6 +76,7 @@ Form section mobile
 	border: none;
 	width: 45vw;
 	font-size: 0.6rem;
+	margin-bottom: 1rem;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 	font-size: 0.6rem;

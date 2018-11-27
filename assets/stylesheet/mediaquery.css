@@ -221,9 +221,6 @@ Media Queries
 		margin-top: 0;
 		height: 40vh;
 	}
-	.button-container {
-		width: 30vw;
-	}
 
 	.form {
 		width: 30vw;
@@ -263,7 +260,7 @@ Media Queries
 		border: none;
 		width: 23vw;
 		font-size: 1rem;
-		margin: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	.form button:hover, .download-form button:hover {
