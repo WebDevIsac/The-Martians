@@ -181,22 +181,44 @@ Media Queries
 	*/
 
 	footer {
+		position: absolute;
 		display: flex;
-		align-content: center;
-		height: 14vh;
+		justify-content: space-between;
+		height: 17vh;
 		width: 100%;
 		border-top: 1px solid lightgrey;
-		font-weight: 200;
-	}
-
-	footer div {
-		margin: 1rem;
-	}
-
-	footer li {
-		margin: 1vh 4vw;
-		font-size: 	0.9375rem;
+		font-size: 	1.15rem;
 		letter-spacing: 0.69px;
+	}
+
+	.foot-left-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 21vw;
+		margin-left: 3.5vw;
+	}
+
+	.foot-sm-container div{
+		margin: 2px;
+	}
+
+	.foot-about-container div {
+		margin: 2px;
+	}
+
+	.foot-right-container{
+		width: 10vw;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-right: 3.5vw;
+
+	}
+
+	.foot-logo img {
+		margin-top: 2.5vh;
+		width: 9.2vw;
 	}
 
 	footer a:hover {
