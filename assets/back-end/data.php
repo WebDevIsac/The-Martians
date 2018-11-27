@@ -21,8 +21,8 @@ $data =
 				'register-button' => 'Register',
 				'download-button' => 'Brochure',
 				'nav-discover' => 'Discover FS.1.0',
-				'contact' => 'Contact Us',
-				'policy' => 'Privacy Policy',
+				'contact' => 'Contact us',
+				'policy' => 'Privacy policy',
 				'content' => file_get_contents(__DIR__.'/../content/eng-lorem.txt')
 			],
 ];

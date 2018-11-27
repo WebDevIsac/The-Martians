@@ -109,20 +109,22 @@ if(!isset($language)) {
 	<!-- Footer -->
 
 	<footer>
-		<div>
-			<ul>
-				<li><a href="#"><span class="foot-facebook"></span> Facebook</a></li>
-				<li><a href="#"><span class="foot-twitter"></span> Twitter</a></li>
-				<li><a href="#"><span class="foot-instagram"></span> Instagram</a></li>
-			</ul>
+		<div class="foot-left-container">
+			<div class="foot-sm-container">
+
+				<div><a href="#"><span class="foot-facebook"></span> Facebook</a></div>
+				<div><a href="#"><span class="foot-instagram"></span> Instagram</a></div>
+				<div><a href="#"><span class="foot-twitter"></span> Twitter</a></div>
+			</div>
+		<div class="foot-about-container">
+				<div><a href="#">FS 1.0</a></div>
+				<div><a href="#"><?= $language['contact']; ?></a></div>
+				<div><a target="_blank" href="https://youtu.be/TgqiSBxvdws"><?= $language['policy']; ?></a></div>
+			</div>
 		</div>
-		<div>
-			<ul>
-				<li><a href="#">FS 1.0</a></li>
-				<li><a href="#"><?= $language['contact']; ?></a></li>
-				<li><a target="_blank" href="https://youtu.be/TgqiSBxvdws"><?= $language['policy']; ?></a></li>
-			</ul>
-		</div>
+			<div class="foot-right-container">
+				<div class="foot-logo"><a href="#"><img src="assets/images/desktop/desk-logo.svg" alt=""></a></div>
+			</div>
 	</footer>
 
 	<!-- Script -->
