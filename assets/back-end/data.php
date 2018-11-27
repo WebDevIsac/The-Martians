@@ -16,7 +16,7 @@ $data =
 			],
 	'en' =>
 			[
-				'title' => 'We bring fun into driving',
+				'title' => 'We bring fun into <br> driving',
 				'signup' => 'Signup to be a part of the adventure',
 				'register-button' => 'Register',
 				'download-button' => 'Download Brochure',
