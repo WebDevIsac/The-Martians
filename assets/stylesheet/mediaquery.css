@@ -184,8 +184,8 @@ Media Queries
 		display: flex;
 		justify-content: center;
 		opacity: 1;
-		transform: scale(1);
-		transition: opacity 0s, transform 0s;
+		/* transform: scale(1); */
+		transition: opacity 0s;
 	}
 
 	/*
