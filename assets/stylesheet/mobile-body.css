@@ -20,6 +20,21 @@ Mobile body
 	position: absolute;
 	top: 0;
 }
+.start-header {
+	font-size: 3rem;
+	animation: 2s ease-in 0s 1 fadeIn;
+	height: 1rem;
+}
+
+@keyframes easeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
 
 .active-image {
 	display: flex;
@@ -106,17 +121,4 @@ Mobile body
 	background-color: #1E2B54;
 }
 
-@keyframes easeIn {
-	0% {
-		opacity: 0;
-		transform: translateY(-100%);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
 
-.start-header {
-	animation: 2s ease-in 0s 1 easeIn;
-	height: 1rem;
-}
