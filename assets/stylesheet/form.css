@@ -1,88 +1,113 @@
 /*
 ==============================================
-Form section mobile
+Forms
 ==============================================
 */
 
-
-.button-container {
-	margin-top: 0;
-	width: 60vw;
-	padding-bottom: 1rem;
-}
-
 .form {
 	background-color: rgba(255,255,255, 0.8);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	min-height: 35vw;
+	font-weight: 300;
+	font-size: 24px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	color: black;
 }
 
-.form p {
-	padding-top: 1rem;
-	color: black;
-	max-width: 60vw;
-	font-family: 'AktivGrotesk-Light';
-	font-size: 1rem;
+@media only screen and (min-width: 480px) { /* Larger Phone Mode */
+	.form {
+		max-width: 70%;
+	}
+}
+
+@media only screen and (min-width: 900px) { /* Desktop Mode */
+	.form {
+		padding: 30px 20px;
+		max-width: 550px;
+	}
 }
 
 .form h1 {
-	color: black;
-	font-size: 1rem;
-	margin-bottom: 0.2rem;
-	max-width: 60vw;
+	font-weight: 500;
+	font-size: 100%;
+}
+
+.form input,
+.form button {
+	width: 85%;
 }
 
 .form input {
-	background-color: rgba(255,255,255, 0.8);
-	border: 1px solid darkgrey;
-	font-size: initial;
-	padding: 0.4rem;
-}
-.download-form {
-	background-color: rgba(255,255,255, 0.8);
-	min-height: 15vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	border: 1px solid #1E2B54;
+	margin: 10px auto;
+	display: block;
+	padding: 10px;
 }
 
-.download-form img {
+@media only screen and (min-width: 900px) { /* Desktop Mode */
+	.form input {
+		width: 400px;
+		padding: 20px;
+	}
+}
+.form input::placeholder {
+	font-size: 24px;
+	color: #aab3ba;
+}
+
+@media only screen and (min-width: 900px) { /* Desktop Mode */
+	.form input::placeholder {
+		font-size: 22px;
+	}
+}
+
+.form button {
+	background-color: #1E2B54;
+	padding: 12px;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) { /* Desktop Mode */
+	.form button {
+		padding: 16px;
+		width: 300px;
+	}
+}
+
+
+/*
+==============================================
+Download Form
+==============================================
+*/
+
+.form.download-form h1 {
+	margin: 25px 0 10px;
+}
+
+.form.download-form img {
 	display: none;
 }
 
-.download-form h1 {
-	font-size: 1rem;
-	color: black;
-	font-family: 'AktivGrotesk-Light';
-	max-width: 90%;
+@media only screen and (min-width: 900px) { /* Desktop Mode */
+	.form.download-form img {
+		margin: -30px auto 0;
+		width: 90%;
+		display: inline-block;
+	}
 }
-
-.form button, .download-form button {
-	color: white;
+.form.download-form button {
 	background-color: #1E2B54;
-	height: 4vh;
-	border: none;
-	width: 45vw;
-	font-size: 0.6rem;
-	margin-bottom: 1rem;
+	padding: 12px;
+	color: white;
+	white-space: nowrap;
 }
 
-.slide3 {
-	background-image: url(../images/Interior_TerrngBil_Jimmy.jpg);
-}
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-	font-size: 0.6rem;
-	opacity: 0.4;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-	font-size: 0.6rem;
-	opacity: 0.4;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-	font-size: 0.5rem;
-	opacity: 0.4;
+@media only screen and (min-width: 900px) { /*Desktop Mode */
+	.form.download-form button {
+		width: 60%;
+		padding: 20px;
+	}
 }

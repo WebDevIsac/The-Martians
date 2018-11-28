@@ -33,21 +33,6 @@ Media Queries
 	.mob-logo-container {
 		display: none;
 	}
-	.download-form img {
-		display: flex;
-	}
-	.download-form h1 {
-		font-size: 2rem;
-		color: black;
-		margin-bottom: 0;
-		margin-top: 2rem;
-	}
-	.form input {
-		background-color: rgba(255,255,255, 0.8);
-		border: 1px solid darkgrey;
-		font-size: x-large;
-		padding: 0.4rem;
-	}
 
 	/*
 	==============================================
@@ -152,11 +137,12 @@ Media Queries
 		justify-content: flex-end;
 		align-items: center;
 	}
+
 	.start-header {
 		color: #1E2B54;
 		text-align: left;
 		height: 1rem ;
-		font-size: 5rem;
+		font-size: 80px;
 		font-family: 'AktivGrotesk-Light';
 		font-weight: lighter;
 		margin-top: -16vh;
@@ -164,28 +150,11 @@ Media Queries
 		animation: 2s ease-in 0s 1 easeIn;
 	}
 
-	@keyframes easeIn {
-		0% {
-			opacity: 0;
-			transform: translateY(-100%);
-		}
-		100% {
-			transform: translateY(0);
-		}
-	}
-
 	.slide-content {
 		width: 100%;
 		font-size: 4rem;
 		color: white;
 		padding-bottom: 1.5rem;
-	}
-
-	.slide-content p {
-		width: 45vw;
-		font-size: 1.4rem;
-		color: white;
-		line-height: normal;
 	}
 
 	.slide {
@@ -247,88 +216,14 @@ Media Queries
 	footer a:hover {
 		color: #D0D7DC;
 	}
+}
 
-	/*
-	==============================================
-	Form section desktop
-	==============================================
-	*/
-	.form {
-		min-height: 55vh;
-		width: 30vw;
+@keyframes easeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
 	}
-
-	.download-form {
-		min-height: 70vh;
-		width: 30vw;
-	}
-
-	.form p {
-		padding-top: 2rem;
-		color: black;
-		max-width: 25vw;
-		font-family: 'AktivGrotesk-Light';
-	}
-
-	.form h1 {
-		color: black;
-		font-size: 1.5rem;
-		margin-top: 2rem;
-	}
-
-	.form input {
-		background-color: #FFF;
-		border: 2px solid lightgrey;
-		width: 25vw;
-		margin-bottom: 1rem;
-		padding: 1rem;
-	}
-
-	.form button, .download-form button {
-		color: white;
-		background-color: #202B51;
-		height: 6vh;
-		border: none;
-		width: 23vw;
-		font-size: 1rem;
-		margin-bottom: 2rem;
-	}
-
-	.form button:hover, .download-form button:hover {
-		border: 1px solid white;
-		cursor: pointer;
-	}
-	.download-form {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		/*justify-content: center;*/
-		/*text-align: center;*/
-	}
-	.download-form a {
-		color: inherit;
-	}
-
-	.download-form img {
-		background-repeat: no-repeat;
-		max-width:85%;
-		max-height:100%;
-		margin-top: 0;
-		height: 40vh;
-	}
-
-	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-		font-size: 1rem;
-		opacity: 0.4;
-	}
-
-	:-ms-input-placeholder { /* Internet Explorer 10-11 */
-		font-size: 1rem;
-		opacity: 0.4;
-	}
-
-	::-ms-input-placeholder { /* Microsoft Edge */
-		font-size: 1rem;
-		opacity: 0.4;
+	100% {
+		transform: translateY(0);
 	}
 }
