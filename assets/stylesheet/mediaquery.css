@@ -150,12 +150,10 @@ Media Queries
 		display: flex;
 		width: 100%;
 		justify-content: flex-end;
-		height: 100%;
 		align-items: center;
 	}
 	.start-header {
 		color: #1E2B54;
-		display: flex;
 		text-align: left;
 		height: 1rem ;
 		font-size: 5rem;
@@ -163,6 +161,17 @@ Media Queries
 		font-weight: lighter;
 		margin-top: -16vh;
 		margin-right: 5vw;
+		animation: 2s ease-in 0s 1 easeIn;
+	}
+
+	@keyframes easeIn {
+		0% {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+		100% {
+			transform: translateY(0);
+		}
 	}
 
 	.slide-content {
@@ -213,7 +222,7 @@ Media Queries
 		margin-left: 3.5vw;
 	}
 
-	.foot-sm-container div{
+	.foot-sm-container div {
 		margin: 2px;
 	}
 
@@ -221,7 +230,7 @@ Media Queries
 		margin: 2px;
 	}
 
-	.foot-right-container{
+	.foot-right-container {
 		width: 10vw;
 		display: flex;
 		align-items: center;
@@ -244,40 +253,16 @@ Media Queries
 	Form section desktop
 	==============================================
 	*/
+	.form {
+		min-height: 55vh;
+		width: 30vw;
+	}
 
 	.download-form {
-		background-color: rgba(255,255,255, 0.8);
-		height: 55vh;
+		min-height: 70vh;
 		width: 30vw;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
 	}
 
-	.download-form a {
-		color: inherit;
-	}
-
-	.download-form img {
-		background-repeat: no-repeat;
-		max-width:85%;
-		max-height:100%;
-		margin-top: 0;
-		height: 40vh;
-	}
-
-	.form {
-		width: 30vw;
-		height: 55vh;
-		background-color: rgba(255,255,255, 0.8);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
 	.form p {
 		padding-top: 2rem;
 		color: black;
@@ -313,6 +298,25 @@ Media Queries
 		border: 1px solid white;
 		cursor: pointer;
 	}
+	.download-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/*justify-content: center;*/
+		/*text-align: center;*/
+	}
+	.download-form a {
+		color: inherit;
+	}
+
+	.download-form img {
+		background-repeat: no-repeat;
+		max-width:85%;
+		max-height:100%;
+		margin-top: 0;
+		height: 40vh;
+	}
+
 	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 		font-size: 1rem;
 		opacity: 0.4;
@@ -326,19 +330,5 @@ Media Queries
 	::-ms-input-placeholder { /* Microsoft Edge */
 		font-size: 1rem;
 		opacity: 0.4;
-	}
-
-	@keyframes easeIn {
-		0% {
-			opacity: 0;
-			transform: translateY(-100%);
-		}
-		100% {
-			transform: translateY(0);
-		}
-	}
-
-	.start-header {
-		animation: 1s ease-in 0s 1 easeIn;
 	}
 }
