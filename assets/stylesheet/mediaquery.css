@@ -33,6 +33,21 @@ Media Queries
 	.mob-logo-container {
 		display: none;
 	}
+	.download-form img {
+		display: flex;
+	}
+	.download-form h1 {
+		font-size: 2rem;
+		color: black;
+		margin-bottom: 0;
+		margin-top: 2rem;
+	}
+	.form input {
+		background-color: rgba(255,255,255, 0.8);
+		border: 1px solid darkgrey;
+		font-size: x-large;
+		padding: 0.4rem;
+	}
 
 	/*
 	==============================================
@@ -61,7 +76,6 @@ Media Queries
 
 	.desk-logo-img {
 		width: 25vh;
-		padding-bottom: 8.3vh;
 	}
 
 	.desk-nav {
@@ -71,14 +85,12 @@ Media Queries
 
 	.email-desk a{
 		font-size: 1.5rem;
-		padding-bottom: 4.2vh;
 	}
 
 	.catalogue-desk a{
 		font-size: 1.5rem;
 		letter-spacing: 1.1px;
 		margin-left: 6vw;
-		padding-bottom: 4.2vh;
 	}
 
 	.lang-sv-desk {
@@ -89,8 +101,8 @@ Media Queries
 	.lang-sv-desk a {
 		font-family: 'AktivGrotesk-Medium';
 		font-size: 1.25rem;
-		padding: 0 .6vw 4.7vh 0;
-		margin: 0 0 0 6.8vw;
+		padding: 0 .6vw 0 0;
+		margin-left:6.8vw;
 	}
 
 	.lang-en-desk  a{
@@ -134,15 +146,27 @@ Media Queries
 	.buttons > a {
 		display: none;
 	}
-
+	.start-header-container {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+		height: 100%;
+		align-items: center;
+	}
 	.start-header {
+		color: #1E2B54;
+		display: flex;
+		text-align: left;
 		height: 1rem ;
 		font-size: 5rem;
-		width: 80vw ;
+		font-family: 'AktivGrotesk-Light';
+		font-weight: lighter;
+		margin-top: -16vh;
+		margin-right: 5vw;
 	}
 
 	.slide-content {
-		width: 45vw;
+		width: 100%;
 		font-size: 4rem;
 		color: white;
 		padding-bottom: 1.5rem;
@@ -171,22 +195,44 @@ Media Queries
 	*/
 
 	footer {
+		position: absolute;
 		display: flex;
-		align-content: center;
-		height: 14vh;
+		justify-content: space-between;
+		height: 17vh;
 		width: 100%;
 		border-top: 1px solid lightgrey;
-		font-weight: 200;
-	}
-
-	footer div {
-		margin: 1rem;
-	}
-
-	footer li {
-		margin: 1vh 4vw;
-		font-size: 	0.9375rem;
+		font-size: 	1.15rem;
 		letter-spacing: 0.69px;
+	}
+
+	.foot-left-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 21vw;
+		margin-left: 3.5vw;
+	}
+
+	.foot-sm-container div{
+		margin: 2px;
+	}
+
+	.foot-about-container div {
+		margin: 2px;
+	}
+
+	.foot-right-container{
+		width: 10vw;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-right: 3.5vw;
+
+	}
+
+	.foot-logo img {
+		margin-top: 2.5vh;
+		width: 9.2vw;
 	}
 
 	footer a:hover {
@@ -200,6 +246,8 @@ Media Queries
 	*/
 
 	.download-form {
+		background-color: rgba(255,255,255, 0.8);
+		height: 55vh;
 		width: 30vw;
 		display: flex;
 		flex-direction: column;
@@ -214,20 +262,16 @@ Media Queries
 
 	.download-form img {
 		background-repeat: no-repeat;
-		max-width:100%;
+		max-width:85%;
 		max-height:100%;
 		margin-top: 0;
 		height: 40vh;
-	}
-	.button-container {
-		background-color: white;
-		width: 30vw;
 	}
 
 	.form {
 		width: 30vw;
 		height: 55vh;
-		background-color: white;
+		background-color: rgba(255,255,255, 0.8);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -262,7 +306,7 @@ Media Queries
 		border: none;
 		width: 23vw;
 		font-size: 1rem;
-		margin: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	.form button:hover, .download-form button:hover {

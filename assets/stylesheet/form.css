@@ -27,19 +27,15 @@ Form section mobile
 	}
 
 	.button-container {
-		background-color: white;
 		margin-top: 0;
 		width: 60vw;
 		padding-bottom: 1rem;
 	}
 
 .form {
-	width: 60vw;
-	height: 40vh;
-	background-color: white;
+	background-color: rgba(255,255,255, 0.8);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
@@ -47,25 +43,36 @@ Form section mobile
 .form p {
 		padding-top: 1rem;
 		color: black;
-		max-width: 50vw;
+		max-width: 60vw;
 		font-family: 'AktivGrotesk-Light';
-		font-size: 16px;
+		font-size: 1rem;
 	}
 
 .form h1 {
 	color: black;
 	font-size: 1rem;
 	margin-bottom: 0.2rem;
-	width: 50vw;
+	max-width: 60vw;
 }
 
 .form input {
-	background-color: #FFF;
+	background-color: rgba(255,255,255, 0.8);
 	border: 1px solid darkgrey;
-	width: 45vw;
-	margin-bottom: 0.3rem;
-	padding: 0.5rem;
 	font-size: initial;
+	padding: 0.4rem;
+}
+.download-form {
+	background-color: rgba(255,255,255, 0.8);
+	height: 25vh;
+}
+.download-form img {
+	display: none;
+}
+.download-form h1 {
+	font-size: 1rem;
+	color: black;
+	font-family: 'AktivGrotesk-Light';
+	max-width: 90%;
 }
 .form button, .download-form button {
 	color: white;
@@ -74,6 +81,10 @@ Form section mobile
 	border: none;
 	width: 45vw;
 	font-size: 0.6rem;
+	margin-bottom: 1rem;
+}
+.slide3 {
+	background-image: url(../images/Interior_TerrngBil_Jimmy.jpg);
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 	font-size: 0.6rem;
