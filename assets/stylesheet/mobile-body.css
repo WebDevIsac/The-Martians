@@ -22,8 +22,10 @@ Mobile body
 }
 .start-header {
 	font-size: 3rem;
-	animation: 2s ease-in 0s 1 fadeIn;
+	animation: 1s ease-in 0s 1 easeIn;
 	height: 1rem;
+	color: white;
+	padding-bottom: 1.5rem;
 }
 
 @keyframes easeIn {
@@ -53,7 +55,7 @@ Mobile body
 }
 
 .slide3 {
-	background-image: url(../images/bild3mobile.jpg);
+	background-image: url(../images/Interior_TerrngBil_Jimmy.jpg);
 }
 
 .slide-content {
@@ -63,19 +65,6 @@ Mobile body
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-}
-
-.slide-content {
-	width: 80vw;
-	font-size: 2.2rem;
-	color: white;
-	padding-bottom: 1.5rem;
-}
-
-.slide-content p {
-	width: 80vw;
-	color: white;
-	line-height: normal;
 }
 
 .buttons {
