@@ -73,12 +73,14 @@ Forms
 	color: white;
 	border: none;
 	cursor: pointer;
+	font-size: 16px;
 }
 
 @media only screen and (min-width: 900px) { /* Desktop Mode */
 	.form button {
 		padding: 16px;
 		width: 70%;
+		font-size: 18px;
 	}
 }
 
@@ -118,5 +120,11 @@ Download Form
 	.form.download-form a button {
 		width: 70%;
 		padding: 16px;
+	}
+}
+@media only screen and (min-width: 480px)  and (max-width: 899) { /* Larger Phone Mode */
+	.form.download-form button {
+		font-size: 16px;
+		max-width: 100%;
 	}
 }
