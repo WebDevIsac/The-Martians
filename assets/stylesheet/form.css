@@ -17,7 +17,7 @@ Forms
 
 @media only screen and (min-width: 480px) { /* Larger Phone Mode */
 	.form {
-		max-width: 70%;
+		max-width: 75%;
 	}
 }
 
@@ -122,7 +122,7 @@ Download Form
 		padding: 16px;
 	}
 }
-@media only screen and (min-width: 480px)  and (max-width: 899) { /* Larger Phone Mode */
+@media only screen and (min-width: 480px)  and (max-width: 900px) { /* Larger Phone Mode */
 	.form.download-form button {
 		font-size: 16px;
 		max-width: 100%;

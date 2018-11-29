@@ -16,6 +16,25 @@ Media Queries
 	}
 }
 
+/* Larger phone mode */
+@media only screen and (min-height: 720px) {
+	.start-header-container {
+		top: 8rem;
+	}
+}
+
+/* Tablets view */
+@media only screen and (min-width: 590px)  and (max-width: 900px) {
+		.start-header-container {
+			position: static;
+			margin-left: 18rem;
+			margin-bottom: 10rem;
+		}
+		.start-header {
+			font-size: 50px;
+		}
+}
+
 /* desktop view */
 @media only screen and (min-width: 900px) {
 
@@ -148,9 +167,8 @@ Media Queries
 	}
 
 	.start-header-container {
-		position: relative;
+		position: static;
 		margin-left: 36rem;
-		margin-bottom: 20rem;
 		display: flex;
 		width: 32rem;
 		justify-content: flex-end;
