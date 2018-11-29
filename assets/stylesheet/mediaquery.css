@@ -108,8 +108,13 @@ Media Queries
 	==============================================
 	*/
 
+	.slide {
+
+	}
+
 	.slide1 {
 		background-image: url(../images/FS_kristoffer.jpg);
+		margin-top: 14vh;
 	}
 
 	.slide2 {
@@ -131,30 +136,38 @@ Media Queries
 	.buttons > a {
 		display: none;
 	}
+
 	.start-header-container {
+		position: relative;
+		margin-left: 36rem;
+		margin-bottom: 20rem;
 		display: flex;
-		width: 100%;
+		width: 32rem;
 		justify-content: flex-end;
 		align-items: center;
+	}
+
+	@media only screen and (max-width: 1100px) {
+		.start-header-container {
+			margin-left: 24rem;
+		}
 	}
 
 	.start-header {
 		color: #1E2B54;
 		text-align: left;
-		height: 1rem ;
-		font-size: 80px;
+		/* height: 1rem; */
+		font-size: 65px;
 		font-family: 'AktivGrotesk-Light';
-		font-weight: lighter;
-		margin-top: -16vh;
-		margin-right: 5vw;
-		animation: 2s ease-in 0s 1 easeIn;
+		font-weight: 300;
+		animation: 1.5s ease-in 0s easeIn;
 	}
 
 	.slide-content {
 		width: 100%;
 		font-size: 4rem;
 		color: white;
-		padding-bottom: 1.5rem;
+
 	}
 
 	.slide {
@@ -162,8 +175,6 @@ Media Queries
 		display: flex;
 		justify-content: center;
 		opacity: 1;
-		/* transform: scale(1); */
-		transition: opacity 0s;
 	}
 
 	/*
@@ -221,7 +232,7 @@ Media Queries
 @keyframes easeIn {
 	0% {
 		opacity: 0;
-		transform: translateY(-100%);
+		transform: translateY(-30%);
 	}
 	100% {
 		transform: translateY(0);

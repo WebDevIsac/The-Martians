@@ -30,7 +30,7 @@ Navigation bar
 	flex-direction: row;
 	background-color: white;
 	top: 0;
-	height: 82px;
+	height: 12.5vh;
 	width: 100%;
 	z-index: 2;
 }

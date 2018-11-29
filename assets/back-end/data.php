@@ -5,7 +5,7 @@ $data =
 [
 	'sv' =>
 			[
-				'title' => 'Vi lyfter glädjen <br>till körning.',
+				'title' => 'Vi lyfter glädjen till körning.',
 				'signup' => 'Registrera dig idag!',
 			 	'register-button' => 'Registrera',
 			 	'download-button' => 'Ladda ned broschyr',
@@ -16,7 +16,7 @@ $data =
 			],
 	'en' =>
 			[
-				'title' => 'We bring fun into <br> driving.',
+				'title' => 'We bring fun into driving.',
 				'signup' => 'Register to be a part of the adventure.',
 				'register-button' => 'Register',
 				'download-button' => 'Download brochure',

@@ -20,12 +20,25 @@ Mobile body
 	position: absolute;
 	top: 0;
 }
+
+.start-header-container {
+	position: absolute;
+	top: 6.5rem;
+	left: 1rem;
+	text-align: left;
+	width: 18rem;
+}
+
+.start-header-container > h1 {
+	margin: 0;
+}
+
 .start-header {
-	font-size: 3rem;
+	font-family: 'AktivGrotesk-Light';
+	font-weight: 300;
+	font-size: 2.5rem;
 	animation: 1s ease-in 0s 1 easeIn;
-	height: 1rem;
-	color: white;
-	padding-bottom: 1.5rem;
+	color: #1E2B54;
 }
 
 @keyframes easeIn {
@@ -43,12 +56,12 @@ Mobile body
 	justify-content: center;
 	align-items: center;
 	position: static;
+	margin-top: 12.5vh;
 }
 
 .slide1 {
 	background-image: url(../images/bild1mobile.jpg);
 }
-
 
 .slide2 {
 	background-image: url(../images/bild2mobile.jpg);
@@ -59,7 +72,7 @@ Mobile body
 }
 
 .slide-content {
-	height: 100vh;
+	height: 87.5vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -70,22 +83,22 @@ Mobile body
 .buttons {
 	position: absolute;
 	bottom: 0;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 	left: 50%;
-	margin-left: -100px;
-	width: 200px;
+	margin-left: -153px;
+	/* width: 250px; */
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
 .buttons > a {
-	width: 75px;
-	height: 10px;
+	width: 100px;
+	height: 7px;
 	display: block;
+	margin: 0 2px;
 	text-decoration: none;
 	background-color: #FFFFFF;
-	border: 1px solid #1E2B54;
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
 }
