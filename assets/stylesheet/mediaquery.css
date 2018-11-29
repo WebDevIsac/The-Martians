@@ -93,7 +93,7 @@ Media Queries
 	.lang-en-desk  a{
 		font-family: 'AktivGrotesk-Medium';
 		font-size: 1.25rem;
-		padding: 0 0 4.7vh  .6vw;
+		padding: 0 0 0 .6vw;
 		margin: 0 6.56vw 0 0;
 	}
 
@@ -108,8 +108,17 @@ Media Queries
 	==============================================
 	*/
 
-	.slide {
+	.slide-content {
+		height: 86vh;
+		font-size: 4rem;
+		color: white;
+	}
 
+	.slide {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		opacity: 1;
 	}
 
 	.slide1 {
@@ -119,6 +128,7 @@ Media Queries
 
 	.slide2 {
 		background-image: url(../images/folderbild.jpg);
+		margin-top: -0.5vh
 	}
 
 	.slide3 {
@@ -156,25 +166,10 @@ Media Queries
 	.start-header {
 		color: #1E2B54;
 		text-align: left;
-		/* height: 1rem; */
 		font-size: 65px;
 		font-family: 'AktivGrotesk-Light';
 		font-weight: 300;
 		animation: 1.5s ease-in 0s easeIn;
-	}
-
-	.slide-content {
-		width: 100%;
-		font-size: 4rem;
-		color: white;
-
-	}
-
-	.slide {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		opacity: 1;
 	}
 
 	/*
