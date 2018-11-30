@@ -7,7 +7,7 @@
 
 ## About
 The first project we collaborate with the Digital Designer and Computer Graphic Designer class. <br>
-The Mission is to create a landing page for <b>SAAB</b> with choose one of the vehicles.<br>
+The Mission is to create a landing page for <b>SAAB</b> and choose one of the vehicles.<br>
 We chose: <b>Capsule - one-seater electric terrain vehicle</b>
 
 ##### The criterias for the assignment:
@@ -24,8 +24,6 @@ We chose: <b>Capsule - one-seater electric terrain vehicle</b>
 - Different language versions
 - Header
 - Footer
-
-
 
 ## Used Languages
 - HTML
@@ -57,8 +55,10 @@ $ git clone https://github.com/WebDevIsac/The-Martians.git
 - Sofia Grönvall (DD)
 
 ### Testers:
-
-
+ - [Amin Mohamed](https://github.com/Amin-Mohamed)
+ - Family
+ - Colleagues
+ 
 ### License
 
 The MIT License ([MIT](https://raw.githubusercontent.com/WebDevIsac/The-Martians/master/LICENSE))
