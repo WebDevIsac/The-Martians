@@ -117,9 +117,9 @@ if(!isset($language)) {
 		<div class="foot-left-container">
 			<div class="foot-sm-container">
 
-				<div><a href="#"><span class="foot-facebook"></span> Facebook</a></div>
-				<div><a href="#"><span class="foot-instagram"></span> Instagram</a></div>
-				<div><a href="#"><span class="foot-twitter"></span> Twitter</a></div>
+				<div><a target="_blank" href="https://www.facebook.com/"><span class="foot-facebook"></span> Facebook</a></div>
+				<div><a target="_blank" href="https://www.instagram.com/"><span class="foot-instagram"></span> Instagram</a></div>
+				<div><a target="_blank" href="https://twitter.com/"><span class="foot-twitter"></span> Twitter</a></div>
 			</div>
 		<div class="foot-about-container">
 				<div><a href="#">FS 1.0</a></div>
