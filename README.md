@@ -33,7 +33,7 @@ We chose: <b>Capsule - one-seater electric terrain vehicle</b>
 
 ## Installation:
 
-- clone the repository.
+- Clone the repository.
 ```sh
 $ git clone https://github.com/WebDevIsac/The-Martians.git
 ```
