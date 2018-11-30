@@ -18,6 +18,9 @@ if(!isset($language)) {
 	<link rel="stylesheet" href="assets/stylesheet/mobile-body.css">
 	<link rel="stylesheet" href="assets/stylesheet/form.css">
 	<link rel="stylesheet" href="assets/stylesheet/mediaquery.css">
+	<link rel="stylesheet" href="assets/stylesheet/header-desk.css">
+	<link rel="stylesheet" href="assets/stylesheet/body-desk.css">
+	<link rel="stylesheet" href="assets/stylesheet/footer-desk.css">
 	<link rel="icon" href="assets/images/favicon.jpg">
 	<title>The Martians</title>
 </head>
@@ -125,7 +128,7 @@ if(!isset($language)) {
 			</div>
 		</div>
 			<div class="foot-right-container">
-				<div class="foot-logo"><a href="#"><img src="assets/images/desktop/desk-logo.svg" alt=""></a></div>
+				<div class="foot-logo"><a href="#home"><img src="assets/images/desktop/desk-logo.svg" alt=""></a></div>
 			</div>
 	</footer>
 

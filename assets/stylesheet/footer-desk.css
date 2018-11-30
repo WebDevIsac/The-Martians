@@ -1,0 +1,62 @@
+@media only screen and (min-width: 900px) {
+	/*
+	==============================================
+	Footer desktop
+	==============================================
+	*/
+
+	footer {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		height: 17vh;
+		width: 100%;
+		border-top: 1px solid lightgrey;
+		font-size: 	1.15rem;
+		letter-spacing: 0.69px;
+	}
+
+	.foot-left-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 21vw;
+		margin-left: 3.5vw;
+	}
+
+	.foot-sm-container div {
+		margin: 2px;
+	}
+
+	.foot-about-container div {
+		margin: 2px;
+	}
+
+	.foot-right-container {
+		width: 10vw;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-right: 3.5vw;
+
+	}
+
+	.foot-logo img {
+		margin-top: 2.5vh;
+		width: 9.2vw;
+	}
+
+	footer a:hover {
+		color: #D0D7DC;
+	}
+}
+
+@keyframes easeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-30%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
