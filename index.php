@@ -61,9 +61,9 @@ if(!isset($language)) {
 					<div class="line"></div>
 
 					<div class="mob-footer-content">
-					<div class="mob-facebook"><a href="#">Facebook</a></div>
-					<div class="mob-instagram"><a href="#">Instagram</a></div>
-					<div class="mob-twitter"><a href="#">Twitter</a></div>
+					<div class="mob-facebook"><a href="https://www.facebook.com">Facebook</a></div>
+					<div class="mob-instagram"><a href="https://www.instagram.com">Instagram</a></div>
+					<div class="mob-twitter"><a href="https://twitter.com">Twitter</a></div>
 					<div class="mob-fs"><a href="#">FS.1.0</a></div>
 					<div class="mob-contact"><a href="#"><?= $language['contact']; ?></a></div>
 					<div class="mob-policy"><a href="#"><?= $language['policy']; ?></a></div>
